@@ -1,0 +1,216 @@
+/* Banner Background */
+.ki-home-banner-background {
+    background: #6637c5;
+    position: relative;
+}
+
+.ki-home-video-background {
+    background: #7740e6;
+    position: relative;
+}
+
+/* Animation Grid */
+.ki-home-banner-animation {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 1920px;
+}
+
+.ki-home-banner-animation span {
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+.aj-animation-grid {
+    height: 810px;
+    width: 60%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.aj-grid-ele {
+    position: relative;
+    height: 270px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    will-change: transform;
+}
+
+.temp-aj-grid-ele {
+    position: relative;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    will-change: transform;
+}
+
+/* Text Styles */
+.text-size-para {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.aj-z-5 {
+    z-index: 5;
+}
+
+.aj-z-0 {
+    z-index: 0;
+}
+
+.text-size-transform {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.aj-grid-ele-bg-transparent {
+    border: none;
+    background-color: transparent !important;
+}
+
+.aj-border-radius {
+    border-radius: 0 0 0 22px;
+}
+
+.aj-light-purple {
+    background-color: #cfa9ff;
+}
+
+.aj-medium-purple {
+    background-color: #7646d7;
+}
+
+.aj-dark-purple {
+    background-color: #4f149a;
+}
+
+.text-h3-size {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.aj-logo-mb {
+    margin-bottom: 15px;
+}
+
+/* Logo Sprites */
+.aj-clutch,
+.aj-crowd-rew,
+.aj-good-firms,
+.aj-ms-image {
+    max-width: 100%;
+    background-size: 100%;
+    background-image: url("/Images/banner.jpg");
+}
+
+.aj-ms-image {
+    background-position: 0 0;
+    background-size: 100%;
+    width: 80%;
+}
+
+.aj-crowd-rew {
+    background-position: 0 36.227045%;
+    background-size: 112.304251%;
+    width: 75%;
+    margin-bottom: 7.5%;
+}
+
+.aj-clutch {
+    background-position: 0 60.526316%;
+    background-size: 145.507246%;
+    width: 60%;
+    margin-bottom: 7.5%;
+}
+
+.aj-good-firms {
+    width: 45%;
+    margin-bottom: 7.5%;
+    background-position: 0 100%;
+    background-size: 179.285714%;
+}
+
+.aj-clutch-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Video Banner */
+.ki-home-banner-video {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.ki-home-banner-video video {
+    width: 60%;
+}
+
+.ki-home-banner-text {
+    position: absolute;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* microsoft card */
+.ms-card {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color:#4D4D4D;
+}
+
+.top-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.top-row img {
+  padding-top: 4px;
+  padding-left:6px;
+  width: 54px;
+  height: 54px;
+}
+
+.text-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-block .microsoft {
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.text-block .partner {
+  font-size: 17px;
+  margin-top: 1px;
+}
+
+.bottom-text {
+  margin-top: 5px;
+  padding-left:4px;
+  font-size: 19px;
+  font-weight: 500;
+}
+
+/* microsoft-card */
+
+@media(min-width:1400px){
+    .container{
+        max-width:1500px !important;
+        padding-left:2.5% !important;
+    }
+}
