@@ -1,0 +1,253 @@
+/* Desktop and General Styles (unchanged) */
+.sec-2 {
+    padding: 50px 0;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.text-it {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.head-it {
+    font-size: 40px;
+    font-weight: 700;
+    color: #101010;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.sec-2-wrap {
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
+.tabs-it {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.it {
+    padding: 10px 30px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    background: #f2f2f2;
+    color: #000;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+.it.active {
+    background: #4f149a;
+    color: #fff;
+}
+
+.links-it {
+    display: none;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 30px;
+    margin-top: 30px;
+}
+
+.links-it.active {
+    display: block;
+}
+
+.it-box-head div {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #4f149a;
+    font-weight: 700;
+}
+
+.linklist-it {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    row-gap: 30px;
+}
+
+.linklist-it a {
+    color: #000;
+    font-weight: 400;
+    text-decoration: underline;
+    font-size: 16px;
+}
+
+.linklist-it span {
+    color: #000;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.it-head-desc {
+    display: none;
+}
+
+.it-desc {
+    display: block;
+}
+
+.collapse {
+    display: none;
+}
+
+.collapse.show {
+    display: block;
+}
+
+/* Mobile-Specific Styles */
+@media (max-width: 767px) {
+    .head-it {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .tabs-it {
+        display: none;
+    }
+
+    .links-it {
+        display: block;
+        padding: 0;
+        margin-bottom: 10px;
+        margin-top: 0;
+        border: none;
+        border-radius: 0;
+        background: #f5f5f5;
+    }
+
+    .box-heading-it {
+        margin: 0;
+    }
+
+    .btn-it {
+        font-size: 16px;
+        font-weight: 600;
+        color: #333;
+        padding: 12px 40px 12px 15px;
+        width: 100%;
+        text-align: left;
+        background: #f5f5f5;
+        border-bottom: 1px solid #ddd;
+        position: relative;
+        cursor: pointer;
+        transition: background 0.3s, color 0.3s;
+    }
+
+    .btn-it.open,
+    .btn-it:hover {
+        background: #6b21a8;
+        color: #fff;
+    }
+
+    .btn-it::after {
+        content: '-';
+        font-size: 12px;
+        color: #6b21a8;
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: transform 0.3s ease;
+    }
+
+    .btn-it.open::after {
+        transform: translateY(-50%) rotate(180deg);
+        color: #fff;
+    }
+
+    .it-desc {
+        font-size: 14px;
+        color: #666;
+        margin: 10px 15px 15px;
+        display: none;
+    }
+
+    .it-desc.show {
+        display: block;
+    }
+
+    .linklist-it {
+        row-gap: 10px;
+        padding: 0 15px 15px;
+    }
+
+    .linklist-it a,
+    .linklist-it span {
+        font-size: 14px;
+    }
+
+    .collapse {
+        display: none;
+    }
+
+    .collapse.show {
+        display: block;
+    }
+}
+
+/* Desktop-Specific Styles (unchanged) */
+@media (min-width: 768px) {
+    .linklist-it {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .it {
+        width: 48.6%;
+        flex: none;
+    }
+
+    .links-it .collapse {
+        display: block !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .sec-2-wrap {
+        column-gap: 50px;
+        grid-template-columns: 2.6fr 6.6fr;
+    }
+
+    .tabs-it {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+    }
+
+    .links-it {
+        margin-top: 0;
+        height: 100%;
+    }
+
+    .it {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .links-it:first-child .linklist-it {
+        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    }
+
+    .linklist-it {
+        grid-template-columns: 1fr 2fr !important;
+    }
+
+    .linklist-it a,
+    .linklist-it span {
+        font-size: 18px !important;
+    }
+}

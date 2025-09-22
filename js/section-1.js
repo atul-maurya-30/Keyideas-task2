@@ -1,15 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
-const kiHomeBannerAnimation = document.querySelector('.ki-home-banner-animation');
-let animationGrid, animationGridItems;
-if (kiHomeBannerAnimation) {
-    animationGrid = kiHomeBannerAnimation.querySelector('.aj-animation-grid');
-    animationGridItems = kiHomeBannerAnimation.querySelectorAll('.aj-grid-ele');
+const BannerAnimation = document.querySelector('.banner-animation');
+let gridAnimation, gridAnimationItems;
+if (BannerAnimation) {
+    gridAnimation = BannerAnimation.querySelector('.grid-animation');
+    gridAnimationItems = BannerAnimation.querySelectorAll('.grid-case');
 }
 // gsap for home banner animation
 
 gsap.registerPlugin(Flip);
-if (animationGridItems) {
-    animationGridItems.forEach((box, index) => {
+if (gridAnimationItems) {
+    gridAnimationItems.forEach((box, index) => {
         let row = (Math.floor(index / 4)) + 1;
         let col = (index % 4) + 1;
         box.style.gridRow = row;
@@ -20,7 +20,7 @@ if (animationGridItems) {
 const msImage = `
     <div class="ms-card">
     <div class="top-row">
-      <img class="aj-ms-image img-fluid" alt="microsoft logo" width="40" height="40" src="/Images/banner/microsoft.png">
+      <img class="grid-ms-image img-fluid" alt="microsoft logo" width="40" height="40" src="/Images/banner/microsoft.png">
       <div class="text-block">
         <div class="microsoft">Microsoft</div>
         <div class="partner">Solutions Partner</div>
@@ -61,8 +61,8 @@ const strategyContent = `
 `;
 
 const clutchB2B = `
-    <div class="aj-clutch-cont">
-        <img class="aj-clutch img-fluid" alt="clutch logo" width="100" height="100" src="/Images/banner/clutch1.png">
+    <div class="grid-clutch-cont">
+        <img class="grid-clutch img-fluid" alt="clutch logo" width="100" height="100" src="/Images/banner/clutch1.png">
         <div class="text-center">
             <span class="text-white text-h3-size">Top B2B</span>
             <span class="text-size-para">Providers in the Indian Emerging Tech Market for 2021</span>
@@ -71,8 +71,8 @@ const clutchB2B = `
 `;
 
 const clutchShopify = `
-    <div class="aj-clutch-cont">
-        <img class="aj-good-firms img-fluid" alt="good firms logo" width="100" height="100" src="/Images/banner/goodfirms.png">
+    <div class="grid-clutch-cont">
+        <img class="grid-good-firms img-fluid" alt="good firms logo" width="100" height="100" src="/Images/banner/goodfirms.png">
         <div class="text-center">
             <span class="text-white text-h3-size">Top Shopify</span>
             <span class="text-size-para">Development Companies in 2019</span>
@@ -81,8 +81,8 @@ const clutchShopify = `
 `;
 
 const clutch12 = `
-    <div class="aj-clutch-cont">
-        <img class="aj-clutch img-fluid" alt="clutch logo" width="100" height="100" src="/Images/banner/clutch1.png">
+    <div class="grid-clutch-cont">
+        <img class="grid-clutch img-fluid" alt="clutch logo" width="100" height="100" src="/Images/banner/clutch1.png">
         <div class="text-center">
             <span class="text-white text-h3-size">Top 12</span>
             <span class="text-size-para">Out of 400 top Mobile App Developers in India, 2020</span>
@@ -91,8 +91,8 @@ const clutch12 = `
 `;
 
 const clutch1000 = `
-    <div class="aj-clutch-cont">
-        <img class="aj-clutch img-fluid" alt="clutch logo" width="100" height="100" src="/Images/banner/clutch1.png">
+    <div class="grid-clutch-cont">
+        <img class="grid-clutch img-fluid" alt="clutch logo" width="100" height="100" src="/Images/banner/clutch1.png">
         <div class="text-center">
             <span class="text-white text-h3-size">Top 1000</span>
             <span class="text-size-para">B2B Companies 2018</span>
@@ -101,8 +101,8 @@ const clutch1000 = `
 `;
 
 const crowd1 = `
-    <div class="aj-clutch-cont">
-        <img class="aj-crowd-rew img-fluid" height="100" width="100" alt="crowd review logo" src="/Images/banner/crowd.png">
+    <div class="grid-clutch-cont">
+        <img class="grid-crowd-rew img-fluid" height="100" width="100" alt="crowd review logo" src="/Images/banner/crowd.png">
         <div class="text-center">
             <span class="text-white text-h3-size">#1</span>
             <span class="text-size-para">ASP.NET Development Company</span>
@@ -111,8 +111,8 @@ const crowd1 = `
 `;
 
 const crowdTop3 = `
-    <div class="aj-clutch-cont">
-        <img class="aj-crowd-rew img-fluid" height="100" width="100" alt="crowd review logo" src="/Images/banner/crowd.png">
+    <div class="grid-clutch-cont">
+        <img class="grid-crowd-rew img-fluid" height="100" width="100" alt="crowd review logo" src="/Images/banner/crowd.png">
         <div class="text-center">
             <span class="text-white text-h3-size">Top 3</span>
             <span class="text-size-para">E-Commerce Development Company</span>
@@ -121,8 +121,8 @@ const crowdTop3 = `
 `;
 
 const crowdTop10 = `
-    <div class="aj-clutch-cont">
-        <img class="aj-crowd-rew img-fluid" height="100" width="100" alt="crowd review logo" src="/Images/banner/crowd.png">
+    <div class="grid-clutch-cont">
+        <img class="grid-crowd-rew img-fluid" height="100" width="100" alt="crowd review logo" src="/Images/banner/crowd.png">
         <div class="text-center">
             <span class="text-white text-h3-size">Top 10</span>
             <span class="text-size-para">Web Development Company</span>
@@ -144,51 +144,51 @@ let twelve;
 
 let tempone, tempTwo, tempthree, tempfour, tempsix, tempseven, tempeight, tempeleven, temptwelve;
 
-if (kiHomeBannerAnimation) {
-    tempone = kiHomeBannerAnimation.querySelector('.temp-one');
+if (BannerAnimation) {
+    tempone = BannerAnimation.querySelector('.temp-one');
     tempone.style.gridColumn = 1;
     tempone.style.gridRow = 1;
-    one = kiHomeBannerAnimation.querySelector('.one');
+    one = BannerAnimation.querySelector('.one');
 
-    tempTwo = kiHomeBannerAnimation.querySelector('.temp-two');
+    tempTwo = BannerAnimation.querySelector('.temp-two');
     tempTwo.style.gridColumn = 2;
     tempTwo.style.gridRow = 1;
-    two = kiHomeBannerAnimation.querySelector('.two');
+    two = BannerAnimation.querySelector('.two');
 
-    tempthree = kiHomeBannerAnimation.querySelector('.temp-three');
+    tempthree = BannerAnimation.querySelector('.temp-three');
     tempthree.style.gridColumn = 3;
     tempthree.style.gridRow = 1;
-    three = kiHomeBannerAnimation.querySelector('.three');
+    three = BannerAnimation.querySelector('.three');
 
-    tempfour = kiHomeBannerAnimation.querySelector('.temp-four');
+    tempfour = BannerAnimation.querySelector('.temp-four');
     tempfour.style.gridColumn = 4;
     tempfour.style.gridRow = 1;
-    four = kiHomeBannerAnimation.querySelector('.four');
+    four = BannerAnimation.querySelector('.four');
 
-    tempsix = kiHomeBannerAnimation.querySelector('.temp-six');
+    tempsix = BannerAnimation.querySelector('.temp-six');
     tempsix.style.gridColumn = 2;
     tempsix.style.gridRow = 2;
-    six = kiHomeBannerAnimation.querySelector('.six');
+    six = BannerAnimation.querySelector('.six');
 
-    tempseven = kiHomeBannerAnimation.querySelector('.temp-seven');
+    tempseven = BannerAnimation.querySelector('.temp-seven');
     tempseven.style.gridColumn = 3;
     tempseven.style.gridRow = 2;
-    seven = kiHomeBannerAnimation.querySelector('.seven');
+    seven = BannerAnimation.querySelector('.seven');
 
-    tempeight = kiHomeBannerAnimation.querySelector('.temp-eight');
+    tempeight = BannerAnimation.querySelector('.temp-eight');
     tempeight.style.gridColumn = 4;
     tempeight.style.gridRow = 2;
-    eight = kiHomeBannerAnimation.querySelector('.eight');
+    eight = BannerAnimation.querySelector('.eight');
 
-    tempeleven = kiHomeBannerAnimation.querySelector('.temp-eleven');
+    tempeleven = BannerAnimation.querySelector('.temp-eleven');
     tempeleven.style.gridColumn = 3;
     tempeleven.style.gridRow = 3;
-    eleven = kiHomeBannerAnimation.querySelector('.eleven');
+    eleven = BannerAnimation.querySelector('.eleven');
 
-    temptwelve = kiHomeBannerAnimation.querySelector('.temp-twelve');
+    temptwelve = BannerAnimation.querySelector('.temp-twelve');
     temptwelve.style.gridColumn = 4;
     temptwelve.style.gridRow = 3;
-    twelve = kiHomeBannerAnimation.querySelector('.twelve');
+    twelve = BannerAnimation.querySelector('.twelve');
 }
 
 function assignContentForStageOne() {
@@ -207,14 +207,14 @@ function stageOne() {
 
     // one.style.opacity = 0;
     let state1 = Flip.getState('.one', { props: "opacity,borderRadius,backgroundColor" }); //change color from light to medium
-    one.classList.remove('aj-light-purple');
-    one.classList.add('aj-medium-purple');
+    one.classList.remove('grid-light-purple');
+    one.classList.add('grid-medium-purple');
     // one.style.opacity = 1;
 
     two.style.gridRow = 2;
     two.style.borderRadius = '0px 0px 0px 32px';
-    two.classList.remove('aj-medium-purple');
-    two.classList.add('aj-dark-purple');
+    two.classList.remove('grid-medium-purple');
+    two.classList.add('grid-dark-purple');
     two.style.opacity = 0;
     tempTwo.innerHTML = clutchB2B;
     two.innerHTML = crowd1;
@@ -224,12 +224,12 @@ function stageOne() {
     two.style.gridRow = 1;
 
     let state3 = Flip.getState('.three', { props: "opacity,borderRadius,backgroundColor" }); //change color from dark to light
-    three.classList.remove('aj-dark-purple');
-    three.classList.add('aj-light-purple');
+    three.classList.remove('grid-dark-purple');
+    three.classList.add('grid-light-purple');
 
     four.style.gridColumn = 3;
-    four.classList.remove('aj-medium-purple');
-    four.classList.add('aj-dark-purple');
+    four.classList.remove('grid-medium-purple');
+    four.classList.add('grid-dark-purple');
     four.style.opacity = 0;
     tempfour.innerHTML = clutchShopify;
     four.innerHTML = crowdTop10;
@@ -241,13 +241,13 @@ function stageOne() {
     tempsix.style.borderRadius = '0px 0px 0px 32px';
     let state6 = Flip.getState('.six', { props: "opacity,borderRadius,backgroundColor" }); //change color from dark to light and border radius from 96 to 32
     six.style.borderRadius = '0px 0px 0px 32px';
-    six.classList.remove('aj-dark-purple');
-    six.classList.add('aj-light-purple');
+    six.classList.remove('grid-dark-purple');
+    six.classList.add('grid-light-purple');
 
     seven.style.gridColumn = 4;
     seven.style.gridRow = 1;
-    seven.classList.remove('aj-light-purple');
-    seven.classList.add('aj-dark-purple');
+    seven.classList.remove('grid-light-purple');
+    seven.classList.add('grid-dark-purple');
     seven.style.opacity = 0;
     tempseven.innerHTML = msImage;
     seven.innerHTML = crowdTop3;
@@ -257,18 +257,18 @@ function stageOne() {
     seven.style.opacity = 1;
 
     let state8 = Flip.getState('.eight', { props: "opacity,borderRadius,backgroundColor" }); //change color from dark to light
-    eight.classList.remove('aj-dark-purple');
-    eight.classList.add('aj-light-purple');
+    eight.classList.remove('grid-dark-purple');
+    eight.classList.add('grid-light-purple');
 
     let state11 = Flip.getState('.eleven', { props: "opacity,borderRadius,backgroundColor" }); //change color from dark to light
-    eleven.classList.remove('aj-dark-purple');
-    eleven.classList.add('aj-light-purple');
+    eleven.classList.remove('grid-dark-purple');
+    eleven.classList.add('grid-light-purple');
 
     twelve.style.opacity = 0;
     twelve.innerHTML = clutch1000;
     let state12 = Flip.getState('.twelve', { props: "opacity,borderRadius,backgroundColor" }); //change content and opacity from 0 to 1
-    twelve.classList.remove('aj-medium-purple');
-    twelve.classList.add('aj-dark-purple');
+    twelve.classList.remove('grid-medium-purple');
+    twelve.classList.add('grid-dark-purple');
     twelve.style.opacity = 1;
 
     Flip.from(state1, { absolute: true, duration: oneChangeTime, ease: "power2.inOut" });
@@ -285,41 +285,41 @@ function stageOne() {
 function removeTempContentFromStageOne() {
 
     tempone.innerHTML = '';
-    tempone.classList.remove('aj-light-purple');
-    tempone.classList.add('aj-medium-purple');
+    tempone.classList.remove('grid-light-purple');
+    tempone.classList.add('grid-medium-purple');
 
     tempTwo.innerHTML = '';
-    tempTwo.classList.remove('aj-medium-purple');
-    tempTwo.classList.add('aj-dark-purple');
+    tempTwo.classList.remove('grid-medium-purple');
+    tempTwo.classList.add('grid-dark-purple');
 
     tempthree.innerHTML = '';
-    tempthree.classList.remove('aj-dark-purple');
-    tempthree.classList.add('aj-light-purple');
+    tempthree.classList.remove('grid-dark-purple');
+    tempthree.classList.add('grid-light-purple');
 
     tempfour.innerHTML = '';
-    tempfour.classList.remove('aj-medium-purple');
-    tempfour.classList.add('aj-dark-purple');
+    tempfour.classList.remove('grid-medium-purple');
+    tempfour.classList.add('grid-dark-purple');
 
     tempsix.innerHTML = '';
-    tempsix.classList.remove('aj-dark-purple');
-    tempsix.classList.add('aj-light-purple');
+    tempsix.classList.remove('grid-dark-purple');
+    tempsix.classList.add('grid-light-purple');
     tempsix.style.borderRadius = '0px 0px 0px 32px';
 
     tempseven.innerHTML = '';
-    tempseven.classList.remove('aj-light-purple');
-    tempseven.classList.add('aj-dark-purple');
+    tempseven.classList.remove('grid-light-purple');
+    tempseven.classList.add('grid-dark-purple');
 
     tempeight.innerHTML = '';
-    tempeight.classList.remove('aj-dark-purple');
-    tempeight.classList.add('aj-light-purple');
+    tempeight.classList.remove('grid-dark-purple');
+    tempeight.classList.add('grid-light-purple');
 
     tempeleven.innerHTML = '';
-    tempeleven.classList.remove('aj-dark-purple');
-    tempeleven.classList.add('aj-light-purple');
+    tempeleven.classList.remove('grid-dark-purple');
+    tempeleven.classList.add('grid-light-purple');
 
     temptwelve.innerHTML = '';
-    temptwelve.classList.remove('aj-medium-purple');
-    temptwelve.classList.add('aj-dark-purple');
+    temptwelve.classList.remove('grid-medium-purple');
+    temptwelve.classList.add('grid-dark-purple');
 }
 
 function stageTwo() {
@@ -330,15 +330,15 @@ function stageTwo() {
 
     two.style.opacity = 0;
     let state2 = Flip.getState('.two', { props: "opacity,borderRadius,backgroundColor" });
-    two.classList.remove('aj-dark-purple');
-    two.classList.add('aj-light-purple');
+    two.classList.remove('grid-dark-purple');
+    two.classList.add('grid-light-purple');
     two.innerHTML = attractContent;
     two.style.opacity = 1;
 
     three.style.opacity = 0;
     three.style.gridRow = 2;
-    three.classList.remove('aj-light-purple');
-    three.classList.add('aj-medium-purple');
+    three.classList.remove('grid-light-purple');
+    three.classList.add('grid-medium-purple');
     tempthree.innerHTML = convertContent;
     three.innerHTML = clutchShopify;
     let state3 = Flip.getState('.three', { props: "opacity,borderRadius,backgroundColor" });
@@ -351,12 +351,12 @@ function stageTwo() {
     four.style.opacity = 1;
 
 
-    tempsix.classList.remove('aj-light-purple');
-    tempsix.classList.add('aj-medium-purple');
+    tempsix.classList.remove('grid-light-purple');
+    tempsix.classList.add('grid-medium-purple');
     six.style.opacity = 0;
     let state6 = Flip.getState('.six', { props: "opacity,borderRadius,backgroundColor" });
-    six.classList.remove('aj-light-purple');
-    six.classList.add('aj-medium-purple');
+    six.classList.remove('grid-light-purple');
+    six.classList.add('grid-medium-purple');
     six.innerHTML = transformContent;
     six.style.opacity = 1;
 
@@ -368,8 +368,8 @@ function stageTwo() {
     eight.style.opacity = 0;
     eight.innerHTML = clutch12;
     let state8 = Flip.getState('.eight', { props: "opacity,borderRadius,backgroundColor" });
-    eight.classList.remove('aj-light-purple');
-    eight.classList.add('aj-medium-purple');
+    eight.classList.remove('grid-light-purple');
+    eight.classList.add('grid-medium-purple');
     eight.style.opacity = 1;
 
     eleven.style.opacity = 0;
@@ -398,28 +398,28 @@ function removeTempContentFromStageTwo() {
     tempone.innerHTML = '';
 
     tempTwo.innerHTML = '';
-    tempTwo.classList.remove('aj-dark-purple');
-    tempTwo.classList.add('aj-light-purple');
+    tempTwo.classList.remove('grid-dark-purple');
+    tempTwo.classList.add('grid-light-purple');
 
     tempthree.innerHTML = '';
-    tempthree.classList.remove('aj-light-purple');
-    tempthree.classList.add('aj-medium-purple');
+    tempthree.classList.remove('grid-light-purple');
+    tempthree.classList.add('grid-medium-purple');
 
     tempfour.innerHTML = '';
 
     tempsix.innerHTML = '';
-    // tempsix.classList.remove('aj-light-purple');
-    // tempsix.classList.add('aj-medium-purple');
+    // tempsix.classList.remove('grid-light-purple');
+    // tempsix.classList.add('grid-medium-purple');
 
     tempseven.innerHTML = '';
 
     tempeight.innerHTML = '';
-    tempeight.classList.remove('aj-light-purple');
-    tempeight.classList.add('aj-medium-purple');
+    tempeight.classList.remove('grid-light-purple');
+    tempeight.classList.add('grid-medium-purple');
 
     tempeleven.innerHTML = '';
-    tempeleven.classList.remove('aj-light-purple');
-    tempeleven.classList.add('aj-dark-purple');
+    tempeleven.classList.remove('grid-light-purple');
+    tempeleven.classList.add('grid-dark-purple');
 
     temptwelve.innerHTML = '';
 }
@@ -429,11 +429,11 @@ function stageThree() {
     // one.style.opacity = 0;
     one.innerHTML = crowd1;
     let state1 = Flip.getState('.one', { props: "opacity,borderRadius,backgroundColor" });
-    one.classList.remove('aj-medium-purple');
-    one.classList.add('aj-dark-purple');
+    one.classList.remove('grid-medium-purple');
+    one.classList.add('grid-dark-purple');
     // one.style.opacity = 1;
 
-    two.classList.remove('aj-light-purple');
+    two.classList.remove('grid-light-purple');
     two.style.gridRow = 2;
     two.innerHTML = transformContent;
     let state2 = Flip.getState('.two', { props: "opacity,borderRadius,backgroundColor" });
@@ -442,29 +442,29 @@ function stageThree() {
     three.style.opacity = 0;
     three.innerHTML = crowdTop3;
     let state3 = Flip.getState('.three', { props: "opacity,borderRadius,backgroundColor" });
-    three.classList.remove('aj-medium-purple');
-    three.classList.add('aj-dark-purple');
+    three.classList.remove('grid-medium-purple');
+    three.classList.add('grid-dark-purple');
     three.style.opacity = 1;
 
 
-    four.classList.remove('aj-dark-purple');
+    four.classList.remove('grid-dark-purple');
     four.style.gridRow = 3;
     four.innerHTML = strategyContent;
     let state4 = Flip.getState('.four', { props: "opacity,borderRadius,backgroundColor" });
     four.style.gridRow = 1;
     let tempState4 = Flip.getState('.temp-four', { props: "opacity,borderRadius,backgroundColor" });
-    tempfour.classList.remove('aj-dark-purple');
-    tempfour.classList.add('aj-medium-purple');
+    tempfour.classList.remove('grid-dark-purple');
+    tempfour.classList.add('grid-medium-purple');
 
 
     six.style.opacity = 0;
     six.innerHTML = crowdTop10;
     let state6 = Flip.getState('.six', { props: "opacity,borderRadius,backgroundColor" });
-    six.classList.remove('aj-medium-purple');
-    six.classList.add('aj-dark-purple');
+    six.classList.remove('grid-medium-purple');
+    six.classList.add('grid-dark-purple');
     six.style.opacity = 1;
 
-    seven.classList.remove('aj-dark-purple');
+    seven.classList.remove('grid-dark-purple');
     seven.style.gridRow = 1;
     seven.style.gridColumn = 2;
     seven.innerHTML = attractContent;
@@ -472,36 +472,36 @@ function stageThree() {
     seven.style.gridRow = 2;
     seven.style.gridColumn = 3;
     let tempState7 = Flip.getState('.temp-seven', { props: "opacity,borderRadius,backgroundColor" });
-    tempseven.classList.remove('aj-dark-purple');
-    tempseven.classList.add('aj-medium-purple');
+    tempseven.classList.remove('grid-dark-purple');
+    tempseven.classList.add('grid-medium-purple');
 
     eight.style.gridColumn = 3;
     eight.style.gridRow = 3;
-    eight.classList.remove('aj-medium-purple');
+    eight.classList.remove('grid-medium-purple');
     eight.innerHTML = msImage;
     let state8 = Flip.getState('.eight', { props: "opacity,borderRadius,backgroundColor" });
     eight.style.gridColumn = 4;
     eight.style.gridRow = 2;
     let tempState8 = Flip.getState('.temp-eight', { props: "opacity,borderRadius,backgroundColor" });
-    tempeight.classList.remove('aj-medium-purple');
-    tempeight.classList.add('aj-light-purple');
+    tempeight.classList.remove('grid-medium-purple');
+    tempeight.classList.add('grid-light-purple');
 
 
     eleven.style.opacity = 0;
     eleven.innerHTML = clutch1000;
     let state11 = Flip.getState('.eleven', { props: "opacity,borderRadius,backgroundColor" });
-    eleven.classList.remove('aj-light-purple');
-    eleven.classList.add('aj-dark-purple');
+    eleven.classList.remove('grid-light-purple');
+    eleven.classList.add('grid-dark-purple');
     eleven.style.opacity = 1;
 
-    twelve.classList.remove('aj-dark-purple');
+    twelve.classList.remove('grid-dark-purple');
     twelve.style.gridRow = 1;
     twelve.innerHTML = growthContent;
     let state12 = Flip.getState('.twelve', { props: "opacity,borderRadius,backgroundColor" });
     twelve.style.gridRow = 3;
     let tempState12 = Flip.getState('.temp-twelve', { props: "opacity,borderRadius,backgroundColor" });
-    temptwelve.classList.remove('aj-dark-purple');
-    temptwelve.classList.add('aj-medium-purple');
+    temptwelve.classList.remove('grid-dark-purple');
+    temptwelve.classList.add('grid-medium-purple');
 
     Flip.from(state1, { absolute: true, duration: oneChangeTime, ease: "power2.inOut" });
     Flip.from(state2, { absolute: true, duration: oneChangeTime, zIndex: 10, ease: "power2.inOut" });
@@ -520,50 +520,50 @@ function stageThree() {
 
 function removeTempContentFromStageThree() {
     tempone.innerHTML = '';
-    tempone.classList.remove('aj-medium-purple');
-    tempone.classList.add('aj-dark-purple');
+    tempone.classList.remove('grid-medium-purple');
+    tempone.classList.add('grid-dark-purple');
 
     tempTwo.innerHTML = '';
-    two.classList.add('aj-light-purple');
+    two.classList.add('grid-light-purple');
 
     tempthree.innerHTML = '';
-    tempthree.classList.remove('aj-medium-purple');
-    tempthree.classList.add('aj-dark-purple');
+    tempthree.classList.remove('grid-medium-purple');
+    tempthree.classList.add('grid-dark-purple');
 
     tempfour.innerHTML = '';
-    tempfour.classList.add('aj-medium-purple');
+    tempfour.classList.add('grid-medium-purple');
 
     tempsix.innerHTML = '';
-    tempsix.classList.remove('aj-medium-purple');
-    tempsix.classList.add('aj-dark-purple');
+    tempsix.classList.remove('grid-medium-purple');
+    tempsix.classList.add('grid-dark-purple');
 
     tempseven.innerHTML = '';
-    seven.classList.add('aj-medium-purple');
+    seven.classList.add('grid-medium-purple');
 
     tempeight.innerHTML = '';
-    eight.classList.add('aj-light-purple');
+    eight.classList.add('grid-light-purple');
 
     tempeleven.innerHTML = '';
-    tempeleven.classList.remove('aj-light-purple');
-    tempeleven.classList.add('aj-dark-purple');
+    tempeleven.classList.remove('grid-light-purple');
+    tempeleven.classList.add('grid-dark-purple');
 
     temptwelve.innerHTML = '';
-    twelve.classList.add('aj-medium-purple');
+    twelve.classList.add('grid-medium-purple');
 }
 
 function stageFour() {
     // one.style.opacity = 0;
     one.innerHTML = transformContent;
     let state1 = Flip.getState('.one', { props: "opacity,borderRadius,backgroundColor" });
-    one.classList.remove('aj-dark-purple');
-    one.classList.add('aj-light-purple');
+    one.classList.remove('grid-dark-purple');
+    one.classList.add('grid-light-purple');
     // one.style.opacity = 1;
 
     two.style.opacity = 0;
     two.innerHTML = clutchB2B;
     let state2 = Flip.getState('.two', { props: "opacity,borderRadius,backgroundColor" });
-    two.classList.remove('aj-light-purple');
-    two.classList.add('aj-medium-purple');
+    two.classList.remove('grid-light-purple');
+    two.classList.add('grid-medium-purple');
     two.style.opacity = 1;
 
     three.style.opacity = 0;
@@ -593,7 +593,7 @@ function stageFour() {
     // six.style.opacity = 1;
 
     seven.style.opacity = 0;
-    seven.classList.remove('aj-medium-purple');
+    seven.classList.remove('grid-medium-purple');
     seven.innerHTML = msImage;
     seven.style.gridColumn = 4;
     let state7 = Flip.getState('.seven', { props: "opacity,borderRadius,backgroundColor" });
@@ -601,14 +601,14 @@ function stageFour() {
     seven.style.opacity = 1;
 
     let tempState7 = Flip.getState('.temp-seven', { props: "opacity,borderRadius,backgroundColor" });
-    tempseven.classList.remove('aj-medium-purple');
-    tempseven.classList.add('aj-light-purple');
+    tempseven.classList.remove('grid-medium-purple');
+    tempseven.classList.add('grid-light-purple');
 
     eight.style.opacity = 0;
     eight.innerHTML = growthContent;
     let state8 = Flip.getState('.eight', { props: "opacity,borderRadius,backgroundColor" });
-    eight.classList.remove('aj-light-purple');
-    eight.classList.add('aj-dark-purple');
+    eight.classList.remove('grid-light-purple');
+    eight.classList.add('grid-dark-purple');
     eight.style.opacity = 1;
 
     eleven.style.opacity = 0;
@@ -657,7 +657,7 @@ function fullBannerAnimation() {
     }, 10000);
 }
 
-if (kiHomeBannerAnimation) {
+if (BannerAnimation) {
     fullBannerAnimation();
 
     setInterval(() => {

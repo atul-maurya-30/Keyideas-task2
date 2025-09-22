@@ -1,0 +1,144 @@
+.blog-article-sc {
+  padding: 60px 0;
+  text-align: center;
+  
+}
+
+.blog-article-sc .tech-stack-text {
+  margin-bottom: 40px;
+  
+}
+
+.heading2-ele {
+  font-size: 32px;
+  
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.sc-btns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.sc-btn {
+  background: #e8dbf7;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  min-width: 120px;
+  text-align: center;
+  white-space: nowrap; /* Prevents text wrapping */
+  filter: blur(6px); /* blur effect */
+  opacity: 0.5;
+  overflow: hidden; /* Hides overflow if any */
+}
+
+.sc-btn.active {
+  background: #5a0dad;
+  color: #fff;
+}
+
+/* Desktop: 2 rows max */
+@media (min-width: 1024px) {
+  .sc-btns {
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 100%;
+  }
+  .sc-btns .sc-btn {
+    flex: 1 0 calc(20% - 12px); /* Approx 6 buttons per row with gap */
+  }
+}
+
+/* Tablet: 3 rows max */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .sc-btns {
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 100%;
+  }
+  .sc-btns .sc-btn {
+    flex: 1 0 calc(25% - 12px); /* Approx 4 buttons per row with gap */
+  }
+}
+
+.display-section {
+  position: relative;
+  margin-top: 40px;
+}
+
+/* Grid container */
+.sc-grid {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 30px;
+  justify-items: center;
+  filter: blur(6px); /* blur effect */
+  opacity: 0.5;
+  padding: 20px 0;
+}
+
+/* Grid images */
+.sc-grid img {
+  width: 100px;      /* fixed width */
+  height: 100px;     /* fixed height */
+  object-fit: contain; /* keeps logo aspect ratio inside the box */
+  display: block;
+}
+
+
+/* Overlay center image */
+.overlay-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index:1;
+}
+
+.overlay-img img {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  
+  border: 1.5px solid black;
+  -webkit-mask: inset(20% 0 15% 0);
+  mask: inset(50% 0 50% 0);
+  
+}
+
+
+/* Mobile only image */
+.mobile-img {
+  display: none;
+}
+
+.mobile-img img {
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+  .sc-grid ,.overlay-img{
+    display: none; /* hide blur grid and overlay image */
+  }
+
+  .mobile-img {
+    display: block;
+    filter: blur(6px); /* blur effect */
+  opacity: 0.5;
+  z-index:0/* show mobile image */
+  }
+  .sc-btns{
+    display:none;
+  }
+  
+}

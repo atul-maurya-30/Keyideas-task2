@@ -1,0 +1,175 @@
+.sec-5 {
+    margin-top: 50px;
+}
+
+.ki-home-trusted-bg-color {
+    background: linear-gradient(279.93deg, #EBE2FB 59.34%, #FFFFFF 101.02%);
+}
+
+.ki-home-trusted-bg-padding {
+    padding: 30px 0;
+}
+
+@media (min-width: 768px) {
+    .ki-home-trusted-bg-padding {
+        padding: 30px 50px;
+    }
+}
+
+@media (min-width: 1170px) and (max-width: 1280px) {
+    .ki-home-trusted-bg-padding {
+        padding: 60px 50px !important;
+    }
+}
+
+@media (min-width: 1300px) {
+    .ki-home-trusted-bg-padding {
+        padding: 60px 100px 0;
+    }
+}
+
+.ki-home-text {
+    width: 100%;
+    margin: auto;
+    font-weight: 700
+}
+
+@media (min-width: 1400px) {
+    .ki-home-text {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+.ki-home-text h2 {
+    color: #000000;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    flex-wrap: nowrap;
+}
+
+.ki-home-text p {
+    color: #333;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    padding-left: 222px;
+    padding-right: 222px;
+    text-align: left;
+}
+
+.ki-home-text .award-title span {
+    color: #4f149a;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.ki-home-since {
+    width: 100%;
+    opacity:0.5;
+}
+
+.ki-home-since span {
+    color: #fff;
+    text-align: center;
+    font-size: clamp(54px, 10vw, 200px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 131%;
+}
+
+.mt-5 {
+    margin-top: 3rem;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.text-md-center {
+    text-align: center;
+}
+
+.overflow-animation {
+    overflow: visible;
+    position: relative;
+    width: 100%;
+    margin: 40px 0;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.bg-img {
+    width: 100%;
+    height: auto;
+    filter: blur(5px);
+    object-fit: cover;
+}
+
+.img-cropped {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* Full width to coincide with bg-img */
+    height: 100%;
+    /* Full height to coincide with bg-img */
+    object-position: center;
+    /* Centers the image horizontally */
+    clip-path: inset(0 35% 0 34%);
+    /* Crops 40% from both left and right to show only the middle 20% */
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+    .ki-home-text h2 {
+    font-size: 30px;
+}
+
+.ki-home-text p {
+    margin-bottom: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align:center;
+}
+    
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+    .ki-home-text h2 {
+    font-size: 30px;
+}
+
+.ki-home-text p {
+    margin-bottom: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align:center;
+}
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}

@@ -1,0 +1,318 @@
+/* =========================
+   Industry Section
+========================= */
+.industry-sc {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.tech-stack-text {
+    margin-bottom: 40px;
+}
+
+.heading2-ele {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #4f149a;
+}
+
+.tech-stack-text p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 18px;
+    color: #555;
+}
+
+.sc-box-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-items: center;
+}
+
+.sc-link-box {
+    background: #fff;
+    border-radius: 12px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 340px;
+    height: 130px;
+}
+
+.sc-link-box a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #222;
+    width: 100%;
+}
+
+.sc-img-box {
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.sc-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sc-link-box .title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #222;
+    line-height: 1.4;
+    text-align: left;
+}
+
+/* Show More Card Styling */
+.sc-link-box.industry-sm-sl {
+    background: #E8E2FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sc-link-box.industry-sm-sl a {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* ✅ ensures text centers */
+    text-decoration: none;
+    color: #222;
+    width: 100%;
+    text-align: center; /* ✅ centers inline text */
+}
+
+.sc-link-box.industry-sm-sl .industry-sm-sl-text {
+    font-size: 16px;
+    font-weight: 600;
+    color: #222;
+    line-height: 1.4;
+    text-align: center; /* ✅ forces center on text */
+    width: 100%; /* ✅ makes text fill so it aligns centrally */
+}
+
+/* Top row background variations */
+.sc-box-wrapper .sc-link-box:nth-child(1),
+.sc-box-wrapper .sc-link-box:nth-child(2),
+.sc-box-wrapper .sc-link-box:nth-child(3),
+.sc-box-wrapper .sc-link-box:nth-child(4) { background: #E8E2FF; }
+
+/* =========================
+   Why We Stand Out Section
+========================= */
+.ki-why-we-standout-section-new {
+    grid-column: span 3;
+    width: 100%;
+    border-radius: 10px;
+    color: #fff;
+    display: flex;
+    padding:0 30px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    background: linear-gradient(269.24deg, #7646D7 0%, #4F149A 98.66%);
+}
+
+.ki-why-we-standout-section-new .ki-wwso-first {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #fff;
+    text-align:left;
+    min-width: 180px;
+}
+
+.ki-why-we-standout-section-new .ki-wwso-second {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.ki-why-we-standout-section-new .ki-wwso-ele {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 8px;
+    flex: 1;
+}
+
+.ki-why-we-standout-section-new .ki-wwso-ele-top {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.ki-why-we-standout-section-new .ki-wwso-ele-top svg {
+    width: 22px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.ki-why-we-standout-section-new .ki-wwso-ele p {
+    margin: 0;
+    font-size: 13px;
+    font-weight: 400;
+    color: #e2d7f9;
+}
+
+/* =========================
+   Media Queries
+========================= */
+@media (max-width: 1024px) {
+    .sc-box-wrapper {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .ki-why-we-standout-section-new {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        padding:20px;
+    }
+    .ki-why-we-standout-section-new .ki-wwso-second {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .ki-why-we-standout-section-new .ki-wwso-ele {
+        flex: 1 1 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .sc-box-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    
+    .sc-link-box {
+        padding: 10px;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .sc-img-box {
+        width: 100px;
+        height: 100px;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    
+    .sc-link-box .title,
+    .sc-link-box.industry-sm-sl .industry-sm-sl-text {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .sc-box-wrapper .industry-mob {
+        display: none;
+    }
+
+    .sc-box-wrapper .industry-mob.industry-sm-sl {
+        display: flex;
+        justify-content: center; /* ✅ ensures mobile show more centers */
+        align-items: center;
+    }
+
+    .ki-why-we-standout-section-new {
+        grid-column: span 2;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding: 40px 20px;
+        min-height: auto;
+        background: linear-gradient(335.13deg, #7646D7 21.39%, #3E2571 79.91%);
+        margin-right:1px;
+        
+    }
+
+    .ki-why-we-standout-section-new .ki-wwso-first {
+        min-width: 100%;
+        text-align: left;
+        font-size: 35px;
+        
+    }
+
+    .ki-why-we-standout-section-new .ki-wwso-second {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .ki-why-we-standout-section-new .ki-wwso-ele {
+        flex: 1 1 100%;
+        align-items: left;
+        text-align: left;
+    }
+
+    .ki-why-we-standout-section-new .ki-wwso-ele-top {
+        justify-content: center;
+        font-size:25px;
+    }
+    .ki-why-we-standout-section-new .ki-wwso-ele-top svg {
+    width: 30px;
+    height: auto;
+    flex-shrink: 0;
+    margin:20px;
+}
+
+.ki-why-we-standout-section-new .ki-wwso-ele p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: #e2d7f9;
+}
+}
+
+@media (max-width: 480px) {
+    .sc-box-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .heading2-ele {
+        font-size: 28px;
+    }
+    
+    .tech-stack-text p {
+        font-size: 16px;
+    }
+     .ki-why-we-standout-section-new {
+        padding: 50px 15px;
+        gap: 25px;
+    }
+
+    .ki-why-we-standout-section-new .ki-wwso-first {
+        font-size: 18px;
+    }
+
+    .ki-why-we-standout-section-new .ki-wwso-ele-top {
+        font-size: 14px;
+    }
+
+    .ki-why-we-standout-section-new .ki-wwso-ele p {
+        font-size: 12px;
+    }
+}
