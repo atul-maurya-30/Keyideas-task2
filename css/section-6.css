@@ -6,7 +6,7 @@
     text-align: center;
 }
 
-.tech-stack-text {
+.text-it {
     margin-bottom: 40px;
 }
 
@@ -17,7 +17,7 @@
     color: #4f149a;
 }
 
-.tech-stack-text p {
+.text-it p {
     max-width: 700px;
     margin: 0 auto;
     font-size: 18px;
@@ -296,7 +296,7 @@
         font-size: 28px;
     }
     
-    .tech-stack-text p {
+    .text-it p {
         font-size: 16px;
     }
      .ki-why-we-standout-section-new {

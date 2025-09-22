@@ -1,8 +1,8 @@
 $(document).ready(function () {
     function initCarousel() {
         if ($(window).width() < 1000) {
-            if (!$(".portfolio-slider").hasClass("owl-loaded")) {
-                $(".portfolio-slider").owlCarousel({
+            if (!$(".slider").hasClass("owl-loaded")) {
+                $(".slider").owlCarousel({
                     items: 4,
                     loop: false,
                     margin: 20,
@@ -23,18 +23,18 @@ $(document).ready(function () {
             }
         } else {
             // Destroy carousel and clean up
-            if ($(".portfolio-slider").hasClass("owl-loaded")) {
-                $(".portfolio-slider")
+            if ($(".slider").hasClass("owl-loaded")) {
+                $(".slider")
                     .trigger("destroy.owl.carousel")
                     .removeClass("owl-carousel owl-loaded owl-hidden")
                     .removeAttr("style"); // Remove inline styles
                 // Unwrap all Owl Carousel wrappers
-                $(".portfolio-slider")
+                $(".slider")
                     .find(".owl-stage-outer, .owl-stage, .owl-item")
                     .contents()
                     .unwrap();
                 // Ensure grid styles take effect
-                $(".portfolio-slider").css("display", "grid");
+                $(".slider").css("display", "grid");
             }
         }
     }
