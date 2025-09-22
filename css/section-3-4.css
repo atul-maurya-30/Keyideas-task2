@@ -12,16 +12,16 @@
     row-gap: 20px;
     grid-template-areas: "health health jewelery" "hospitality enterprise enterprise";
 }
-.healthcare-ele {
+.health {
     grid-area: health;
 }
-.jewelery-ele {
+.jewelery {
     grid-area: jewelery;
 }
-.hospitality-ele {
+.travel {
     grid-area: hospitality;
 }
-.enterprise-ele {
+.enterprise {
     grid-area: enterprise;
 }
 .caro-2 {
@@ -29,7 +29,7 @@
     grid-template-columns: 1.5fr 1.5fr;
     gap: 20px;
 }
-.work-title {
+.exp-box-head {
     color: #fff;
     font-size: 18px;
     font-weight: 700;
@@ -40,19 +40,19 @@
     color: #fff;
     text-decoration: none;
 }
-.works-link p img {
+.exp-box-point p img {
     width: 10px;
     height: 14px;
     margin-left: 10px;
     margin-bottom: 2px;
     display: inline-block !important;
 }
-.works-link p {
+.exp-box-point p {
     display: flex;
     align-items: center;
     column-gap: 15px;
 }
-.works-link {
+.exp-box-point {
     position: absolute;
     bottom: 30px;
     transition: all 3s ease 3s;
@@ -60,7 +60,7 @@
     display: none;
 }
 /* Base style for all image blocks */
-.hoverable-ele {
+.hover-box {
     background-size: cover;       /* Always fills container */
     background-position: center;  /* Keeps image centered */
     background-repeat: no-repeat; /* Avoids tiling */
@@ -72,77 +72,77 @@
     background-blend-mode: overlay;
 }
 
-.healthcare-block {
+.health-box {
     background-image: url('/Images/section-3/health.png'), linear-gradient(181.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(0, 0, 0, 0.814) 40.29%, rgba(55, 74, 41, 0.422) 100%);
 ;
 }
-.healthcare-block:hover {
+.health-box:hover {
     background-size: 108%;
     background-blend-mode: overlay;
-    background-image: url('/Images/section-3/health.png'), linear-gradient(181.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(0, 0, 0, 0.814) 40.29%, rgba(55, 74, 41, 0.422) 100%);
+    background-image: url('/Images/section-3/health.png'), linear-gradient(181.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(0, 0, 0, 0.814) 40.29%, rgba(23, 43, 23, 0.591) 100%);
 }
 
-.hoverable-ele:hover .works-link {
+.hover-box:hover .exp-box-point {
     display: flex !important;
     flex-direction: column;
     transition: all 3s ease 3s;
 }
-.jewelery-block {
+.jewelery-box {
     background-image: url('/Images/section-3/advanced.jpg'), linear-gradient(181.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(0, 0, 0, 0.814) 40.29%, rgba(55, 74, 41, 0.422) 100%);
 }
-.jewelery-block:hover {
+.jewelery-box:hover {
     background-size: 108%;
     background-blend-mode: overlay;
-    background-image: url('/Images/section-3/advanced.jpg'), linear-gradient(181.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(0, 0, 0, 0.814) 40.29%, rgba(55, 74, 41, 0.422) 100%);
+    background-image: url('/Images/section-3/advanced.jpg'), linear-gradient(181.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(0, 0, 0, 0.814) 40.29%, rgba(23, 43, 23, 0.591) 100%);
 }
-.real-estate-block {
+.real-estate-box {
     background-image: url('/Images/section-4/realestate.png'), linear-gradient(181.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(0, 0, 0, 0.814) 40.29%, rgba(55, 74, 41, 0.422) 100%);
 }
-.real-estate-block:hover {
+.real-estate-box:hover {
     background-size: 118%;
     background-blend-mode: overlay;
-    background-image: url('/Images/section-4/realestate.png'), linear-gradient(181.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(0, 0, 0, 0.814) 40.29%, rgba(55, 74, 41, 0.422) 100%);
+    background-image: url('/Images/section-4/realestate.png'), linear-gradient(181.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(0, 0, 0, 0.814) 40.29%, rgba(23, 43, 23, 0.591) 100%);
 }
-.e-commerce-block {
+.e-commerce-box {
     background-image: url('/Images/section-4/ecommerce.png'), linear-gradient(181.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(0, 0, 0, 0.814) 40.29%, rgba(55, 74, 41, 0.422) 100%);
 }
-.e-commerce-block:hover {
+.e-commerce-box:hover {
     background-size: 108%;
     background-blend-mode: overlay;
-    background-image: url('/Images/section-4/ecommerce.png'), linear-gradient(181.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(0, 0, 0, 0.814) 40.29%, rgba(55, 74, 41, 0.422) 100%);
+    background-image: url('/Images/section-4/ecommerce.png'), linear-gradient(181.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(0, 0, 0, 0.814) 40.29%, rgba(23, 43, 23, 0.591) 100%);
 }
-.finance-block {
+.finance-box {
     background-image: url('/Images/section-4/finance.png'), linear-gradient(181.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(0, 0, 0, 0.814) 40.29%, rgba(55, 74, 41, 0.422) 100%);
 }
-.finance-block:hover {
+.finance-box:hover {
     background-size: 130%;
     background-blend-mode: overlay;
-    background-image: url('/Images/section-4/finance.png'), linear-gradient(181.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(0, 0, 0, 0.814) 40.29%, rgba(55, 74, 41, 0.422) 100%);
+    background-image: url('/Images/section-4/finance.png'), linear-gradient(181.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(0, 0, 0, 0.814) 40.29%, rgba(23, 43, 23, 0.591) 100%);
 }
-.home-block {
+.home-box {
     background-image: url('/Images/section-4/contractor.jpg'), linear-gradient(181.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(0, 0, 0, 0.814) 40.29%, rgba(55, 74, 41, 0.422) 100%);
 }
-.home-block:hover {
+.home-box:hover {
     background-size: 190%;
     background-blend-mode: overlay;
-    background-image: url('/Images/section-4/contractor.jpg'), linear-gradient(181.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(0, 0, 0, 0.814) 40.29%, rgba(55, 74, 41, 0.422) 100%);
+    background-image: url('/Images/section-4/contractor.jpg'), linear-gradient(181.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(0, 0, 0, 0.814) 40.29%, rgba(23, 43, 23, 0.591) 100%);
 }
-.hospitality-block {
+.travel-box {
     background-image: url('/Images/section-3/travel.png'), linear-gradient(181.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(0, 0, 0, 0.814) 40.29%, rgba(55, 74, 41, 0.422) 100%);
     
 }
-.hospitality-block:hover {
+.travel-box:hover {
     background-size: 140%;
     background-blend-mode: overlay;
-    background-image: url('/Images/section-3/travel.png'), linear-gradient(181.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(0, 0, 0, 0.814) 40.29%, rgba(55, 74, 41, 0.422) 100%);
+    background-image: url('/Images/section-3/travel.png'), linear-gradient(181.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(0, 0, 0, 0.814) 40.29%, rgba(23, 43, 23, 0.591) 100%);
 }
-.enterprise-block {
+.enterprise-box {
     background-image: url('/Images/section-3/Enterprise.png'), linear-gradient(181.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(0, 0, 0, 0.814) 40.29%, rgba(55, 74, 41, 0.422) 100%);
 }
-.enterprise-block:hover {
+.enterprise-box:hover {
     background-size: 108%;
     background-blend-mode: overlay;
-    background-image: url('/Images/section-3/Enterprise.png'), linear-gradient(181.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(0, 0, 0, 0.814) 40.29%, rgba(55, 74, 41, 0.422) 100%);
+    background-image: url('/Images/section-3/Enterprise.png'), linear-gradient(181.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(0, 0, 0, 0.814) 40.29%, rgba(23, 43, 23, 0.591) 100%);
 }
 @media (max-width: 992px) {
     .work-container {
@@ -160,42 +160,42 @@
         scrollbar-width: none;
         gap: 15px;
     }
-    .hoverable-ele {
+    .hover-box {
         background-size: cover !important;
         border-radius: 10px;
         height: 350px;
     }
-    .works-link {
+    .exp-box-point {
         bottom: 15px;
         display: flex !important;
         flex-direction: column;
     }
-    .hoverable-ele:hover {
+    .hover-box:hover {
         background-size: cover !important;
     }
-    .works-link p {
+    .exp-box-point p {
         position: relative;
         align-items: start;
         column-gap: 10px;
     }
-    .works-link p img {
+    .exp-box-point p img {
         width: 7px !important;
         height: 12px !important;
         margin: 0 0 3px 10px !important;
     }
 }
 @media (max-width: 1180px) {
-    .work-title~p {
+    .exp-box-head~p {
         display: none;
     }
-    .hoverable-ele {
+    .hover-box {
         background-size: cover !important;
     }
-    .hoverable-ele:hover {
+    .hover-box:hover {
         background-size: cover !important;
         
     }
-    .works-link {
+    .exp-box-point {
         display: flex;
         flex-direction: column;
     }
@@ -208,26 +208,26 @@
         grid-template-columns: 1fr .4fr 1fr;
         grid-template-rows: auto auto;
     }
-    .hoverable-ele {
+    .hover-box {
         background-size: cover !important;
     }
-    .hoverable-ele:hover {
+    .hover-box:hover {
         background-size: cover !important;
     }
 }
 @media (min-width: 768px) {
-    .work-title {
+    .exp-box-head {
         font-size: 18px;
     }
 }
 @media (min-width: 1025px) and (max-width: 1600px) {
-    .work-title {
+    .exp-box-head {
         font-size: 22px;
         margin-bottom: 40px;
     }
 }
 @media (min-width: 1600px) {
-    .hoverable-ele {
+    .hover-box {
         height: 100% !important;
     }
     .exp-box {
@@ -236,13 +236,13 @@
     .caro-2 .exp-box {
         height: 580px !important;
     }
-    .work-title {
+    .exp-box-head {
         font-size: 24px;
         margin-bottom: 40px;
     }
 }
 @media (min-width: 1200px) and (max-width: 1600px) {
-    .hoverable-ele {
+    .hover-box {
         height: 100% !important;
     }
     .exp-box {
@@ -253,7 +253,7 @@
     }
 }
 @media (min-width: 1180px) {
-    .hoverable-ele {
+    .hover-box {
         height: 330px;
     }
 }
@@ -267,7 +267,7 @@
 }
 @media (max-width: 999px) {
     .owl-carousel .owl-nav {
-        display: block; /* Show navigation on mobile/tablet */
+        display: none !important; /* Show navigation on mobile/tablet */
     }
 }
 .owl-carousel .owl-nav .owl-prev,

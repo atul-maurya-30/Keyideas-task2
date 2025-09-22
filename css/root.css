@@ -1,4 +1,6 @@
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
@@ -13,8 +15,7 @@ html, body {
     padding: 0;
 }
 .container {
-    width: 100%;
-    max-width: 1200px; /* works well for desktop */
-    margin: 0 auto;   /* keeps it centered */
-    padding: 20px;
+    max-width: 1300px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
 }

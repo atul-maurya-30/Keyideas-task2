@@ -1,0 +1,324 @@
+/* Heading and text styling */
+.sec-8-head {
+    margin-bottom: 30px;
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+
+.sec-8-head h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.sec-8-head p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+@media (min-width: 1300px) {
+    .sec-8-text {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+@media (min-width: 1400px) {
+    .sec-8-text {
+        width: 66%;
+        margin: auto;
+    }
+}
+
+/* Efficient processes wrapper */
+.chart {
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    padding: 110px 0;
+}
+
+.level {
+    padding: 0 20px 0 40px;
+    flex: 1 0 0;
+    position: relative;
+    background-color: #f2f2f2;
+    height: 125px;
+}
+
+.level-text {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.level-text p {
+    color: rgba(0,0,0,.62);
+    line-height: 33px;
+}
+/* for creating a gap between boxes */
+.chart .level:not(:last-of-type)::after {
+    content: '';
+    position: absolute;
+    top: -8px;
+    right: 11px;
+    display: block;
+    width: 70px;
+    height: 70px;
+    border-color: #fff !important;
+    border-width: 0 10px 10px 0 !important;
+    border-radius: 0 !important;
+    border-style: solid;
+    z-index: 1;
+    rotate: -45deg;
+    transform: skew(-24deg, -24deg);
+    translate: 65% 50% !important;
+    background-color: #f2f2f2;
+}
+
+.level:first-child {
+    border-radius: 30px 0 0 30px;
+}
+
+.level:last-child {
+    border-radius: 0 30px 30px 0;
+}
+
+.level-head::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    right: calc(50% - 1px);
+    height: 62px;
+    z-index: 1;
+    border: 2px solid #d9d9d9;
+}
+
+.level-head.level-temp::before {
+    top: -50%;
+}
+
+.level-head .tick-box {
+    position: absolute;
+    display: flex;
+    gap: 7px;
+}
+
+.level-head.level-temp .tick-box {
+    top: -86%;
+}
+
+.level-head.level-temp1 .tick-box {
+    top: 150%;
+}
+
+.level-head.level-temp .tick-box {
+    left: -35px;
+}
+
+.level-head.level-temp1 .tick-box {
+    left: -86px;
+}
+
+.level-1 .level-head.level-temp .tick-box {
+    left: 0;
+}
+
+.level-head .tick-box p {
+    background-color: #4f149a;
+    border-radius: 50vh;
+    color: #fff;
+    height: 45px;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    text-transform: uppercase;
+}
+
+span.tick {
+    background: url(/Images/logos/tick.png) center center no-repeat, #BAA2EB;
+    display: block;
+    width: 45px;
+    height: 45px;
+    background-size: cover;
+    flex-shrink: 0;
+    border-radius: 50%; /* Makes the background circular */
+}
+
+/* Responsive design */
+@media (min-width: 768px) and (max-width: 1365px) {
+    .chart {
+        padding: 144px 0;
+        flex-wrap: wrap;
+        gap: 30px 0;
+    }
+
+    .level {
+        flex: 0 0 33%;
+    }
+
+    .level.level-3 {
+        flex: 0 0 31%;
+    }
+
+    .level.level-4::before {
+        content: '';
+        position: absolute;
+        top: -8px;
+        right: 103%;
+        display: block;
+        width: 70px;
+        height: 70px;
+        border-color: #fff !important;
+        border-width: 0 10px 10px 0 !important;
+        border-radius: 0 !important;
+        border-style: solid;
+        z-index: 1;
+        rotate: -45deg;
+        transform: skew(-24deg, -24deg);
+        translate: 65% 50% !important;
+        background-color: #fff;
+    }
+
+    .level-head.level-temp::before {
+        top: -96px;
+    }
+
+    .level-head::before {
+        right: calc(50% - 1px);
+        height: 96px;
+    }
+
+    .level-1 .level-head .tick-box,
+    .level-3 .level-head .tick-box {
+        top: -113%;
+    }
+
+    .level-4 .level-head .tick-box,
+    .level-6 .level-head .tick-box {
+        top: 177%;
+    }
+
+    .level-2 .level-head::before {
+        height: 30px;
+        top: -30px;
+    }
+
+    .level-2 .level-head .tick-box {
+        top: -75px;
+    }
+
+    .level-5 .level-head .tick-box {
+        top: 155px;
+    }
+
+    .level-5 .level-head.level-temp::before {
+        top: 125px;
+        height: 30px;
+    }
+
+    .level-4 .level-head.level-temp1 .tick-box {
+        left: 0;
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1365px) {
+    .level-head.level-temp1 .tick-box,
+    .level-head.level-temp .tick-box {
+        left: 0;
+    }
+
+    .level {
+        padding: 0 20px 0 60px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .level {
+        padding: 0 5px 0 35px;
+    }
+}
+
+@media (min-width: 1366px) and (max-width: 1600px) {
+    .level-head.level-temp1 .tick-box {
+        left: -144px;
+    }
+
+    .level {
+        padding: 0 5px 0 30px;
+        width: 17.5%;
+        flex: unset;
+    }
+
+    .level.level-1 {
+        padding: 0 5px 0 20px;
+        width: 15.5%;
+    }
+
+    .level.level-6 {
+        width: 19.5%;
+    }
+
+    .level-text p {
+        white-space: nowrap;
+        z-index: 2;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .chart {
+        flex-direction: column;
+        gap: 5px;
+        padding: 0 0;
+    }
+
+    .level-head::before,
+    .level:not(:last-of-type)::after {
+        content: unset;
+    }
+
+    .level-head .tick-box {
+        position: relative;
+    }
+
+    .level,
+    .level:first-child,
+    .level:last-child {
+        border-radius: 10px;
+    }
+
+    .level {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: baseline;
+        padding: 10px;
+        height: auto;
+        gap: 20px;
+    }
+
+    .level-head .tick-box p {
+        width: 100%;
+        justify-content: left;
+    }
+
+    .level-head.level-temp1 .tick-box,
+    .level-head.level-temp .tick-box,
+    .level-head.level-temp.level-1 .tick-box,
+    .level-head.level-temp::before {
+        top: unset;
+        left: unset;
+    }
+
+    .level-text {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .level-head {
+        width: 100%;
+    }
+}

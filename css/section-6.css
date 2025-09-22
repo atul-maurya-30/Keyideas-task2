@@ -1,7 +1,7 @@
 /* =========================
    Industry Section
 ========================= */
-.industry-sc {
+.gallery {
     padding: 60px 0;
     text-align: center;
 }
@@ -24,7 +24,7 @@
     color: #555;
 }
 
-.sc-box-wrapper {
+.gallery-box {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 25px;
@@ -33,7 +33,7 @@
     justify-items: center;
 }
 
-.sc-link-box {
+.small-card {
     background: #fff;
     border-radius: 12px;
     padding: 10px;
@@ -46,7 +46,7 @@
     height: 130px;
 }
 
-.sc-link-box a {
+.small-card a {
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -54,7 +54,7 @@
     width: 100%;
 }
 
-.sc-img-box {
+.card-img {
     width: 80px;
     height: 80px;
     flex-shrink: 0;
@@ -66,13 +66,13 @@
     overflow: hidden;
 }
 
-.sc-img-box img {
+.card-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.sc-link-box .title {
+.small-card .title {
     font-size: 16px;
     font-weight: 600;
     color: #222;
@@ -81,14 +81,14 @@
 }
 
 /* Show More Card Styling */
-.sc-link-box.industry-sm-sl {
+.small-card.gallery-mob {
     background: #E8E2FF;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.sc-link-box.industry-sm-sl a {
+.small-card.gallery-mob a {
     display: flex;
     align-items: center;
     justify-content: center; /* ✅ ensures text centers */
@@ -98,7 +98,7 @@
     text-align: center; /* ✅ centers inline text */
 }
 
-.sc-link-box.industry-sm-sl .industry-sm-sl-text {
+.small-card.gallery-mob .gallery-mob-text {
     font-size: 16px;
     font-weight: 600;
     color: #222;
@@ -108,15 +108,15 @@
 }
 
 /* Top row background variations */
-.sc-box-wrapper .sc-link-box:nth-child(1),
-.sc-box-wrapper .sc-link-box:nth-child(2),
-.sc-box-wrapper .sc-link-box:nth-child(3),
-.sc-box-wrapper .sc-link-box:nth-child(4) { background: #E8E2FF; }
+.gallery-box .small-card:nth-child(1),
+.gallery-box .small-card:nth-child(2),
+.gallery-box .small-card:nth-child(3),
+.gallery-box .small-card:nth-child(4) { background: #E8E2FF; }
 
 /* =========================
    Why We Stand Out Section
 ========================= */
-.ki-why-we-standout-section-new {
+.blue-card {
     grid-column: span 3;
     width: 100%;
     border-radius: 10px;
@@ -129,7 +129,7 @@
     background: linear-gradient(269.24deg, #7646D7 0%, #4F149A 98.66%);
 }
 
-.ki-why-we-standout-section-new .ki-wwso-first {
+.blue-card .blue-card-head {
     font-size: 22px;
     font-weight: 700;
     line-height: 1.4;
@@ -138,7 +138,7 @@
     min-width: 180px;
 }
 
-.ki-why-we-standout-section-new .ki-wwso-second {
+.blue-card .blue-card-2nd-image-svg {
     display: flex;
     flex: 1;
     justify-content: space-between;
@@ -146,7 +146,7 @@
     gap: 50px;
 }
 
-.ki-why-we-standout-section-new .ki-wwso-ele {
+.blue-card .blue-card-container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -155,7 +155,7 @@
     flex: 1;
 }
 
-.ki-why-we-standout-section-new .ki-wwso-ele-top {
+.blue-card .blue-card-container-top {
     display: flex;
     align-items: center;
     gap: 12px;
@@ -164,13 +164,13 @@
     color: #fff;
 }
 
-.ki-why-we-standout-section-new .ki-wwso-ele-top svg {
+.blue-card .blue-card-container-top svg {
     width: 22px;
     height: auto;
     flex-shrink: 0;
 }
 
-.ki-why-we-standout-section-new .ki-wwso-ele p {
+.blue-card .blue-card-container p {
     margin: 0;
     font-size: 13px;
     font-weight: 400;
@@ -181,32 +181,32 @@
    Media Queries
 ========================= */
 @media (max-width: 1024px) {
-    .sc-box-wrapper {
+    .gallery-box {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .ki-why-we-standout-section-new {
+    .blue-card {
         flex-direction: column;
         align-items: flex-start;
         gap: 20px;
         padding:20px;
     }
-    .ki-why-we-standout-section-new .ki-wwso-second {
+    .blue-card .blue-card-2nd-image-svg {
         flex-wrap: wrap;
         gap: 30px;
     }
-    .ki-why-we-standout-section-new .ki-wwso-ele {
+    .blue-card .blue-card-container {
         flex: 1 1 45%;
     }
 }
 
 @media (max-width: 768px) {
-    .sc-box-wrapper {
+    .gallery-box {
         grid-template-columns: repeat(2, 1fr);
         gap: 15px;
     }
     
-    .sc-link-box {
+    .small-card {
         padding: 10px;
         height: auto;
         flex-direction: column;
@@ -214,30 +214,30 @@
         text-align: center;
     }
     
-    .sc-img-box {
+    .card-img {
         width: 100px;
         height: 100px;
         margin-right: 0;
         margin-bottom: 10px;
     }
     
-    .sc-link-box .title,
-    .sc-link-box.industry-sm-sl .industry-sm-sl-text {
+    .small-card .title,
+    .small-card.gallery-mob .gallery-mob-text {
         font-size: 14px;
         text-align: center;
     }
 
-    .sc-box-wrapper .industry-mob {
+    .gallery-box .gallery-cont-mob {
         display: none;
     }
 
-    .sc-box-wrapper .industry-mob.industry-sm-sl {
+    .gallery-box .gallery-cont-mob.gallery-mob {
         display: flex;
         justify-content: center; /* ✅ ensures mobile show more centers */
         align-items: center;
     }
 
-    .ki-why-we-standout-section-new {
+    .blue-card {
         grid-column: span 2;
         flex-direction: column;
         align-items: center;
@@ -249,37 +249,37 @@
         
     }
 
-    .ki-why-we-standout-section-new .ki-wwso-first {
+    .blue-card .blue-card-head {
         min-width: 100%;
         text-align: left;
         font-size: 35px;
         
     }
 
-    .ki-why-we-standout-section-new .ki-wwso-second {
+    .blue-card .blue-card-2nd-image-svg {
         flex-direction: column;
         gap: 20px;
         width: 100%;
     }
 
-    .ki-why-we-standout-section-new .ki-wwso-ele {
+    .blue-card .blue-card-container {
         flex: 1 1 100%;
         align-items: left;
         text-align: left;
     }
 
-    .ki-why-we-standout-section-new .ki-wwso-ele-top {
+    .blue-card .blue-card-container-top {
         justify-content: center;
         font-size:25px;
     }
-    .ki-why-we-standout-section-new .ki-wwso-ele-top svg {
+    .blue-card .blue-card-container-top svg {
     width: 30px;
     height: auto;
     flex-shrink: 0;
     margin:20px;
 }
 
-.ki-why-we-standout-section-new .ki-wwso-ele p {
+.blue-card .blue-card-container p {
     margin: 0;
     font-size: 16px;
     font-weight: 400;
@@ -288,7 +288,7 @@
 }
 
 @media (max-width: 480px) {
-    .sc-box-wrapper {
+    .gallery-box {
         grid-template-columns: repeat(2, 1fr);
     }
     
@@ -299,20 +299,20 @@
     .text-it p {
         font-size: 16px;
     }
-     .ki-why-we-standout-section-new {
+     .blue-card {
         padding: 50px 15px;
         gap: 25px;
     }
 
-    .ki-why-we-standout-section-new .ki-wwso-first {
+    .blue-card .blue-card-head {
         font-size: 18px;
     }
 
-    .ki-why-we-standout-section-new .ki-wwso-ele-top {
+    .blue-card .blue-card-container-top {
         font-size: 14px;
     }
 
-    .ki-why-we-standout-section-new .ki-wwso-ele p {
+    .blue-card .blue-card-container p {
         font-size: 12px;
     }
 }

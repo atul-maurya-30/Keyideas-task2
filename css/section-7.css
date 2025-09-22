@@ -1,22 +1,16 @@
-.blog-article-sc {
+.gallery-text {
   padding: 60px 0;
   text-align: center;
   
 }
 
-.blog-article-sc .text-it {
+.gallery-text .text-it {
   margin-bottom: 40px;
   
 }
 
-.heading2-ele {
-  font-size: 32px;
-  
-  font-weight: 700;
-  margin-bottom: 15px;
-}
 
-.sc-btns {
+.cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -24,7 +18,7 @@
   margin-bottom: 40px;
 }
 
-.sc-btn {
+.cards-btn {
   background: #e8dbf7;
   padding: 8px 16px;
   border-radius: 8px;
@@ -38,42 +32,42 @@
   overflow: hidden; /* Hides overflow if any */
 }
 
-.sc-btn.active {
+.cards-btn.active {
   background: #5a0dad;
   color: #fff;
 }
 
 /* Desktop: 2 rows max */
 @media (min-width: 1024px) {
-  .sc-btns {
+  .cards {
     flex-direction: row;
     flex-wrap: wrap;
     max-width: 100%;
   }
-  .sc-btns .sc-btn {
+  .cards .cards-btn {
     flex: 1 0 calc(20% - 12px); /* Approx 6 buttons per row with gap */
   }
 }
 
 /* Tablet: 3 rows max */
 @media (min-width: 768px) and (max-width: 1023px) {
-  .sc-btns {
+  .cards {
     flex-direction: row;
     flex-wrap: wrap;
     max-width: 100%;
   }
-  .sc-btns .sc-btn {
+  .cards .cards-btn {
     flex: 1 0 calc(25% - 12px); /* Approx 4 buttons per row with gap */
   }
 }
 
-.display-section {
+.sec-contain-7 {
   position: relative;
   margin-top: 40px;
 }
 
 /* Grid container */
-.sc-grid {
+.contain-7-grid {
   display: grid;
   grid-template-columns: repeat(4,1fr);
   gap: 30px;
@@ -84,7 +78,7 @@
 }
 
 /* Grid images */
-.sc-grid img {
+.contain-7-grid img {
   width: 100px;      /* fixed width */
   height: 100px;     /* fixed height */
   object-fit: contain; /* keeps logo aspect ratio inside the box */
@@ -127,7 +121,7 @@
 
 /* Responsive behavior */
 @media (max-width: 768px) {
-  .sc-grid ,.overlay-img{
+  .contain-7-grid ,.overlay-img{
     display: none; /* hide blur grid and overlay image */
   }
 
@@ -137,7 +131,7 @@
   opacity: 0.5;
   z-index:0/* show mobile image */
   }
-  .sc-btns{
+  .cards{
     display:none;
   }
   
