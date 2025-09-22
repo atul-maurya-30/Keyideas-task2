@@ -1,0 +1,257 @@
+/* Base styles for the section */
+.sec-9 {
+    padding: 60px 0;
+}
+
+/* Social impact homepage container */
+.social {
+    background: linear-gradient(360deg, #f2f2f2 4.43%, #fff 51.95%, #ebe2fb 51%);
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    min-height: 500px; /* Ensure enough space for midline alignment */
+}
+
+/* Flex container for s-photo */
+.social .social-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0; /* Remove bottom margin to control positioning */
+}
+
+/* Inline-flex for circle-photo group */
+.social .s-photo {
+    display: inline-flex;
+    flex-wrap: nowrap; /* Ensure s-photo stay in a single row by default */
+}
+
+/* circle-photo styling */
+.social .circle-photo {
+    position: relative;
+    border: 6px solid #fff;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 145px;
+    height: 145px;
+}
+
+.social .circle-photo:not(:first-child) {
+    margin-left: -32px;
+}
+
+.social .circle-photo img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+/* Unique cropping for each circle-photo image */
+.social .circle-photo:nth-child(1) img {
+    object-position: -360px -260px ;
+    width:500px;
+    height:500px;
+}
+
+.social .circle-photo:nth-child(2) img {
+    object-position: -930px -280px;
+    width:500px;
+    height:500px;
+}
+
+.social .circle-photo:nth-child(3) img {
+    object-position: -570px -45px;
+    width:250px;
+    height:250px;
+}
+
+.social .circle-photo:nth-child(4) img {
+    object-position: left;
+}
+
+.social .circle-photo:nth-child(5) img {
+    object-position: -10px 0px;
+}
+
+.social .circle-photo:nth-child(6) img {
+    object-position: 2% 30%;
+}
+
+/* Paragraph styling */
+.social p {
+    max-height: 78px;
+    text-align: center;
+    margin: 20px auto; /* Add consistent margin */
+    max-width: 800px; /* Limit paragraph width for readability */
+}
+
+/* Social impact home link */
+.social-link {
+    color: #4f149a;
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(10px, 1.5%, 22px);
+}
+
+.social-link a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+/* Explore button/link styling */
+.social-temp {
+    margin-top: 30px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-temp span {
+    color: #4f149a;
+    font-family: Poppins, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: normal;
+    margin-right: 15px;
+}
+
+/* Responsive styles */
+
+/* Small screens (max-width: 400px) */
+@media (max-width: 400px) {
+    .social .circle-photo {
+        width: 141px;
+        height: 141px;
+    }
+}
+
+/* Mobile screens (max-width: 767px) */
+@media (max-width: 767px) {
+    .social {
+        background: linear-gradient(360deg, #f2f2f2 4.43%, #fff 45%, #ebe2fb 51%);
+        min-height: auto; /* Allow content to dictate height */
+    }
+
+    .social .s-photo {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 20px;
+        justify-content: center;
+    }
+
+    .social .social-photo {
+        margin-top: 30px;
+    }
+
+    .social .circle-photo {
+        width: 154px;
+        height: 154px;
+    }
+
+    .social .circle-photo:nth-child(4) {
+        margin-left: 0;
+    }
+
+    .social p {
+        max-height: none;
+    }
+}
+
+/* Tablet screens (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .social {
+        background: linear-gradient(360deg, #f2f2f2 4.43%, #fff 56.95%, #ebe2fb 51%);
+        min-height: 600px;
+    }
+
+    .social p {
+        max-height: none;
+    }
+
+    .social .s-photo {
+        margin-top: 20px;
+    }
+
+    .social .social-photo {
+        margin: 0;
+    }
+}
+
+/* Desktop screens (min-width: 1025px) */
+@media (min-width: 1025px) {
+    .social {
+        min-height: 550px;
+        padding: 60px 0;
+        background: linear-gradient(360deg, #f2f2f2 4.43%, #fff 51.95%, #ebe2fb 51%);
+    }
+
+    .social .social-photo {
+        margin: 0;
+    }
+}
+
+/* Large desktop screens (min-width: 1180px) */
+@media (min-width: 1180px) {
+    .social-temp {
+        margin-top: 60px;
+    }
+
+    .social-temp span {
+        font-size: 18px;
+    }
+}
+
+/* Extra large screens (min-width: 1501px) */
+@media (min-width: 1501px) {
+    .social-temp span {
+        font-size: 22px;
+    }
+
+    .social {
+        min-height: 670px;
+        padding: 70px 0;
+        background: linear-gradient(360deg, #f2f2f2 4.43%, #fff 51.95%, #ebe2fb 51%);
+    }
+
+    .social .social-photo {
+        margin: 0;
+    }
+
+    .social .circle-photo {
+        width: 180px;
+        height: 180px;
+    }
+
+    .social .s-photo {
+        margin-top: 10px;
+    }
+}
+
+/* Ultra large screens (min-width: 1920px) */
+@media (min-width: 1920px) {
+    .social {
+        background: linear-gradient(360deg, #f2f2f2 4.43%, #fff 51.95%, #ebe2fb 51%);
+        padding: 80px 0;
+        min-height: auto; /* Allow content to dictate height */
+    }
+
+    .social .circle-photo {
+        width: 200px;
+        height: 200px;
+    }
+
+    .social .social-photo {
+        margin: 0;
+    }
+}

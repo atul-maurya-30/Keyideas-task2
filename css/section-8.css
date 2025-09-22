@@ -1,4 +1,7 @@
 /* Heading and text styling */
+.sec-8{
+    padding:60px 0;
+}
 .sec-8-head {
     margin-bottom: 30px;
     text-align: center;
@@ -6,9 +9,13 @@
 }
 
 .sec-8-head h2 {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 0.5rem;
+    font-size: 40px;
+    font-weight: 700;
+    color: #101010;
+    margin-bottom: 50px;
+    text-align: center;
+    white-space:nowrap;
+    
 }
 
 .sec-8-head p {
@@ -17,15 +24,21 @@
     line-height: 1.6;
 }
 
-@media (min-width: 1300px) {
-    .sec-8-text {
+@media (min-width: 1000px) {
+    .sec-8-text h2{
         width: 100%;
+    }
+    .sec-8-text p{
+        width: 66%;
         margin: auto;
     }
 }
 
 @media (min-width: 1400px) {
-    .sec-8-text {
+    .sec-8-text h2{
+        width: 100%;
+    }
+    .sec-8-text p{
         width: 66%;
         margin: auto;
     }

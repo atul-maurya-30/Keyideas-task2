@@ -83,14 +83,6 @@
     margin-top: 3rem;
 }
 
-.container {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
 .text-md-center {
     text-align: center;
 }
@@ -130,9 +122,6 @@
 }
 
 @media (min-width: 576px) {
-    .container {
-        max-width: 540px;
-    }
 
     .contain-5-text h2 {
         font-size: 30px;
@@ -145,33 +134,4 @@
         text-align: center;
     }
 
-}
-
-@media (min-width: 768px) {
-    .container {
-        max-width: 720px;
-    }
-
-    .contain-5-text h2 {
-        font-size: 30px;
-    }
-
-    .contain-5-text p {
-        margin-bottom: 20px;
-        padding-left: 100px;
-        padding-right: 100px;
-        text-align: center;
-    }
-}
-
-@media (min-width: 992px) {
-    .container {
-        max-width: 960px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .container {
-        max-width: 1140px;
-    }
 }
