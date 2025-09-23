@@ -1,22 +1,35 @@
 /* Section-1 *
 /* Banner Background */
 .banner-background {
-    background: #6637c5;
     position: relative;
+    background: #6637c5;
+
 }
-.contain-1{
-    padding-left:2rem;
+
+.contain-1 {
+    padding-left: 2rem;
 }
-.head-1{
-    font-size:46px !important;
-    margin-bottom:30px;
-    font-weight:700;
-    line-height:1.2
+
+.head-1 {
+    font-size: 66px !important;
+    margin-bottom: 50px;
+    font-weight: 800;
+    line-height: 1.2;
+    width: 600px !important;
+    color: #fff;
 }
+
+.text-white {
+    font-size: 18px !important;
+
+}
+
 /* Animation Grid */
 .banner-animation {
     display: flex;
+
     justify-content: flex-end;
+    align-items: center;
     max-width: 1920px;
 }
 
@@ -24,6 +37,18 @@
     display: block;
     width: 90%;
     margin: auto;
+}
+
+
+
+.banner-text {
+    position: absolute;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    left: 80px;
 }
 
 .grid-animation {
@@ -107,16 +132,9 @@
 /* Logo Sprites */
 .grid-clutch,
 .grid-crowd-rew,
-.grid-good-firms,
-.grid-ms-image {
+.grid-good-firms {
     max-width: 100%;
     background-size: 100%;
-}
-
-.grid-ms-image {
-    background-position: 0 0;
-    background-size: 100%;
-    width: 80%;
 }
 
 .grid-crowd-rew {
@@ -147,56 +165,312 @@
     align-items: center;
 }
 
-.banner-text {
-    position: absolute;
-    z-index: 2;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+.mob-view-animation-head {
+    display: none;
 }
 
 /* microsoft card */
 .ms-card {
-  font-family: 'Segoe UI', Arial, sans-serif;
-  color:#4D4D4D;
+    font-family: 'Segoe UI', Arial, sans-serif !important;
+    color: #4D4D4D;
 }
 
 .top-row {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
 }
 
 .top-row img {
-  padding-top: 4px;
-  padding-left:6px;
-  width: 54px;
-  height: 54px;
+    padding-top: 4px;
+    padding-left: 6px;
+    width: 54px;
+    height: 54px;
 }
 
 .text-block {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .text-block .microsoft {
-  font-size: 26px;
-  font-weight: 600;
-  line-height: 1.2;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 1.2;
 }
 
 .text-block .partner {
-  font-size: 17px;
-  margin-top: 1px;
+    font-size: 17px;
+    margin-top: 1px;
 }
 
 .bottom-text {
-  margin-top: 5px;
-  padding-left:4px;
-  font-size: 19px;
-  font-weight: 500;
+    margin-top: 5px;
+    padding-left: 4px;
+    font-size: 19px;
+    font-weight: 500;
 }
 
 /* <<---------------------------- */
+
+@media screen and (max-width:992px) {
+
+    .top-row img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .text-block .microsoft {
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 1.2;
+    }
+
+    .text-block .partner {
+        font-size: 12px;
+        margin-top: 1px;
+    }
+
+    .bottom-text {
+        margin-top: 5px;
+        padding-left: 4px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-width: 1200.25px) {
+    .banner-text {
+        left: 20px;
+    }
+
+    .banner-text h1 {
+        font-size: 30px !important;
+        /* smaller than desktop */
+        line-height: 1.3;
+        margin-bottom: 15px;
+    }
+
+    .banner-text p {
+        font-size: 12px;
+        line-height: 1.2;
+    }
+
+    .head-1 {
+        font-size: 30px !important;
+        /* override desktop size */
+
+    }
+
+    .contain-1 {
+        padding-left: 0.8rem;
+        /* less padding for smaller screens */
+    }
+
+    .grid-animation {
+        height: 500px;
+        width: 65%;
+    }
+
+    .grid-case {
+        height: 166px;
+    }
+
+    .grid-crowd-rew {
+        width: 70%;
+
+    }
+
+    .grid-clutch {
+        width: 50%;
+
+    }
+
+    .grid-good-firms {
+        width: 40%;
+    }
+
+    .text-h3-size {
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    .text-size-para {
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    .text-size-transform {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .top-row img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .text-block .microsoft {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.2;
+    }
+
+    .text-block .partner {
+        font-size: 9px;
+        margin-top: 1px;
+    }
+
+    .bottom-text {
+        margin-top: 5px;
+        padding-left: 4px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .banner-text h1 {
+        font-size: 32px;
+        /* smaller than desktop */
+        line-height: 1.3;
+        margin-bottom: 15px;
+    }
+
+    .banner-text p {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .head-1 {
+        font-size: 46px !important;
+        width: 500px !important;
+        /* override desktop size */
+    }
+
+    .contain-1 {
+        padding-left: 1rem;
+        /* less padding for smaller screens */
+    }
+}
+
+/* Mobile-specific styles for the home banner animation */
+@media screen and (max-width: 767px) {
+
+
+    .mob-view-animation-head {
+        display: block;
+    }
+
+    .desk-view-animation-head {
+        display: none;
+    }
+    .head-1{
+        max-width:250px !important;
+        white-space:wrap !important;
+    }
+    .banner-background{height:580px;}
+    .banner-text {
+        position: relative;
+        z-index: 2;
+        height: 100%;
+        top:20px;
+        left:0px;
+        bottom:40px;
+    }
+
+    .banner-text h1 {
+        font-size: 28px !important;
+        line-height: 1.2;
+        margin-top:30px;
+        margin-bottom: 10px;
+        
+    }
+
+    .banner-text p {
+        font-size: 16px !important;
+        font-weight: 500;
+    }
+
+    .banner-animation {
+        display: block;
+        width: 100%;
+        position: relative;
+        height: 360px;
+    }
+
+    .grid-animation {
+        height: 360px;
+        width: 100%;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .grid-case {
+        position: relative;
+        height: 120px !important;
+
+    }
+
+    .dummy-case {
+        
+        height: 120px;
+    }
+
+
+
+    .text-size-transform {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .text-h3-size {
+        font-size: 12px !important;
+        font-weight: 600;
+    }
+
+    .text-size-para {
+        font-size: 9px;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .top-row img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .text-block .microsoft {
+        padding-top:2px;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 1.2;
+    }
+
+    .text-block .partner {
+        font-size: 9px;
+        margin-top: 1px;
+    }
+
+    .bottom-text {
+        margin-top: 5px;
+        padding-left: 4px;
+        font-size: 10px;
+        font-weight: 400;
+    }
+
+    .grid-crowd-rew {
+        width: 80%;
+        padding-top:10px;
+    }
+
+    .grid-clutch {
+        width: 50%;
+        padding-top: 20px;
+    }
+
+    .grid-good-firms {
+        width: 50%;
+        padding-top:20px;
+    }
+}

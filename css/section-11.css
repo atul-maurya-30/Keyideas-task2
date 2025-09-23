@@ -1,11 +1,11 @@
 /* FAQ Section Wrapper */
-.faq-new {
+.sec-11 {
     padding: 60px 20px;
     font-family: "Poppins", sans-serif;
     background: #fff;
 }
 
-.faq-main-wrapper {
+.sec-11-contain {
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
@@ -13,12 +13,12 @@
 }
 
 /* FAQ Content Area */
-.faq-content {
+.sec-11-point {
     flex: 1 1 60%;
     filter: blur(10px);
 }
 
-.faq-heading-box1 h2 {
+.sec-11-head h2 {
     margin-bottom: 20px;
     max-width: 900px;
     font-size: 40px;
@@ -26,13 +26,13 @@
     color: #101010;
 }
 
-.faq-item {
+.sec-11-points {
     padding: 15px 20px;
     margin-bottom: 12px;
     position: relative;
 }
 
-.faq-item h3 {
+.sec-11-points h3 {
     font-size: 16px;
     font-weight: 500;
     margin: 0;
@@ -40,7 +40,7 @@
 }
 
 /* Review Section */
-.faq-review {
+.sec-11-box {
     flex: 1 1 35%;
     background: #EBE2FB;
     border-radius: 12px;
@@ -50,14 +50,14 @@
     filter: blur(10px);
 }
 
-.faq-content-quotes {
+.sec-11-qoutes {
     font-size: 16px;
     color: #333;
     margin-bottom: 15px;
     line-height: 1.5;
 }
 
-.review-company {
+.sec-11-icon-text {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -65,20 +65,20 @@
     margin-bottom: 15px;
 }
 
-.review-company .clutch-icon {
+.sec-11-icon-text .clutch-icon {
     width: 30px;
     height: 30px;
     background: url('/Images/faq/clu.png') no-repeat center center;
     background-size: contain;
 }
 
-.review-company p {
+.sec-11-icon-text p {
     font-size: 16px;
     color: #000000;
     margin: 0;
 }
 
-.faq-review button {
+.sec-11-box button {
     background: #4F149A;
     border: none;
     padding: 12px 50px;
@@ -88,14 +88,14 @@
     transition: all 0.3s ease;
 }
 
-.faq-review button a {
+.sec-11-box button a {
     color: #fff;
     font-size: 15px;
     font-weight: 600;
     text-decoration: underline;
 }
 
-.review-quotes {
+.sec-11-qoute1 {
     margin-top: 10px;
     font-size: 18px;
     font-weight: 600;
@@ -104,7 +104,7 @@
 }
 
 /* Overlay */
-.faq-overlay {
+.text-overlay {
     position: absolute;
     top: 60%;
     left: 50%;
@@ -113,7 +113,7 @@
     z-index: 10;
 }
 
-.faq-overlay span {
+.text-overlay span {
     font-size: 24px;
     letter-spacing: 1px;
     color: #000000;
@@ -123,26 +123,26 @@
 
 /* Responsive */
 @media (max-width: 991px) {
-    .faq-main-wrapper {
+    .sec-11-contain {
         flex-direction: column;
     }
 
-    .faq-content,
-    .faq-review {
+    .sec-11-point,
+    .sec-11-box {
         flex: 1 1 100%;
     }
 
-    .faq-review {
+    .sec-11-box {
         margin-top: 30px;
     }
 
-    .faq-overlay {
+    .text-overlay {
         width: 100%;
         padding: 0 20px;
     }
 }
 @media (max-width:767px){
-    .faq-new{
+    .sec-11{
         display:none;
     }
 }

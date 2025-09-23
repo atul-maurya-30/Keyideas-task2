@@ -665,3 +665,4 @@ if (BannerAnimation) {
     }, 12000);
 }
 });
+
