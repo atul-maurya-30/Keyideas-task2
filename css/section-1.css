@@ -165,7 +165,7 @@
     align-items: center;
 }
 
-.mob-view-animation-head {
+.mob-view {
     display: none;
 }
 
@@ -182,10 +182,10 @@
 }
 
 .top-row img {
-    padding-top: 4px;
+    padding-top: 2px;
     padding-left: 6px;
-    width: 54px;
-    height: 54px;
+    width: 50px;
+    height: 50px;
 }
 
 .text-block {
@@ -194,20 +194,20 @@
 }
 
 .text-block .microsoft {
-    font-size: 26px;
+    font-size: 22px;
     font-weight: 600;
     line-height: 1.2;
 }
 
 .text-block .partner {
-    font-size: 17px;
+    font-size: 15px;
     margin-top: 1px;
 }
 
 .bottom-text {
     margin-top: 5px;
     padding-left: 4px;
-    font-size: 19px;
+    font-size: 16px;
     font-weight: 500;
 }
 
@@ -221,7 +221,7 @@
     }
 
     .text-block .microsoft {
-        font-size: 22px;
+        font-size: 16px;
         font-weight: 500;
         line-height: 1.2;
     }
@@ -234,7 +234,7 @@
     .bottom-text {
         margin-top: 5px;
         padding-left: 4px;
-        font-size: 16px;
+        font-size: 13px;
         font-weight: 500;
     }
 }
@@ -304,7 +304,7 @@
         font-size: 20px;
         font-weight: 500;
     }
-
+    
     .top-row img {
         width: 35px;
         height: 35px;
@@ -358,11 +358,11 @@
 @media screen and (max-width: 767px) {
 
 
-    .mob-view-animation-head {
+    .mob-view {
         display: block;
     }
 
-    .desk-view-animation-head {
+    .desk-view {
         display: none;
     }
     .head-1{
@@ -475,27 +475,31 @@
     }
 }
 @media screen and (max-width:480px){
-.top-row img {
-        width: 28px;
-        height: 28px;
+    .top-row{
+        gap:4px;
+    }
+    .top-row img {
+        width: 25px;
+        height: 22px;
+        
     }
 
     .text-block .microsoft {
         padding-top:2px;
-        font-size: 12px;
+        font-size: 11px;
         font-weight: 500;
-        line-height: 1.2;
+        line-height: 1;
     }
 
     .text-block .partner {
-        font-size: 8px;
+        font-size: 7px;
         margin-top: 1px;
     }
 
     .bottom-text {
-        margin-top: 3px;
-        padding-left: 6px;
-        font-size: 10px;
+        margin-top: 1px;
+        padding-left:6px;
+        font-size: 8px;
         
     }
 }

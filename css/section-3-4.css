@@ -2,10 +2,12 @@
     margin-bottom: 35px;
     font-weight: 700;
 }
+
 .sec-3 {
     margin-bottom: 55px;
-    font-family:Poppins, sans-serif;
+    font-family: Poppins, sans-serif;
 }
+
 .caro-1 {
     display: grid;
     column-gap: 20px;
@@ -13,23 +15,29 @@
     row-gap: 20px;
     grid-template-areas: "health health jewelery" "hospitality enterprise enterprise";
 }
+
 .health {
     grid-area: health;
 }
+
 .jewelery {
     grid-area: jewelery;
 }
+
 .travel {
     grid-area: hospitality;
 }
+
 .enterprise {
     grid-area: enterprise;
 }
+
 .caro-2 {
     display: grid;
     grid-template-columns: 1.5fr 1.5fr;
     gap: 20px;
 }
+
 .exp-box-head {
     color: #fff;
     font-size: 18px;
@@ -37,36 +45,40 @@
     text-transform: uppercase;
     margin-bottom: 30px;
 }
-.caro-1 p, .caro-1 p a, .caro-2 p, .caro-2 p a {
+
+.caro-1 p,
+.caro-1 p a,
+.caro-2 p,
+.caro-2 p a {
     color: #fff;
     text-decoration: none;
-    font-size:18px;
+    font-size: 18px;
 }
-.exp-box-point p img {
-    width: 10px;
-    height: 14px;
-    margin-left: 10px;
-    margin-bottom: 2px;
-    display: inline-block !important;
-}
+
 .exp-box-point p {
     display: flex;
     align-items: center;
     column-gap: 15px;
 }
+
 .exp-box-point {
-    font-size:18px;
+    font-size: 18px;
     position: absolute;
     bottom: 30px;
     transition: all 3s ease 3s;
     line-height: 0px !important;
     display: none;
+
 }
+
 /* Base style for all image blocks */
 .hover-box {
-    background-size: cover;       /* Always fills container */
-    background-position: center;  /* Keeps image centered */
-    background-repeat: no-repeat; /* Avoids tiling */
+    background-size: cover;
+    /* Always fills container */
+    background-position: center;
+    /* Keeps image centered */
+    background-repeat: no-repeat;
+    /* Avoids tiling */
     border-radius: 20px;
     height: 300px;
     padding: 30px;
@@ -77,8 +89,9 @@
 
 .health-box {
     background-image: url('/Images/section-3/health.png'), linear-gradient(181.2deg, rgb(0, 0, 0) -18.48%, rgba(0, 0, 0, 0.938) -0.81%, rgba(0, 0, 0, 0.784) 35.29%, rgba(57, 74, 42, 0.422) 100%);
-;
+    ;
 }
+
 .health-box:hover {
     background-size: 108%;
     background-blend-mode: overlay;
@@ -90,72 +103,101 @@
     flex-direction: column;
     transition: all 3s ease 3s;
 }
+
 .jewelery-box {
     background-image: url('/Images/section-3/advanced.jpg'), linear-gradient(150.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(0, 0, 0, 0.814) 40.29%, rgba(143, 154, 135, 0.422) 100%);
 }
+
 .jewelery-box:hover {
     background-size: 108%;
     background-blend-mode: overlay;
-    background-image: url('/Images/section-3/advanced.jpg'), linear-gradient(150.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(0, 0, 0, 0.814) 40.29%,rgba(14, 21, 5, 0.408) 100%);
+    background-image: url('/Images/section-3/advanced.jpg'), linear-gradient(150.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(0, 0, 0, 0.814) 40.29%, rgba(14, 21, 5, 0.408) 100%);
 }
+
 .real-estate-box {
     background-image: url('/Images/section-4/realestate.png'), linear-gradient(160.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(0, 0, 0, 0.673) 50.29%, rgba(29, 26, 26, 0.422) 100%);
 }
+
 .real-estate-box:hover {
     background-size: 115%;
     background-blend-mode: overlay;
     background-image: url('/Images/section-4/realestate.png'), linear-gradient(160.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(0, 0, 0, 0.673) 50.29%, rgba(26, 23, 23, 0.683) 100%);
 }
+
 .e-commerce-box {
     background-image: url('/Images/section-4/ecommerce.png'), linear-gradient(170.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(0, 0, 0, 0.814) 40.29%, rgba(55, 74, 41, 0.422) 100%);
-    background-position:40% 80%;
+    background-position: 40% 80%;
 }
+
 .e-commerce-box:hover {
     background-size: 108%;
     background-blend-mode: overlay;
     background-image: url('/Images/section-4/ecommerce.png'), linear-gradient(170.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(0, 0, 0, 0.814) 40.29%, rgba(55, 74, 41, 0.422) 100%);
 }
+
 .finance-box {
     background-image: url('/Images/section-4/finance.png'), linear-gradient(181.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(39, 40, 37, 0.448) 100%);
 }
+
 .finance-box:hover {
     background-size: 130%;
     background-blend-mode: overlay;
     background-image: url('/Images/section-4/finance.png'), linear-gradient(181.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(39, 40, 37, 0.713) 100%);
 }
+
 .home-box {
-    background-image: url('/Images/section-4/contractor.jpg'), linear-gradient(170.2deg, rgba(0, 0, 0, 0.905) -0.48%,rgba(0, 0, 0, 0.889) 12%, rgba(57, 87, 33, 0.318) 100%);
+    background-image: url('/Images/section-4/contractor.jpg'), linear-gradient(170.2deg, rgba(0, 0, 0, 0.905) -0.48%, rgba(0, 0, 0, 0.889) 12%, rgba(57, 87, 33, 0.318) 100%);
 }
+
 .home-box:hover {
     background-size: 190%;
     background-blend-mode: overlay;
-    background-image: url('/Images/section-4/contractor.jpg'), linear-gradient(170.2deg, rgba(0, 0, 0, 0.905) -0.48%,rgba(0, 0, 0, 0.889) 12%, rgba(26, 38, 17, 0.543) 100%);
+    background-image: url('/Images/section-4/contractor.jpg'), linear-gradient(170.2deg, rgba(0, 0, 0, 0.905) -0.48%, rgba(0, 0, 0, 0.889) 12%, rgba(26, 38, 17, 0.543) 100%);
 }
+
 .travel-box {
     background-image: url('/Images/section-3/travel.png'), linear-gradient(181.2deg, rgba(0, 0, 0, 0.93) -5.48%, rgba(160, 162, 157, 0.422) 100%);
-    
+
 }
+
 .travel-box:hover {
     background-size: 140%;
     background-blend-mode: overlay;
     background-image: url('/Images/section-3/travel.png'), linear-gradient(181.2deg, rgba(0, 0, 0, 0.93) -5.48%, rgba(56, 57, 54, 0.422) 100%);
 }
+
 .enterprise-box {
     background-image: url('/Images/section-3/Enterprise.png'), linear-gradient(181.2deg, rgba(0, 0, 0, 0.994) -2.48%, rgba(0, 0, 0, 0.889) 5.81%, rgba(12, 12, 12, 0) 110%);
 }
+
 .enterprise-box:hover {
     background-size: 108%;
     background-blend-mode: overlay;
     background-image: url('/Images/section-3/Enterprise.png'), linear-gradient(181.2deg, rgba(0, 0, 0, 0.994) -2.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(36, 39, 34, 0.422) 100%);
 }
-.icon-arrow{
+
+.icon-arrow {
     font-size: 15px;
 }
-@media(max-width:480px){
-    .icon-arrow{
-    font-size: 10px;
+
+@media(max-width:480px) {
+    .icon-arrow {
+        font-size: 10px;
+    }
+
+    .sec-3 {
+        margin-bottom: 10px;
+    }
+
+    .sec-3 h2 {
+        text-align: left;
+    }
+
+    .hover-box {
+        padding-left: 15px;
+    }
 }
-}
+
 @media (max-width: 992px) {
     .work-container {
         display: flex;
@@ -163,125 +205,163 @@
         overflow: scroll;
         scrollbar-width: none;
     }
+
     .caro-1 {
         grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
     }
+
     .caro-2 {
         grid-template-columns: repeat(2, minmax(0, 1fr));
         overflow: scroll;
         scrollbar-width: none;
         gap: 15px;
     }
+
     .hover-box {
         background-size: cover !important;
         border-radius: 10px;
         height: 350px;
     }
+
     .exp-box-point {
         bottom: 15px;
         display: flex !important;
         flex-direction: column;
     }
+
     .hover-box:hover {
         background-size: cover !important;
     }
+
     .exp-box-point p {
         position: relative;
         align-items: start;
         column-gap: 10px;
     }
+
     .exp-box-point p img {
         width: 7px !important;
         height: 12px !important;
         margin: 0 0 3px 10px !important;
     }
+
 }
+
 @media (max-width: 1180px) {
     .exp-box-head~p {
         display: none;
     }
+
     .hover-box {
         background-size: cover !important;
     }
+
     .hover-box:hover {
         background-size: cover !important;
-        
+
     }
+
     .exp-box-point {
         display: flex;
         flex-direction: column;
     }
 }
+
 @media (min-width: 768px) and (max-width: 1024px) {
-    .caro-1 p a, .caro-2 p a {
+
+    .caro-1 p a,
+    .caro-2 p a {
         font-size: 16px !important;
     }
+
     .caro-1 {
         grid-template-columns: 1fr .4fr 1fr;
         grid-template-rows: auto auto;
     }
+
     .hover-box {
         background-size: cover !important;
     }
+
     .hover-box:hover {
         background-size: cover !important;
     }
 }
-@media (min-width: 768px) {
+
+@media (max-width: 768px) {
     .exp-box-head {
         font-size: 18px;
     }
+
+    .exp-box-point {
+        font-size: 14px;
+    }
 }
+
 @media (min-width: 1025px) and (max-width: 1600px) {
     .exp-box-head {
         font-size: 22px;
         margin-bottom: 40px;
     }
+
 }
+
 @media (min-width: 1600px) {
     .hover-box {
         height: 100% !important;
     }
+
     .exp-box {
         height: 475px !important;
     }
+
     .caro-2 .exp-box {
         height: 580px !important;
     }
+
     .exp-box-head {
         font-size: 24px;
         margin-bottom: 40px;
     }
 }
+
 @media (min-width: 1200px) and (max-width: 1600px) {
     .hover-box {
         height: 100% !important;
     }
+
     .exp-box {
         height: 400px !important;
     }
+
     .caro-2 .exp-box {
         height: 450px !important;
     }
 }
+
 @media (min-width: 1180px) {
     .hover-box {
         height: 330px;
     }
 }
+
 /* Owl Carousel navigation */
 .owl-carousel .owl-nav {
     position: absolute;
     top: 50%;
     width: 100%;
     transform: translateY(-50%);
-    display: none; /* Hide navigation on desktop */
+    display: none;
+    /* Hide navigation on desktop */
 }
+
 @media (max-width: 999px) {
     .owl-carousel .owl-nav {
-        display: none !important; /* Show navigation on mobile/tablet */
+        display: none !important;
+        /* Show navigation on mobile/tablet */
     }
 }
+
 .owl-carousel .owl-nav .owl-prev,
 .owl-carousel .owl-nav .owl-next {
     position: absolute;
@@ -291,9 +371,75 @@
     padding: 10px;
     border-radius: 50%;
 }
+
 .owl-carousel .owl-nav .owl-prev {
     left: 10px;
 }
+
 .owl-carousel .owl-nav .owl-next {
     right: 10px;
+}
+
+@media (max-width: 992px) {
+
+    /* Health Box */
+    .health-box {
+        background-image: url('/Images/section-3/health.png'), linear-gradient(181.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(10, 13, 8, 0.586) 100%) !important;
+    }
+
+    /* Jewelery Box */
+    .jewelery-box {
+        background-image: url('/Images/section-3/advanced.jpg'), linear-gradient(150.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(0, 0, 0, 0.814) 40.29%, rgba(14, 21, 5, 0.408) 100%) !important;
+    }
+
+    /* Real Estate Box */
+    .real-estate-box {
+        background-image: url('/Images/section-4/realestate.png'), linear-gradient(160.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(0, 0, 0, 0.673) 50.29%, rgba(26, 23, 23, 0.683) 100%) !important;
+    }
+
+    /* E-commerce Box */
+    .e-commerce-box {
+        background-image: url('/Images/section-4/ecommerce.png'), linear-gradient(170.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(0, 0, 0, 0.814) 40.29%, rgba(38, 50, 28, 0.771) 100%) !important;
+    }
+
+    /* Finance Box */
+    .finance-box {
+        background-image: url('/Images/section-4/finance.png'), linear-gradient(181.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(29, 30, 27, 0.83) 100%) !important;
+    }
+
+    /* Home Box */
+    .home-box {
+        background-image: url('/Images/section-4/contractor.jpg'), linear-gradient(170.2deg, rgba(0, 0, 0, 0.905) -0.48%, rgba(0, 0, 0, 0.889) 12%, rgba(24, 31, 18, 0.52) 100%) !important;
+    }
+
+    /* Travel Box */
+    .travel-box {
+        background-image: url('/Images/section-3/travel.png'), linear-gradient(181.2deg, rgba(0, 0, 0, 0.582) -5.48%, rgba(56, 57, 54, 0.125) 100%) !important;
+    }
+
+    /* Enterprise Box */
+    .enterprise-box {
+        background-image: url('/Images/section-3/Enterprise.png'), linear-gradient(181.2deg, rgba(0, 0, 0, 0.994) -2.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(36, 39, 34, 0.185) 100%) !important;
+    }
+
+    .exp-box-point {
+        line-height: 1.5 !important;
+        /* Override line-height: 0px to prevent collapsing */
+        display: flex !important;
+        flex-direction: column;
+        gap: 10px;
+        /* Add spacing between paragraphs */
+        bottom: 15px;
+    }
+
+    .exp-box-point p {
+        white-space: nowrap;
+        /* Prevent text wrapping */
+        margin: 0;
+        /* Remove default margins to control spacing with gap */
+        font-size: 14px;
+        /* Slightly smaller font size for mobile to avoid overflow */
+        align-items: flex-start;
+        /* Ensure alignment is consistent */
+    }
 }
