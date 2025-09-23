@@ -1,0 +1,31 @@
+footer {
+    color: #fff;
+    text-align: center;
+    line-height: 1.5; /* Improved readability */
+    margin-top:20px;
+}
+
+.footer-section {
+    background-color: #4F149A;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0; /* Remove default margins */
+    padding: 8px 0; /* Consistent vertical spacing */
+}
+footer p:first-child {
+        margin-bottom: 0.1px; /* Reduced gap for mobile */
+    }
+
+/* Mobile View */
+@media (max-width: 767px) {
+    footer p {
+        font-size: 16px;
+        padding: 6px 0; /* Slightly reduced padding for mobile */
+    }
+
+    footer p:first-child {
+        margin-bottom: 20px; /* Reduced gap for mobile */
+    }
+}
