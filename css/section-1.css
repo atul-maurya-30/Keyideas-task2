@@ -474,3 +474,28 @@
         padding-top:20px;
     }
 }
+@media screen and (max-width:480px){
+.top-row img {
+        width: 28px;
+        height: 28px;
+    }
+
+    .text-block .microsoft {
+        padding-top:2px;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 1.2;
+    }
+
+    .text-block .partner {
+        font-size: 8px;
+        margin-top: 1px;
+    }
+
+    .bottom-text {
+        margin-top: 3px;
+        padding-left: 6px;
+        font-size: 10px;
+        
+    }
+}

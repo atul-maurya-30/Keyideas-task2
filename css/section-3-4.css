@@ -4,6 +4,7 @@
 }
 .sec-3 {
     margin-bottom: 55px;
+    font-family:Poppins, sans-serif;
 }
 .caro-1 {
     display: grid;
@@ -39,6 +40,7 @@
 .caro-1 p, .caro-1 p a, .caro-2 p, .caro-2 p a {
     color: #fff;
     text-decoration: none;
+    font-size:18px;
 }
 .exp-box-point p img {
     width: 10px;
@@ -53,6 +55,7 @@
     column-gap: 15px;
 }
 .exp-box-point {
+    font-size:18px;
     position: absolute;
     bottom: 30px;
     transition: all 3s ease 3s;
@@ -73,13 +76,13 @@
 }
 
 .health-box {
-    background-image: url('/Images/section-3/health.png'), linear-gradient(181.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(0, 0, 0, 0.814) 40.29%, rgba(55, 74, 41, 0.422) 100%);
+    background-image: url('/Images/section-3/health.png'), linear-gradient(181.2deg, rgb(0, 0, 0) -18.48%, rgba(0, 0, 0, 0.938) -0.81%, rgba(0, 0, 0, 0.784) 35.29%, rgba(57, 74, 42, 0.422) 100%);
 ;
 }
 .health-box:hover {
     background-size: 108%;
     background-blend-mode: overlay;
-    background-image: url('/Images/section-3/health.png'), linear-gradient(181.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(0, 0, 0, 0.814) 40.29%, rgba(23, 43, 23, 0.591) 100%);
+    background-image: url('/Images/section-3/health.png'), linear-gradient(181.2deg, rgb(0, 0, 0) -18.48%, rgba(0, 0, 0, 0.938) -0.81%, rgba(0, 0, 0, 0.874) 35.29%, rgba(14, 21, 5, 0.408) 100%);
 }
 
 .hover-box:hover .exp-box-point {
@@ -88,61 +91,70 @@
     transition: all 3s ease 3s;
 }
 .jewelery-box {
-    background-image: url('/Images/section-3/advanced.jpg'), linear-gradient(181.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(0, 0, 0, 0.814) 40.29%, rgba(55, 74, 41, 0.422) 100%);
+    background-image: url('/Images/section-3/advanced.jpg'), linear-gradient(150.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(0, 0, 0, 0.814) 40.29%, rgba(143, 154, 135, 0.422) 100%);
 }
 .jewelery-box:hover {
     background-size: 108%;
     background-blend-mode: overlay;
-    background-image: url('/Images/section-3/advanced.jpg'), linear-gradient(181.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(0, 0, 0, 0.814) 40.29%, rgba(23, 43, 23, 0.591) 100%);
+    background-image: url('/Images/section-3/advanced.jpg'), linear-gradient(150.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(0, 0, 0, 0.814) 40.29%,rgba(14, 21, 5, 0.408) 100%);
 }
 .real-estate-box {
-    background-image: url('/Images/section-4/realestate.png'), linear-gradient(181.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(0, 0, 0, 0.814) 40.29%, rgba(55, 74, 41, 0.422) 100%);
+    background-image: url('/Images/section-4/realestate.png'), linear-gradient(160.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(0, 0, 0, 0.673) 50.29%, rgba(29, 26, 26, 0.422) 100%);
 }
 .real-estate-box:hover {
-    background-size: 118%;
+    background-size: 115%;
     background-blend-mode: overlay;
-    background-image: url('/Images/section-4/realestate.png'), linear-gradient(181.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(0, 0, 0, 0.814) 40.29%, rgba(23, 43, 23, 0.591) 100%);
+    background-image: url('/Images/section-4/realestate.png'), linear-gradient(160.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(0, 0, 0, 0.673) 50.29%, rgba(26, 23, 23, 0.683) 100%);
 }
 .e-commerce-box {
-    background-image: url('/Images/section-4/ecommerce.png'), linear-gradient(181.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(0, 0, 0, 0.814) 40.29%, rgba(55, 74, 41, 0.422) 100%);
+    background-image: url('/Images/section-4/ecommerce.png'), linear-gradient(170.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(0, 0, 0, 0.814) 40.29%, rgba(55, 74, 41, 0.422) 100%);
+    background-position:40% 80%;
 }
 .e-commerce-box:hover {
     background-size: 108%;
     background-blend-mode: overlay;
-    background-image: url('/Images/section-4/ecommerce.png'), linear-gradient(181.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(0, 0, 0, 0.814) 40.29%, rgba(23, 43, 23, 0.591) 100%);
+    background-image: url('/Images/section-4/ecommerce.png'), linear-gradient(170.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(0, 0, 0, 0.814) 40.29%, rgba(55, 74, 41, 0.422) 100%);
 }
 .finance-box {
-    background-image: url('/Images/section-4/finance.png'), linear-gradient(181.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(0, 0, 0, 0.814) 40.29%, rgba(55, 74, 41, 0.422) 100%);
+    background-image: url('/Images/section-4/finance.png'), linear-gradient(181.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(39, 40, 37, 0.448) 100%);
 }
 .finance-box:hover {
     background-size: 130%;
     background-blend-mode: overlay;
-    background-image: url('/Images/section-4/finance.png'), linear-gradient(181.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(0, 0, 0, 0.814) 40.29%, rgba(23, 43, 23, 0.591) 100%);
+    background-image: url('/Images/section-4/finance.png'), linear-gradient(181.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(39, 40, 37, 0.713) 100%);
 }
 .home-box {
-    background-image: url('/Images/section-4/contractor.jpg'), linear-gradient(181.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(0, 0, 0, 0.814) 40.29%, rgba(55, 74, 41, 0.422) 100%);
+    background-image: url('/Images/section-4/contractor.jpg'), linear-gradient(170.2deg, rgba(0, 0, 0, 0.905) -0.48%,rgba(0, 0, 0, 0.889) 12%, rgba(57, 87, 33, 0.318) 100%);
 }
 .home-box:hover {
     background-size: 190%;
     background-blend-mode: overlay;
-    background-image: url('/Images/section-4/contractor.jpg'), linear-gradient(181.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(0, 0, 0, 0.814) 40.29%, rgba(23, 43, 23, 0.591) 100%);
+    background-image: url('/Images/section-4/contractor.jpg'), linear-gradient(170.2deg, rgba(0, 0, 0, 0.905) -0.48%,rgba(0, 0, 0, 0.889) 12%, rgba(26, 38, 17, 0.543) 100%);
 }
 .travel-box {
-    background-image: url('/Images/section-3/travel.png'), linear-gradient(181.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(0, 0, 0, 0.814) 40.29%, rgba(55, 74, 41, 0.422) 100%);
+    background-image: url('/Images/section-3/travel.png'), linear-gradient(181.2deg, rgba(0, 0, 0, 0.93) -5.48%, rgba(160, 162, 157, 0.422) 100%);
     
 }
 .travel-box:hover {
     background-size: 140%;
     background-blend-mode: overlay;
-    background-image: url('/Images/section-3/travel.png'), linear-gradient(181.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(0, 0, 0, 0.814) 40.29%, rgba(23, 43, 23, 0.591) 100%);
+    background-image: url('/Images/section-3/travel.png'), linear-gradient(181.2deg, rgba(0, 0, 0, 0.93) -5.48%, rgba(56, 57, 54, 0.422) 100%);
 }
 .enterprise-box {
-    background-image: url('/Images/section-3/Enterprise.png'), linear-gradient(181.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(0, 0, 0, 0.814) 40.29%, rgba(55, 74, 41, 0.422) 100%);
+    background-image: url('/Images/section-3/Enterprise.png'), linear-gradient(181.2deg, rgba(0, 0, 0, 0.994) -2.48%, rgba(0, 0, 0, 0.889) 5.81%, rgba(12, 12, 12, 0) 110%);
 }
 .enterprise-box:hover {
     background-size: 108%;
     background-blend-mode: overlay;
-    background-image: url('/Images/section-3/Enterprise.png'), linear-gradient(181.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(0, 0, 0, 0.814) 40.29%, rgba(23, 43, 23, 0.591) 100%);
+    background-image: url('/Images/section-3/Enterprise.png'), linear-gradient(181.2deg, rgba(0, 0, 0, 0.994) -2.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(36, 39, 34, 0.422) 100%);
+}
+.icon-arrow{
+    font-size: 15px;
+}
+@media(max-width:480px){
+    .icon-arrow{
+    font-size: 10px;
+}
 }
 @media (max-width: 992px) {
     .work-container {
