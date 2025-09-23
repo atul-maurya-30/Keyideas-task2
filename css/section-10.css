@@ -1,0 +1,234 @@
+/* Careers Section Wrapper */
+
+.sec-10-frame {
+    text-align: center;
+    width: 100%;
+    max-width: 1526px;
+    margin: 0 auto;
+    padding: 40px 20px 0;
+    box-sizing: border-box;
+}
+
+/* Heading */
+.sec-10-text h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+/* Description */
+.box-text p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 50px;
+}
+
+/* Careers Image Frame (Desktop) */
+.image-frame.d-none.d-md-flex {
+    width: 100%;
+    max-width: 1526px;
+    height: auto;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #EBE2FB;
+    display: flex;
+    gap: 20px;
+    align-items: stretch;
+    box-sizing: border-box;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+/* First Block (2 stacked images, cropped) */
+.image-frame.d-none.d-md-flex .first-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-width: 0;
+}
+
+.image-frame.d-none.d-md-flex .first-box div {
+    flex: 1;
+    overflow: hidden;
+}
+
+.image-frame.d-none.d-md-flex .first-box img {
+    width: 100%;
+    max-width: 342px;
+    height: 193px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* Second Block (big image, centered) */
+.image-frame.d-none.d-md-flex .second-box {
+    flex: 2;
+    display: flex;
+    overflow: hidden;
+    min-width: 0;
+}
+
+.image-frame.d-none.d-md-flex .second-box img {
+    width: 100%;
+    max-width: 752px;
+    height: 404px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* Third Block (1 image + job link, cropped) */
+.image-frame.d-none.d-md-flex .third-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+    min-width: 0;
+}
+
+.image-frame.d-none.d-md-flex .third-box img {
+    width: 100%;
+    max-width: 346px;
+    height: 332px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* Job Link (Desktop) */
+.opening-link {
+    color: #4f149a;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.opening-link a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    gap: 12px;
+    transition: all 0.3s ease;
+}
+
+
+.opening-link span {
+    margin-right: 10px;
+}
+
+/* Mobile Layout */
+.image-frame.d-md-none {
+    display: block;
+    padding: 12px;
+    width: 100%;
+    background-color:#EBE2FB;
+    border-radius: 15px;
+}
+
+.image-frame.d-md-none .second-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.image-frame.d-md-none .mob-image {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.image-frame.d-md-none .mob-image img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* Mobile Job Link */
+.social-temp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.social-temp a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #4f149a;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 20px;
+    gap: 12px;
+    transition: all 0.3s ease;
+}
+
+.social-temp a:hover {
+    background-color: #4f149a;
+    color: #fff;
+}
+
+/* Responsive Adjustments */
+@media (min-width: 1400px) {
+    .sec-10-text {
+        width: 66%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1025px) {
+    .sec-10-frame {
+        width: 80%;
+        max-width: 1526px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1180px) {
+    .opening-link a div {
+        display: none;
+    }
+    .image-frame.d-none.d-md-flex {
+        gap: 12px;
+        padding: 12px;
+    }
+    .image-frame.d-none.d-md-flex .first-box,
+    .image-frame.d-none.d-md-flex .third-box {
+        gap: 12px;
+    }
+    .opening-link span {
+        margin-right: 5px;
+    }
+    .box-text p {
+        margin-bottom: 30px;
+    }
+    .image-frame.d-none.d-md-flex .first-box img,
+    .image-frame.d-none.d-md-flex .second-box img,
+    .image-frame.d-none.d-md-flex .third-box img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .d-none.d-md-flex {
+        display: none !important;
+    }
+    .d-md-none {
+        display: block !important;
+    }
+    .box-text p {
+        margin-bottom: 20px;
+    }
+}
