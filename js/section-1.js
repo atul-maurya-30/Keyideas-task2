@@ -20,7 +20,7 @@ if (gridAnimationItems) {
 const msImage = `
     <div class="ms-card">
     <div class="top-row">
-      <img class="grid-ms-image img-fluid" alt="microsoft logo" width="40" height="40" src="/Images/banner/microsoft.png">
+      <img class="grid-ms-image img-fluid" alt="microsoft logo" width="40" height="40" src="/Images/banner/microsoft.webp">
       <div class="text-block">
         <div class="microsoft">Microsoft</div>
         <div class="partner">Solutions Partner</div>
@@ -62,7 +62,7 @@ const strategyContent = `
 
 const clutchB2B = `
     <div class="grid-clutch-cont">
-        <img class="grid-clutch img-fluid" alt="clutch logo" width="100" height="100" src="/Images/banner/clutch1.png">
+        <img class="grid-clutch img-fluid" alt="clutch logo" width="100" height="100" src="/Images/banner/clutch1.webp">
         <div class="text-center">
             <span class="text-white text-h3-size">Top B2B</span>
             <span class="text-size-para">Providers in the Indian Emerging Tech Market for 2021</span>
@@ -72,7 +72,7 @@ const clutchB2B = `
 
 const clutchShopify = `
     <div class="grid-clutch-cont">
-        <img class="grid-good-firms img-fluid" alt="good firms logo" width="100" height="100" src="/Images/banner/goodfirms.png">
+        <img class="grid-good-firms img-fluid" alt="good firms logo" width="100" height="100" src="/Images/banner/goodfirms.webp">
         <div class="text-center">
             <span class="text-white text-h3-size">Top Shopify</span>
             <span class="text-size-para">Development Companies in 2019</span>
@@ -82,7 +82,7 @@ const clutchShopify = `
 
 const clutch12 = `
     <div class="grid-clutch-cont">
-        <img class="grid-clutch img-fluid" alt="clutch logo" width="100" height="100" src="/Images/banner/clutch1.png">
+        <img class="grid-clutch img-fluid" alt="clutch logo" width="100" height="100" src="/Images/banner/clutch1.webp">
         <div class="text-center">
             <span class="text-white text-h3-size">Top 12</span>
             <span class="text-size-para">Out of 400 top Mobile App Developers in India, 2020</span>
@@ -92,7 +92,7 @@ const clutch12 = `
 
 const clutch1000 = `
     <div class="grid-clutch-cont">
-        <img class="grid-clutch img-fluid" alt="clutch logo" width="100" height="100" src="/Images/banner/clutch1.png">
+        <img class="grid-clutch img-fluid" alt="clutch logo" width="100" height="100" src="/Images/banner/clutch1.webp">
         <div class="text-center">
             <span class="text-white text-h3-size">Top 1000</span>
             <span class="text-size-para">B2B Companies 2018</span>
@@ -102,7 +102,7 @@ const clutch1000 = `
 
 const crowd1 = `
     <div class="grid-clutch-cont">
-        <img class="grid-crowd-rew img-fluid" height="100" width="100" alt="crowd review logo" src="/Images/banner/crowd.png">
+        <img class="grid-crowd-rew img-fluid" height="100" width="100" alt="crowd review logo" src="/Images/banner/crowd.webp">
         <div class="text-center">
             <span class="text-white text-h3-size">#1</span>
             <span class="text-size-para">ASP.NET Development Company</span>
@@ -112,7 +112,7 @@ const crowd1 = `
 
 const crowdTop3 = `
     <div class="grid-clutch-cont">
-        <img class="grid-crowd-rew img-fluid" height="100" width="100" alt="crowd review logo" src="/Images/banner/crowd.png">
+        <img class="grid-crowd-rew img-fluid" height="100" width="100" alt="crowd review logo" src="/Images/banner/crowd.webp">
         <div class="text-center">
             <span class="text-white text-h3-size">Top 3</span>
             <span class="text-size-para">E-Commerce Development Company</span>
@@ -122,7 +122,7 @@ const crowdTop3 = `
 
 const crowdTop10 = `
     <div class="grid-clutch-cont">
-        <img class="grid-crowd-rew img-fluid" height="100" width="100" alt="crowd review logo" src="/Images/banner/crowd.png">
+        <img class="grid-crowd-rew img-fluid" height="100" width="100" alt="crowd review logo" src="/Images/banner/crowd.webp">
         <div class="text-center">
             <span class="text-white text-h3-size">Top 10</span>
             <span class="text-size-para">Web Development Company</span>

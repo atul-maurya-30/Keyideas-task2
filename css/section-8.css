@@ -1,42 +1,38 @@
 /* Heading and text styling */
-.sec-8{
-    padding:60px 0;
+.sec-8 {
+    padding: 60px 0 0;
 }
+
 .sec-8-head {
     margin-bottom: 30px;
     text-align: center;
     padding-bottom: 1.5rem;
 }
 
-.sec-8-head h2 {
-    font-size: 40px;
-    font-weight: 700;
-    color: #101010;
-    margin-bottom: 50px;
-    text-align: center;
-}
-
 .sec-8-head p {
-    font-size: 1.1rem;
-    color: #666;
+    font-size: 16px;
+    color: #000000;
     line-height: 1.6;
+    text-align:center;
 }
 
 @media (min-width: 1000px) {
-    .sec-8-text h2{
+    .sec-8-text h2 {
         width: 100%;
     }
-    .sec-8-text p{
+
+    .sec-8-text p {
         width: 66%;
         margin: auto;
     }
 }
 
 @media (min-width: 1400px) {
-    .sec-8-text h2{
+    .sec-8-text h2 {
         width: 100%;
     }
-    .sec-8-text p{
+
+    .sec-8-text p {
         width: 66%;
         margin: auto;
     }
@@ -55,7 +51,7 @@
     flex: 1 0 0;
     position: relative;
     background-color: #f2f2f2;
-    height: 125px;
+    height: 115px;
 }
 
 .level-text {
@@ -65,9 +61,10 @@
 }
 
 .level-text p {
-    color: rgba(0,0,0,.62);
+    color: rgba(0, 0, 0, .62);
     line-height: 33px;
 }
+
 /* for creating a gap between boxes */
 .chart .level:not(:last-of-type)::after {
     content: '';
@@ -150,13 +147,14 @@
 }
 
 span.tick {
-    background: url(/Images/logos/tick.png) center center no-repeat, #BAA2EB;
+    background: url(/Images/logos/tick.webp) center center no-repeat, #BAA2EB;
     display: block;
     width: 45px;
     height: 45px;
     background-size: cover;
     flex-shrink: 0;
-    border-radius: 50%; /* Makes the background circular */
+    border-radius: 50%;
+    /* Makes the background circular */
 }
 
 /* Responsive design */
@@ -237,6 +235,7 @@ span.tick {
 }
 
 @media (min-width: 993px) and (max-width: 1365px) {
+
     .level-head.level-temp1 .tick-box,
     .level-head.level-temp .tick-box {
         left: 0;
@@ -286,6 +285,10 @@ span.tick {
         padding: 0 0;
     }
 
+    .chart .level:not(:last-of-type)::after {
+        display: none;
+    }
+
     .level-head::before,
     .level:not(:last-of-type)::after {
         content: unset;
@@ -307,12 +310,15 @@ span.tick {
         align-items: baseline;
         padding: 10px;
         height: auto;
-        gap: 20px;
+        gap: 10px;
     }
 
     .level-head .tick-box p {
         width: 100%;
         justify-content: left;
+    }
+    .level-text p{
+            margin-bottom: 0px;
     }
 
     .level-head.level-temp1 .tick-box,
@@ -332,4 +338,13 @@ span.tick {
     .level-head {
         width: 100%;
     }
+
+    .sec-8 {
+        padding-top: 20px;
+    }
+    .sec-8-head{
+        padding-bottom:0px;
+    }
+    .sec-8-text p {
+        text-align:left;}
 }

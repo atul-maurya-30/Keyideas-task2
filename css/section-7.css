@@ -1,5 +1,5 @@
 .gallery-text {
-  padding: 60px 0;
+  padding: 0px 0 60px;
   text-align: center;
   
 }
@@ -8,7 +8,9 @@
   margin-bottom: 40px;
   
 }
-
+.left-text{
+  text-align:left;
+}
 
 .cards {
   display: flex;
@@ -89,7 +91,7 @@
 /* Overlay center image */
 .overlay-img {
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index:1;
@@ -124,7 +126,6 @@
   .contain-7-grid ,.overlay-img{
     display: none; /* hide blur grid and overlay image */
   }
-
   .mobile-img {
     display: block;
     filter: blur(6px); /* blur effect */
@@ -135,4 +136,9 @@
     display:none;
   }
   
+}
+
+@media (max-width:480px){
+  .gallery-text {
+  padding: 0 0;}
 }

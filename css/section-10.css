@@ -5,23 +5,23 @@
     width: 100%;
     max-width: 1526px;
     margin: 0 auto;
-    padding: 40px 20px 0;
+    padding: 10px 20px 0;
     box-sizing: border-box;
 }
-
-/* Heading */
-.sec-10-text h2 {
-    font-size: 40px;
-    font-weight: 700;
-    color: #000000;
-    margin-bottom: 20px;
+.sec-10-frame p{
+    text-align:center;
+    max-width:100%;
+}
+.sec-10-frame h2{
+    padding-top:0px ;
 }
 
 /* Description */
 .box-text p {
     font-size: 1.1rem;
-    color: #555;
+    color: #000000;
     margin-bottom: 50px;
+
 }
 
 /* Careers Image Frame (Desktop) */
@@ -98,7 +98,7 @@
 
 /* Job Link (Desktop) */
 .opening-link {
-    color: #4f149a;
+    
     text-align: center;
     font-size: 18px;
     font-weight: 600;
@@ -106,6 +106,7 @@
 }
 
 .opening-link a {
+    color: #4f149a ;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -113,7 +114,6 @@
     padding: 15px;
     border-radius: 20px;
     text-decoration: none;
-    gap: 12px;
     transition: all 0.3s ease;
 }
 
@@ -171,13 +171,7 @@
     background-color: #fff;
     padding: 15px;
     border-radius: 20px;
-    gap: 12px;
     transition: all 0.3s ease;
-}
-
-.social-temp a:hover {
-    background-color: #4f149a;
-    color: #fff;
 }
 
 /* Responsive Adjustments */
@@ -231,4 +225,10 @@
     .box-text p {
         margin-bottom: 20px;
     }
+    .sec-10-frame{
+        padding: 15px 25px 0;
+    }
+    .sec-10-frame p{
+    text-align:left;}
+
 }

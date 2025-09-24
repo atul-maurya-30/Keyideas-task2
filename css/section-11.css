@@ -21,8 +21,8 @@
 .sec-11-head h2 {
     margin-bottom: 20px;
     max-width: 900px;
-    font-size: 40px;
-    font-weight: 700;
+    font-size: 34px;
+    font-weight: 800;
     color: #101010;
 }
 
@@ -68,7 +68,7 @@
 .sec-11-icon-text .clutch-icon {
     width: 30px;
     height: 30px;
-    background: url('/Images/faq/clu.png') no-repeat center center;
+    background: url('/Images/faq/clu.webp') no-repeat center center;
     background-size: contain;
 }
 

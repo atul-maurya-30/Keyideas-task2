@@ -2,7 +2,7 @@
    Industry Section
 ========================= */
 .gallery {
-    padding: 60px 0;
+    padding: 0px 0;
     text-align: center;
 }
 
@@ -21,13 +21,13 @@
     max-width: 700px;
     margin: 0 auto;
     font-size: 18px;
-    color: #555;
+    color: #000000;
 }
 
 .gallery-box {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 25px;
+    gap: 5px;
     max-width: 1200px;
     margin: 0 auto;
     justify-items: center;
@@ -41,24 +41,25 @@
     align-items: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
     transition: all 0.3s ease;
-    width: 100%;
+    width: 90%;
     max-width: 340px;
-    height: 130px;
+    height: 110px;
+    margin-bottom:28px;
 }
 
 .small-card a {
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: #222;
-    width: 100%;
+    color: #000000;
+    width: 90%;
 }
 
 .card-img {
     width: 80px;
     height: 80px;
     flex-shrink: 0;
-    margin-right: 15px;
+    margin-right: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,14 +76,15 @@
 .small-card .title {
     font-size: 16px;
     font-weight: 600;
-    color: #222;
+    color: #000000;
     line-height: 1.4;
     text-align: left;
 }
 
 /* Show More Card Styling */
 .small-card.gallery-mob {
-    background: #E8E2FF;
+    background:#E8E8E8;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -91,41 +93,48 @@
 .small-card.gallery-mob a {
     display: flex;
     align-items: center;
-    justify-content: center; /* ✅ ensures text centers */
+    justify-content: center; 
     text-decoration: none;
-    color: #222;
+    color:#4F149A;
     width: 100%;
-    text-align: center; /* ✅ centers inline text */
+    text-align: center; 
 }
 
 .small-card.gallery-mob .gallery-mob-text {
     font-size: 16px;
     font-weight: 600;
-    color: #222;
+    color:#4F149A;
     line-height: 1.4;
-    text-align: center; /* ✅ forces center on text */
-    width: 100%; /* ✅ makes text fill so it aligns centrally */
+    text-align: center; 
+    width: 100%; 
 }
 
 /* Top row background variations */
 .gallery-box .small-card:nth-child(1),
 .gallery-box .small-card:nth-child(2),
 .gallery-box .small-card:nth-child(3),
-.gallery-box .small-card:nth-child(4) { background: #E8E2FF; }
+.gallery-box .small-card:nth-child(4) { background: #E8E2FF;}
 
+.gallery-box .small-card:nth-child(1) .title,
+.gallery-box .small-card:nth-child(2) .title,
+.gallery-box .small-card:nth-child(3) .title,
+.gallery-box .small-card:nth-child(4) .title {
+    color: #4F149A; /* Set the text color for the title in the top row */
+}
 /* =========================
    Why We Stand Out Section
 ========================= */
 .blue-card {
     grid-column: span 3;
-    width: 100%;
+    width: 95%;
+    height:110px;
+    margin-left:4px;
     border-radius: 10px;
     color: #fff;
     display: flex;
     padding:0 30px;
     align-items: center;
-    justify-content: space-between;
-    gap: 40px;
+    gap: 10px;
     background: linear-gradient(269.24deg, #7646D7 0%, #4F149A 98.66%);
 }
 
@@ -133,7 +142,7 @@
     font-size: 22px;
     font-weight: 700;
     line-height: 1.4;
-    color: #fff;
+    color: #EBE2FB;
     text-align:left;
     min-width: 180px;
 }
@@ -163,7 +172,11 @@
     font-weight: 700;
     color: #fff;
 }
-
+.blue-card-container-desc{
+    padding-top:10px;
+    font-size:12px;
+    font-weight:normal;
+}
 .blue-card .blue-card-container-top svg {
     width: 22px;
     height: auto;
@@ -188,8 +201,8 @@
     .blue-card {
         flex-direction: column;
         align-items: flex-start;
-        gap: 20px;
         padding:20px;
+        height:auto;
     }
     .blue-card .blue-card-2nd-image-svg {
         flex-wrap: wrap;
@@ -203,28 +216,38 @@
 @media (max-width: 768px) {
     .gallery-box {
         grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
+        gap: 0px;
+        
     }
     
     .small-card {
-        padding: 10px;
+        padding: 15px;
         height: auto;
         flex-direction: column;
         align-items: center;
         text-align: center;
+        min-height: 160px;
+        width: 160px;
+        margin-bottom:20px;
+        box-shadow: 4px 4px 19px 2px #00000024;
+        
     }
     
     .card-img {
-        width: 100px;
-        height: 100px;
+        width: 130px;
+        height: 110px;
         margin-right: 0;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
     }
-    
+    .small-card a {
+        flex-direction: column; /* Ensure link content stacks vertically */
+        align-items: center;
+    }
     .small-card .title,
     .small-card.gallery-mob .gallery-mob-text {
-        font-size: 14px;
+        font-size: 16px;
         text-align: center;
+        width: 100%;
     }
 
     .gallery-box .gallery-cont-mob {
@@ -233,8 +256,18 @@
 
     .gallery-box .gallery-cont-mob.gallery-mob {
         display: flex;
-        justify-content: center; /* ✅ ensures mobile show more centers */
+        justify-content: center;
         align-items: center;
+        width: 160px;
+        min-height: 160px; /* Match other cards for consistency */
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+    .gallery-box .gallery-cont-mob.gallery-mob a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%; /* Ensure the link fills the card for centering */
     }
 
     .blue-card {
@@ -305,14 +338,15 @@
     }
 
     .blue-card .blue-card-head {
-        font-size: 18px;
+        font-size: 30px;
     }
 
     .blue-card .blue-card-container-top {
-        font-size: 14px;
+        font-size: 20px;
     }
 
     .blue-card .blue-card-container p {
-        font-size: 12px;
+        font-size: 15px;
+        width:280px;
     }
 }

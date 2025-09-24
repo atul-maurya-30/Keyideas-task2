@@ -1,6 +1,5 @@
 .text-center {
     margin-bottom: 35px;
-    font-weight: 700;
 }
 
 .sec-3 {
@@ -88,14 +87,14 @@
 }
 
 .health-box {
-    background-image: url('/Images/section-3/health.png'), linear-gradient(181.2deg, rgb(0, 0, 0) -18.48%, rgba(0, 0, 0, 0.938) -0.81%, rgba(0, 0, 0, 0.784) 35.29%, rgba(57, 74, 42, 0.422) 100%);
+    background-image: url('/Images/section-3/health.webp'), linear-gradient(181.2deg, rgb(0, 0, 0) -18.48%, rgba(0, 0, 0, 0.938) -0.81%, rgba(0, 0, 0, 0.784) 35.29%, rgba(57, 74, 42, 0.422) 100%);
     ;
 }
 
 .health-box:hover {
     background-size: 108%;
     background-blend-mode: overlay;
-    background-image: url('/Images/section-3/health.png'), linear-gradient(181.2deg, rgb(0, 0, 0) -18.48%, rgba(0, 0, 0, 0.938) -0.81%, rgba(0, 0, 0, 0.874) 35.29%, rgba(14, 21, 5, 0.408) 100%);
+    background-image: url('/Images/section-3/health.webp'), linear-gradient(181.2deg, rgb(0, 0, 0) -18.48%, rgba(0, 0, 0, 0.938) -0.81%, rgba(0, 0, 0, 0.874) 35.29%, rgba(14, 21, 5, 0.408) 100%);
 }
 
 .hover-box:hover .exp-box-point {
@@ -115,34 +114,34 @@
 }
 
 .real-estate-box {
-    background-image: url('/Images/section-4/realestate.png'), linear-gradient(160.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(0, 0, 0, 0.673) 50.29%, rgba(29, 26, 26, 0.422) 100%);
+    background-image: url('/Images/section-4/realestate.webp'), linear-gradient(160.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(0, 0, 0, 0.673) 50.29%, rgba(29, 26, 26, 0.422) 100%);
 }
 
 .real-estate-box:hover {
     background-size: 115%;
     background-blend-mode: overlay;
-    background-image: url('/Images/section-4/realestate.png'), linear-gradient(160.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(0, 0, 0, 0.673) 50.29%, rgba(26, 23, 23, 0.683) 100%);
+    background-image: url('/Images/section-4/realestate.webp'), linear-gradient(160.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(0, 0, 0, 0.673) 50.29%, rgba(26, 23, 23, 0.683) 100%);
 }
 
 .e-commerce-box {
-    background-image: url('/Images/section-4/ecommerce.png'), linear-gradient(170.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(0, 0, 0, 0.814) 40.29%, rgba(55, 74, 41, 0.422) 100%);
+    background-image: url('/Images/section-4/ecommerce.webp'), linear-gradient(170.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(0, 0, 0, 0.814) 40.29%, rgba(55, 74, 41, 0.422) 100%);
     background-position: 40% 80%;
 }
 
 .e-commerce-box:hover {
     background-size: 108%;
     background-blend-mode: overlay;
-    background-image: url('/Images/section-4/ecommerce.png'), linear-gradient(170.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(0, 0, 0, 0.814) 40.29%, rgba(55, 74, 41, 0.422) 100%);
+    background-image: url('/Images/section-4/ecommerce.webp'), linear-gradient(170.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(0, 0, 0, 0.814) 40.29%, rgba(55, 74, 41, 0.422) 100%);
 }
 
 .finance-box {
-    background-image: url('/Images/section-4/finance.png'), linear-gradient(181.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(39, 40, 37, 0.448) 100%);
+    background-image: url('/Images/section-4/finance.webp'), linear-gradient(181.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(39, 40, 37, 0.448) 100%);
 }
 
 .finance-box:hover {
     background-size: 130%;
     background-blend-mode: overlay;
-    background-image: url('/Images/section-4/finance.png'), linear-gradient(181.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(39, 40, 37, 0.713) 100%);
+    background-image: url('/Images/section-4/finance.webp'), linear-gradient(181.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(39, 40, 37, 0.713) 100%);
 }
 
 .home-box {
@@ -156,24 +155,24 @@
 }
 
 .travel-box {
-    background-image: url('/Images/section-3/travel.png'), linear-gradient(181.2deg, rgba(0, 0, 0, 0.93) -5.48%, rgba(160, 162, 157, 0.422) 100%);
+    background-image: url('/Images/section-3/travel.webp'), linear-gradient(181.2deg, rgba(0, 0, 0, 0.93) -5.48%, rgba(160, 162, 157, 0.422) 100%);
 
 }
 
 .travel-box:hover {
     background-size: 140%;
     background-blend-mode: overlay;
-    background-image: url('/Images/section-3/travel.png'), linear-gradient(181.2deg, rgba(0, 0, 0, 0.93) -5.48%, rgba(56, 57, 54, 0.422) 100%);
+    background-image: url('/Images/section-3/travel.webp'), linear-gradient(181.2deg, rgba(0, 0, 0, 0.93) -5.48%, rgba(56, 57, 54, 0.422) 100%);
 }
 
 .enterprise-box {
-    background-image: url('/Images/section-3/Enterprise.png'), linear-gradient(181.2deg, rgba(0, 0, 0, 0.994) -2.48%, rgba(0, 0, 0, 0.889) 5.81%, rgba(12, 12, 12, 0) 110%);
+    background-image: url('/Images/section-3/Enterprise.webp'), linear-gradient(181.2deg, rgba(0, 0, 0, 0.994) -2.48%, rgba(0, 0, 0, 0.889) 5.81%, rgba(12, 12, 12, 0) 110%);
 }
 
 .enterprise-box:hover {
     background-size: 108%;
     background-blend-mode: overlay;
-    background-image: url('/Images/section-3/Enterprise.png'), linear-gradient(181.2deg, rgba(0, 0, 0, 0.994) -2.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(36, 39, 34, 0.422) 100%);
+    background-image: url('/Images/section-3/Enterprise.webp'), linear-gradient(181.2deg, rgba(0, 0, 0, 0.994) -2.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(36, 39, 34, 0.422) 100%);
 }
 
 .icon-arrow {
@@ -384,7 +383,7 @@
 
     /* Health Box */
     .health-box {
-        background-image: url('/Images/section-3/health.png'), linear-gradient(181.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(10, 13, 8, 0.586) 100%) !important;
+        background-image: url('/Images/section-3/health.webp'), linear-gradient(181.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(10, 13, 8, 0.586) 100%) !important;
     }
 
     /* Jewelery Box */
@@ -394,17 +393,17 @@
 
     /* Real Estate Box */
     .real-estate-box {
-        background-image: url('/Images/section-4/realestate.png'), linear-gradient(160.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(0, 0, 0, 0.673) 50.29%, rgba(26, 23, 23, 0.683) 100%) !important;
+        background-image: url('/Images/section-4/realestate.webp'), linear-gradient(160.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(0, 0, 0, 0.673) 50.29%, rgba(26, 23, 23, 0.683) 100%) !important;
     }
 
     /* E-commerce Box */
     .e-commerce-box {
-        background-image: url('/Images/section-4/ecommerce.png'), linear-gradient(170.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(0, 0, 0, 0.814) 40.29%, rgba(38, 50, 28, 0.771) 100%) !important;
+        background-image: url('/Images/section-4/ecommerce.webp'), linear-gradient(170.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(0, 0, 0, 0.814) 40.29%, rgba(38, 50, 28, 0.771) 100%) !important;
     }
 
     /* Finance Box */
     .finance-box {
-        background-image: url('/Images/section-4/finance.png'), linear-gradient(181.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(29, 30, 27, 0.83) 100%) !important;
+        background-image: url('/Images/section-4/finance.webp'), linear-gradient(181.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(29, 30, 27, 0.83) 100%) !important;
     }
 
     /* Home Box */
@@ -414,12 +413,12 @@
 
     /* Travel Box */
     .travel-box {
-        background-image: url('/Images/section-3/travel.png'), linear-gradient(181.2deg, rgba(0, 0, 0, 0.582) -5.48%, rgba(56, 57, 54, 0.125) 100%) !important;
+        background-image: url('/Images/section-3/travel.webp'), linear-gradient(181.2deg, rgba(0, 0, 0, 0.582) -5.48%, rgba(56, 57, 54, 0.125) 100%) !important;
     }
 
     /* Enterprise Box */
     .enterprise-box {
-        background-image: url('/Images/section-3/Enterprise.png'), linear-gradient(181.2deg, rgba(0, 0, 0, 0.994) -2.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(36, 39, 34, 0.185) 100%) !important;
+        background-image: url('/Images/section-3/Enterprise.webp'), linear-gradient(181.2deg, rgba(0, 0, 0, 0.994) -2.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(36, 39, 34, 0.185) 100%) !important;
     }
 
     .exp-box-point {
