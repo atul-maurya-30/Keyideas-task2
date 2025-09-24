@@ -104,13 +104,13 @@
 }
 
 .jewelery-box {
-    background-image: url('/Images/section-3/advanced.jpg'), linear-gradient(150.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(0, 0, 0, 0.814) 40.29%, rgba(143, 154, 135, 0.422) 100%);
+    background-image: url('/Images/section-3/advanced.webp'), linear-gradient(150.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(0, 0, 0, 0.814) 40.29%, rgba(143, 154, 135, 0.422) 100%);
 }
 
 .jewelery-box:hover {
     background-size: 108%;
     background-blend-mode: overlay;
-    background-image: url('/Images/section-3/advanced.jpg'), linear-gradient(150.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(0, 0, 0, 0.814) 40.29%, rgba(14, 21, 5, 0.408) 100%);
+    background-image: url('/Images/section-3/advanced.webp'), linear-gradient(150.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(0, 0, 0, 0.814) 40.29%, rgba(14, 21, 5, 0.408) 100%);
 }
 
 .real-estate-box {
@@ -145,13 +145,13 @@
 }
 
 .home-box {
-    background-image: url('/Images/section-4/contractor.jpg'), linear-gradient(170.2deg, rgba(0, 0, 0, 0.905) -0.48%, rgba(0, 0, 0, 0.889) 12%, rgba(57, 87, 33, 0.318) 100%);
+    background-image: url('/Images/section-4/contractor.webp'), linear-gradient(170.2deg, rgba(0, 0, 0, 0.905) -0.48%, rgba(0, 0, 0, 0.889) 12%, rgba(57, 87, 33, 0.318) 100%);
 }
 
 .home-box:hover {
     background-size: 190%;
     background-blend-mode: overlay;
-    background-image: url('/Images/section-4/contractor.jpg'), linear-gradient(170.2deg, rgba(0, 0, 0, 0.905) -0.48%, rgba(0, 0, 0, 0.889) 12%, rgba(26, 38, 17, 0.543) 100%);
+    background-image: url('/Images/section-4/contractor.webp'), linear-gradient(170.2deg, rgba(0, 0, 0, 0.905) -0.48%, rgba(0, 0, 0, 0.889) 12%, rgba(26, 38, 17, 0.543) 100%);
 }
 
 .travel-box {
@@ -388,7 +388,7 @@
 
     /* Jewelery Box */
     .jewelery-box {
-        background-image: url('/Images/section-3/advanced.jpg'), linear-gradient(150.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(0, 0, 0, 0.814) 40.29%, rgba(14, 21, 5, 0.408) 100%) !important;
+        background-image: url('/Images/section-3/advanced.webp'), linear-gradient(150.2deg, rgba(0, 0, 0, 0.905) -18.48%, rgba(0, 0, 0, 0.889) -0.81%, rgba(0, 0, 0, 0.814) 40.29%, rgba(14, 21, 5, 0.408) 100%) !important;
     }
 
     /* Real Estate Box */
@@ -408,7 +408,7 @@
 
     /* Home Box */
     .home-box {
-        background-image: url('/Images/section-4/contractor.jpg'), linear-gradient(170.2deg, rgba(0, 0, 0, 0.905) -0.48%, rgba(0, 0, 0, 0.889) 12%, rgba(24, 31, 18, 0.52) 100%) !important;
+        background-image: url('/Images/section-4/contractor.webp'), linear-gradient(170.2deg, rgba(0, 0, 0, 0.905) -0.48%, rgba(0, 0, 0, 0.889) 12%, rgba(24, 31, 18, 0.52) 100%) !important;
     }
 
     /* Travel Box */
