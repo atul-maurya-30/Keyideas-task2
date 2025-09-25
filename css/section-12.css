@@ -1,42 +1,171 @@
-footer {
+/* Section background */
+.discuss-sec {
+    background: linear-gradient(71.78deg, rgba(244, 237, 255, 0.99) 38.58%, #fff 107.36%);
+    padding: 70px 0;
+}
+
+/* Center wrapper */
+.wrap-container {
+    max-width: 1200px;
+    /* 🔹 adjust this for total width */
+    margin: 0 auto;
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 80px;
+    padding: 0 15px;
+}
+
+/* Common box styles */
+.stats-box,
+.connect-box {
+    flex: 1;
+    min-height: 180px;
+    /* 🔹 adjust this for height */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Left stats box */
+.stats-box {
+    background: #fff;
+}
+
+/* Inner card for stats */
+.stats-card {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Left stats content */
+.stats-left {
+    flex: 1;
+    padding-right: 15px;
+    color: #4f149a;
+}
+
+/* Right stats content */
+.stats-right {
+    flex: 1;
+    padding-left: 20px;
+    border-left: 1px solid rgba(79, 20, 154, 0.25);
+    display: flex;
+    flex-direction: column;
+    color: #4f149ACC;
+
+    justify-content: space-between;
+}
+
+/* Stat text */
+.stats-text {
+    font-size: 18px;
+    line-height: 1.8;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-wrap: nowrap;
+
+}
+
+
+/* Right connect box */
+.connect-box {
+    background: linear-gradient(90deg, #4f149a 0%, #361362 100%);
     color: #fff;
-    text-align: center;
-    line-height: 1.5;
-    /* Improved readability */
-    margin-top: 20px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
 }
 
-.footer-section {
-    background-color: #4F149A;
-    padding: 20px 0;
+/* Title */
+.connect-title {
+    font-weight: 700;
+    font-size: 30px;
 }
 
-footer p {
-    margin: 0;
-    /* Remove default margins */
-    padding: 8px 0;
-    /* Consistent vertical spacing */
+/* Button */
+.connect-btn {
+    border-radius: 8px;
+    padding: 10px 28px;
+    color: #4a148c;
+    font-weight: 600;
+    font-size: 16px;
+    background: #fff;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
 }
 
-footer p:first-child {
-    margin-bottom: 0.1px;
-    /* Reduced gap for mobile */
-}
-
-/* Mobile View */
-@media (max-width: 767px) {
-    footer p {
-        font-size: 16px;
-        padding: 6px 0;
-        /* Slightly reduced padding for mobile */
+/* Responsive */
+@media (max-width: 991px) {
+    .connect-title {
+        font-size: 1.375rem;
     }
 
-    .footer-section {
-        padding: 10px 0;
+    .stats-text {
+        font-size: 15px;
+    }
+    .footer-location {
+    flex-direction: row !important;
+    justify-content: space-between;
+    gap: 10px; /* adjust for spacing */
+  }
+}
+
+@media (max-width: 576px) {
+    .discuss-sec {
+        padding: 30px 0;
     }
 
-    footer p:first-child {
-        margin-bottom: 20px;
-        /* Reduced gap for mobile */
+    .stats-card {
+        padding: 20px 20px 15px 20px;
+    }
+
+    .connect-title {
+        font-size: 1.25rem;
+
+    }
+
+    .wrap-container {
+        gap: 20px;
+    }
+
+    .connect-btn {
+        text-align: center;
+        padding: 10px 12px;
+        font-size: 13px;
+    }
+
+    .connect-box {
+        flex-direction: column;
+    }
+
+    .stats-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .stats-right {
+        border-left: none;
+        padding-left: 0;
+        margin-top: 20px;
+    }
+    .footer-location {
+    display: flex;
+    justify-content: space-between;
+    gap: 0px;
+}
+}
+@media (min-width: 1200px) and (max-width: 1700px) {
+    .stats-text {
+        font-size: 18px;
+        text-wrap: unset;
     }
 }

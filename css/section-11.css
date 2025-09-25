@@ -1,8 +1,6 @@
 /* FAQ Section Wrapper */
 .sec-11 {
     padding: 60px 20px;
-    font-family: "Poppins", sans-serif;
-    background: #fff;
 }
 
 .sec-11-contain {
@@ -10,12 +8,12 @@
     flex-wrap: wrap;
     gap: 40px;
     position: relative;
-    /* Added to position the overlay */
 }
 
 /* FAQ Content Area */
 .sec-11-point {
     flex: 1 1 60%;
+
 }
 
 .sec-11-head h2 {
@@ -26,10 +24,22 @@
     color: #101010;
 }
 
+/* Accordion Wrapper for Overall Border */
+.accordion-wrapper {
+    border: 2px solid #ebe2fb;
+    border-radius: 10px;
+    overflow: hidden;
+    /* Ensure rounded corners are respected */
+}
+
 .sec-11-points {
-    padding: 15px 20px;
-    margin-bottom: 12px;
+    padding: 0;
+    /* Remove padding to close gaps */
+    margin-bottom: 0;
+    /* No gap between items */
     position: relative;
+    background: #f9f9f9;
+    transition: all 0.3s ease;
 }
 
 .sec-11-points h3 {
@@ -37,6 +47,19 @@
     font-weight: 500;
     margin: 0;
     color: #333;
+    cursor: pointer;
+}
+
+.sec-11-points .accordion-body {
+    font-size: 15px;
+    color: #000;
+    line-height: 1.6;
+    padding: 25px 15px !important;
+    /* Active content padding */
+    background-color: #ebe2fb !important;
+    /* Active content background */
+    border-top: 0 solid #ddd;
+    /* No top border */
 }
 
 /* Review Section */
@@ -47,6 +70,8 @@
     padding: 25px;
     text-align: center;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.06);
+    height: fit-content;
+    min-height: auto;
 }
 
 .sec-11-qoutes {
@@ -54,6 +79,7 @@
     color: #333;
     margin-bottom: 15px;
     line-height: 1.5;
+    font-weight: 800;
 }
 
 .sec-11-icon-text {
@@ -85,13 +111,14 @@
     margin: 15px 0;
     cursor: pointer;
     transition: all 0.3s ease;
+    display: inline-block;
 }
 
 .sec-11-box button a {
     color: #fff;
     font-size: 15px;
     font-weight: 600;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .sec-11-qoute1 {
@@ -102,22 +129,32 @@
     padding: 0 20px;
 }
 
-/* Overlay */
-.text-overlay {
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    z-index: 10;
+/* Accordion Styling */
+.accordion-button:not(.collapsed) {
+    color: #333;
+    background-color: #fff !important;
+    box-shadow: none;
 }
 
-.text-overlay span {
-    font-size: 24px;
-    letter-spacing: 1px;
-    color: #000000;
-    font-weight: 900;
-    padding: 10px 20px;
+.accordion-button:focus {
+    box-shadow: none;
+    border: none;
+}
+
+.accordion-button {
+    padding: 25px 15px;
+    font-weight: 700 !important;
+    /* No individual border radius */
+    border: 1px solid #ebe2fb;
+
+    /* Remove default borders */
+}
+
+.accordion-item {
+    border: none;
+    margin-bottom: 0;
+    /* No gap between items */
+    background: none;
 }
 
 /* Responsive */
@@ -135,14 +172,19 @@
         margin-top: 30px;
     }
 
-    .text-overlay {
-        width: 100%;
-        padding: 0 20px;
-    }
 }
 
 @media (max-width:767px) {
-    .sec-11 {
-        display: none;
+    .sec-11-head h2 {
+        margin-bottom: 15px;
+        max-width: 900px;
+        font-size: 24px !important;
+        font-weight: 700;
+        color: #101010;
+    }
+
+    .sec-11-qoutes {
+        font-size: 14px;
+        font-weight: 700;
     }
 }

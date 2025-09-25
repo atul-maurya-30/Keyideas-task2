@@ -1,0 +1,274 @@
+/* ================= FOOTER ================= */
+.sec-13-footer {
+    background: #3a0ca3 url("/Images/root/footer-background.webp") no-repeat center center/cover;
+    color: #fff;
+    padding: 40px 0 20px;
+    /* reduced from 60px 0 30px */
+    margin-bottom: 0px;
+}
+
+/* Titles */
+.sec-13-footer .first-b-head {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #fff;
+}
+
+.sec-13-footer .first-b-head a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.sec-13-footer .first-b-head a:hover {
+    opacity: 0.8;
+}
+
+/* SERVICES KEYWORDS */
+.first-b-point {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+    /* reduced */
+}
+
+.first-b-point-block a {
+    display: inline-block;
+    background: linear-gradient(180deg, #8132ff 0, #571eb2 11.4%, #571eb2 88.4%, #2f007a 100%);
+    padding: 6px 12px;
+    /* reduced */
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.first-b-point-block a:hover {
+    background: #812ae8;
+}
+
+/* LEFT LINKS */
+.first-b-link {
+    display: flex;
+    gap: 30px;
+    /* reduced */
+}
+
+.first-b-link .first-b-head {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+/* Apply Now Badge */
+.sec-11-apply {
+    background: linear-gradient(180deg, #fff 0, #f5f4f5 11.4%, #e3d1ff 88.4%, #cdb5f5 100%);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 11px;
+    margin-left: 8px;
+    font-weight: 600;
+    color: #2f007AEB !important;
+}
+
+/* Get in Touch link */
+.get-in-touch a {
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: underline;
+    transition: opacity 0.3s ease;
+}
+
+.get-in-touch a:hover {
+    opacity: 0.8;
+}
+
+/* COMPANY INFO */
+.sec-13-footer-first-b p {
+    font-size: 14px;
+    line-height: 22px;
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 15px;
+    /* reduced */
+}
+
+/* OFFICE LOCATIONS */
+.footer-location {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    /* reduced */
+}
+
+.footer-location .first-b-head {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.footer-location p {
+    font-size: 14px;
+    line-height: 22px;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.footer-location a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer-location a:hover {
+    text-decoration: underline;
+}
+
+/* Divider Line */
+.second-b-head {
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    /* reduced */
+}
+
+.second-b-row {
+    display: flex;
+    flex-direction: row;
+    /* put them in one row */
+    /* spread across full width */
+    align-items: center;
+    flex-wrap: wrap;
+    /* keeps it responsive on smaller screens */
+    gap: 20px;
+    justify-content: center;
+    /* smaller gap */
+    margin-bottom: 0px;
+}
+
+.social-links {
+    justify-content: center;
+    /* align icons left */
+}
+
+/* Sprite Base */
+.footer-sprite {
+    display: inline-block;
+    background: url("/Images/root/social-icon-footer-sprite.webp") no-repeat;
+    background-size: 300px auto;
+    /* adjust based on sprite sheet size */
+    transition: transform 0.3s ease;
+}
+
+.footer-sprite:hover {
+    transform: scale(1.1);
+}
+
+/* Sprite Positions */
+.linkedin-icon.footer-sprite {
+    width: 50px;
+    height: 24px;
+    background-position: -8px -11px;
+    transform: scale(0.8);
+}
+
+.behance-icon.footer-sprite {
+    width: 50px;
+    height: 35px;
+    background-position: -58px 0px;
+    transform: scale(0.7);
+}
+
+.twitter-icon.footer-sprite {
+    width: 40px;
+    height: 30px;
+    background-position: -123px -4px;
+    transform: scale(0.7);
+}
+
+.facebook-icon.footer-sprite {
+    width: 50px;
+    height: 32px;
+    background-position: -176px -2px;
+    transform: scale(0.7);
+}
+
+.instagram-icon.footer-sprite {
+    width: 60px;
+    height: 30px;
+    background-position: -230px -4px;
+    transform: scale(0.7);
+}
+
+/* Additional Links */
+.additional-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.additional-links p {
+    margin: 0;
+    font-size: 13px;
+}
+
+.additional-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.additional-links a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .footer-location {
+        flex-direction: column;
+    }
+}
+
+/* ================= MOBILE RESPONSIVE FIXES ================= */
+@media (max-width: 767px) {
+
+    /* Stack icons and text vertically */
+    .second-b-row {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        margin-top:20px;
+        margin-bottom: 15px;
+        border-top: 1px solid white;
+    }
+
+    /* Center align social icons */
+    .first-b-point {
+        padding-bottom: 20px;
+        border-bottom: 0.05px solid white;
+    }
+.first-b-point-block a {
+    font-size:12px;}
+    .sec-13-footer-first-b p {
+        padding: 20px 0;
+        border-top: 0.05px solid white;
+        border-bottom: 0.05px solid white;
+    }
+    .first-b-link .first-b-head {
+    font-size: 11px;
+}
+
+    .social-links {
+        justify-content: center;
+
+    }
+
+    .sec-13-footer .additional-links {
+        width: 70%;
+        flex-wrap: wrap;
+        margin-top: 15px;
+        justify-content: space-evenly;
+        gap: 10px;
+    }
+}
