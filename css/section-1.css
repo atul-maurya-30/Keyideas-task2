@@ -304,7 +304,7 @@
         font-size: 20px;
         font-weight: 500;
     }
-    
+
     .top-row img {
         width: 35px;
         height: 35px;
@@ -365,33 +365,38 @@
     .desk-view {
         display: none;
     }
-    .head-1{
-        max-width:250px !important;
-        white-space:wrap !important;
+
+    .head-1 {
+        max-width: 250px !important;
+        white-space: wrap !important;
     }
-    .banner-background{height:620px;}
+
+    .banner-background {
+        height: 620px;
+    }
+
     .banner-text {
         position: relative;
         z-index: 2;
         height: 100%;
-        top:20px;
-        left:0px;
-        bottom:40px;
+        top: 20px;
+        left: 0px;
+        bottom: 40px;
     }
 
     .banner-text h1 {
         font-size: 28px !important;
         line-height: 1.2;
-        margin-top:30px;
+        margin-top: 30px;
         margin-bottom: 30px;
-        
+
     }
 
     .banner-text p {
         font-size: 16px !important;
         font-weight: 500;
-        max-width:280px;
-        padding-bottom:10px;
+        max-width: 280px;
+        padding-bottom: 10px;
 
     }
 
@@ -416,7 +421,7 @@
     }
 
     .dummy-case {
-        
+
         height: 120px;
     }
 
@@ -434,8 +439,8 @@
 
     .text-size-para {
         font-size: 7px;
-        max-width:66%;
-        font-weight:lighter;
+        max-width: 66%;
+        font-weight: lighter;
         line-height: normal;
     }
 
@@ -445,7 +450,7 @@
     }
 
     .text-block .microsoft {
-        padding-top:2px;
+        padding-top: 2px;
         font-size: 15px;
         font-weight: 500;
         line-height: 1.2;
@@ -465,7 +470,7 @@
 
     .grid-crowd-rew {
         width: 80%;
-        padding-top:10px;
+        padding-top: 10px;
     }
 
     .grid-clutch {
@@ -475,21 +480,23 @@
 
     .grid-good-firms {
         width: 50%;
-        padding-top:20px;
+        padding-top: 20px;
     }
 }
-@media screen and (max-width:480px){
-    .top-row{
-        gap:4px;
+
+@media screen and (max-width:480px) {
+    .top-row {
+        gap: 4px;
     }
+
     .top-row img {
         width: 25px;
         height: 22px;
-        
+
     }
 
     .text-block .microsoft {
-        padding-top:2px;
+        padding-top: 2px;
         font-size: 11px;
         font-weight: 500;
         line-height: 1;
@@ -502,8 +509,8 @@
 
     .bottom-text {
         margin-top: 1px;
-        padding-left:6px;
+        padding-left: 6px;
         font-size: 8px;
-        
+
     }
 }

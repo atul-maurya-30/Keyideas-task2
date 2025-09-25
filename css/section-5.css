@@ -24,7 +24,7 @@
     line-height: 1.6;
     margin-bottom: 20px;
     max-width: 540px;
-    font-weight:normal;
+    font-weight: normal;
     text-align: left;
 }
 
@@ -37,7 +37,7 @@
 .contain-since {
     width: 100%;
     opacity: 0.5;
-    
+
 }
 
 .contain-since span {
@@ -95,11 +95,11 @@
 
     .contain-since {
         padding-bottom: 40px;
-        opacity:1;
+        opacity: 1;
     }
 
     .contain-since span {
-        
+
         font-size: clamp(60px, 10vw, 200px);
     }
 

@@ -13,7 +13,7 @@
     font-size: 16px;
     color: #000000;
     line-height: 1.6;
-    text-align:center;
+    text-align: center;
 }
 
 @media (min-width: 1000px) {
@@ -317,8 +317,9 @@ span.tick {
         width: 100%;
         justify-content: left;
     }
-    .level-text p{
-            margin-bottom: 0px;
+
+    .level-text p {
+        margin-bottom: 0px;
     }
 
     .level-head.level-temp1 .tick-box,
@@ -342,9 +343,12 @@ span.tick {
     .sec-8 {
         padding-top: 20px;
     }
-    .sec-8-head{
-        padding-bottom:0px;
+
+    .sec-8-head {
+        padding-bottom: 0px;
     }
+
     .sec-8-text p {
-        text-align:left;}
+        text-align: left;
+    }
 }

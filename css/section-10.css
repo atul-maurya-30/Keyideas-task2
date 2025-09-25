@@ -8,12 +8,14 @@
     padding: 10px 20px 0;
     box-sizing: border-box;
 }
-.sec-10-frame p{
-    text-align:center;
-    max-width:100%;
+
+.sec-10-frame p {
+    text-align: center;
+    max-width: 100%;
 }
-.sec-10-frame h2{
-    padding-top:0px ;
+
+.sec-10-frame h2 {
+    padding-top: 0px;
 }
 
 /* Description */
@@ -98,7 +100,7 @@
 
 /* Job Link (Desktop) */
 .opening-link {
-    
+
     text-align: center;
     font-size: 18px;
     font-weight: 600;
@@ -106,7 +108,7 @@
 }
 
 .opening-link a {
-    color: #4f149a ;
+    color: #4f149a;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -127,7 +129,7 @@
     display: block;
     padding: 12px;
     width: 100%;
-    background-color:#EBE2FB;
+    background-color: #EBE2FB;
     border-radius: 15px;
 }
 
@@ -193,20 +195,25 @@
     .opening-link a div {
         display: none;
     }
+
     .image-frame.d-none.d-md-flex {
         gap: 12px;
         padding: 12px;
     }
+
     .image-frame.d-none.d-md-flex .first-box,
     .image-frame.d-none.d-md-flex .third-box {
         gap: 12px;
     }
+
     .opening-link span {
         margin-right: 5px;
     }
+
     .box-text p {
         margin-bottom: 30px;
     }
+
     .image-frame.d-none.d-md-flex .first-box img,
     .image-frame.d-none.d-md-flex .second-box img,
     .image-frame.d-none.d-md-flex .third-box img {
@@ -219,16 +226,21 @@
     .d-none.d-md-flex {
         display: none !important;
     }
+
     .d-md-none {
         display: block !important;
     }
+
     .box-text p {
         margin-bottom: 20px;
     }
-    .sec-10-frame{
+
+    .sec-10-frame {
         padding: 15px 25px 0;
     }
-    .sec-10-frame p{
-    text-align:left;}
+
+    .sec-10-frame p {
+        text-align: left;
+    }
 
 }

@@ -25,9 +25,11 @@
     text-align: center;
     padding-top: 25px;
 }
-.sec-2 .text-it{
+
+.sec-2 .text-it {
     padding-top: 0px;
 }
+
 .sec-2-wrap {
     display: grid;
     grid-template-rows: 1fr auto;
@@ -223,8 +225,10 @@
     .pd-top {
         padding-top: 0px;
     }
+
     .text-it {
-    padding-top: 0px;}
+        padding-top: 0px;
+    }
 }
 
 /* Desktop-Specific Styles (unchanged) */

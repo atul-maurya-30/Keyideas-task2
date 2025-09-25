@@ -9,7 +9,8 @@
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
-    position: relative; /* Added to position the overlay */
+    position: relative;
+    /* Added to position the overlay */
 }
 
 /* FAQ Content Area */
@@ -141,8 +142,9 @@
         padding: 0 20px;
     }
 }
-@media (max-width:767px){
-    .sec-11{
-        display:none;
+
+@media (max-width:767px) {
+    .sec-11 {
+        display: none;
     }
 }

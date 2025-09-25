@@ -44,7 +44,7 @@
     width: 90%;
     max-width: 340px;
     height: 110px;
-    margin-bottom:28px;
+    margin-bottom: 28px;
 }
 
 .small-card a {
@@ -83,7 +83,7 @@
 
 /* Show More Card Styling */
 .small-card.gallery-mob {
-    background:#E8E8E8;
+    background: #E8E8E8;
 
     display: flex;
     align-items: center;
@@ -93,46 +93,50 @@
 .small-card.gallery-mob a {
     display: flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
     text-decoration: none;
-    color:#4F149A;
+    color: #4F149A;
     width: 100%;
-    text-align: center; 
+    text-align: center;
 }
 
 .small-card.gallery-mob .gallery-mob-text {
     font-size: 16px;
     font-weight: 600;
-    color:#4F149A;
+    color: #4F149A;
     line-height: 1.4;
-    text-align: center; 
-    width: 100%; 
+    text-align: center;
+    width: 100%;
 }
 
 /* Top row background variations */
 .gallery-box .small-card:nth-child(1),
 .gallery-box .small-card:nth-child(2),
 .gallery-box .small-card:nth-child(3),
-.gallery-box .small-card:nth-child(4) { background: #E8E2FF;}
+.gallery-box .small-card:nth-child(4) {
+    background: #E8E2FF;
+}
 
 .gallery-box .small-card:nth-child(1) .title,
 .gallery-box .small-card:nth-child(2) .title,
 .gallery-box .small-card:nth-child(3) .title,
 .gallery-box .small-card:nth-child(4) .title {
-    color: #4F149A; /* Set the text color for the title in the top row */
+    color: #4F149A;
+    /* Set the text color for the title in the top row */
 }
+
 /* =========================
    Why We Stand Out Section
 ========================= */
 .blue-card {
     grid-column: span 3;
     width: 95%;
-    height:110px;
-    margin-left:4px;
+    height: 110px;
+    margin-left: 4px;
     border-radius: 10px;
     color: #fff;
     display: flex;
-    padding:0 30px;
+    padding: 0 30px;
     align-items: center;
     gap: 10px;
     background: linear-gradient(269.24deg, #7646D7 0%, #4F149A 98.66%);
@@ -143,7 +147,7 @@
     font-weight: 700;
     line-height: 1.4;
     color: #EBE2FB;
-    text-align:left;
+    text-align: left;
     min-width: 180px;
 }
 
@@ -172,11 +176,13 @@
     font-weight: 700;
     color: #fff;
 }
-.blue-card-container-desc{
-    padding-top:10px;
-    font-size:12px;
-    font-weight:normal;
+
+.blue-card-container-desc {
+    padding-top: 10px;
+    font-size: 12px;
+    font-weight: normal;
 }
+
 .blue-card .blue-card-container-top svg {
     width: 22px;
     height: auto;
@@ -201,13 +207,15 @@
     .blue-card {
         flex-direction: column;
         align-items: flex-start;
-        padding:20px;
-        height:auto;
+        padding: 20px;
+        height: auto;
     }
+
     .blue-card .blue-card-2nd-image-svg {
         flex-wrap: wrap;
         gap: 30px;
     }
+
     .blue-card .blue-card-container {
         flex: 1 1 45%;
     }
@@ -217,9 +225,9 @@
     .gallery-box {
         grid-template-columns: repeat(2, 1fr);
         gap: 0px;
-        
+
     }
-    
+
     .small-card {
         padding: 15px;
         height: auto;
@@ -228,21 +236,24 @@
         text-align: center;
         min-height: 160px;
         width: 160px;
-        margin-bottom:20px;
+        margin-bottom: 20px;
         box-shadow: 4px 4px 19px 2px #00000024;
-        
+
     }
-    
+
     .card-img {
         width: 130px;
         height: 110px;
         margin-right: 0;
         margin-bottom: 15px;
     }
+
     .small-card a {
-        flex-direction: column; /* Ensure link content stacks vertically */
+        flex-direction: column;
+        /* Ensure link content stacks vertically */
         align-items: center;
     }
+
     .small-card .title,
     .small-card.gallery-mob .gallery-mob-text {
         font-size: 16px;
@@ -259,15 +270,18 @@
         justify-content: center;
         align-items: center;
         width: 160px;
-        min-height: 160px; /* Match other cards for consistency */
+        min-height: 160px;
+        /* Match other cards for consistency */
         padding: 15px;
         margin-bottom: 20px;
     }
+
     .gallery-box .gallery-cont-mob.gallery-mob a {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100%; /* Ensure the link fills the card for centering */
+        height: 100%;
+        /* Ensure the link fills the card for centering */
     }
 
     .blue-card {
@@ -278,15 +292,15 @@
         padding: 40px 20px;
         min-height: auto;
         background: linear-gradient(335.13deg, #7646D7 21.39%, #3E2571 79.91%);
-        margin-right:1px;
-        
+        margin-right: 1px;
+
     }
 
     .blue-card .blue-card-head {
         min-width: 100%;
         text-align: left;
         font-size: 35px;
-        
+
     }
 
     .blue-card .blue-card-2nd-image-svg {
@@ -303,36 +317,38 @@
 
     .blue-card .blue-card-container-top {
         justify-content: center;
-        font-size:25px;
+        font-size: 25px;
     }
-    .blue-card .blue-card-container-top svg {
-    width: 30px;
-    height: auto;
-    flex-shrink: 0;
-    margin:20px;
-}
 
-.blue-card .blue-card-container p {
-    margin: 0;
-    font-size: 16px;
-    font-weight: 400;
-    color: #e2d7f9;
-}
+    .blue-card .blue-card-container-top svg {
+        width: 30px;
+        height: auto;
+        flex-shrink: 0;
+        margin: 20px;
+    }
+
+    .blue-card .blue-card-container p {
+        margin: 0;
+        font-size: 16px;
+        font-weight: 400;
+        color: #e2d7f9;
+    }
 }
 
 @media (max-width: 480px) {
     .gallery-box {
         grid-template-columns: repeat(2, 1fr);
     }
-    
+
     .heading2-ele {
         font-size: 28px;
     }
-    
+
     .text-it p {
         font-size: 16px;
     }
-     .blue-card {
+
+    .blue-card {
         padding: 50px 15px;
         gap: 25px;
     }
@@ -347,6 +363,6 @@
 
     .blue-card .blue-card-container p {
         font-size: 15px;
-        width:280px;
+        width: 280px;
     }
 }

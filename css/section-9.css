@@ -9,8 +9,10 @@
     padding: 30px 0;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center content vertically */
-    min-height: 500px; /* Ensure enough space for midline alignment */
+    justify-content: center;
+    /* Center content vertically */
+    min-height: 500px;
+    /* Ensure enough space for midline alignment */
 }
 
 /* Flex container for s-photo */
@@ -18,13 +20,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0; /* Remove bottom margin to control positioning */
+    margin: 0;
+    /* Remove bottom margin to control positioning */
 }
 
 /* Inline-flex for circle-photo group */
 .social .s-photo {
     display: inline-flex;
-    flex-wrap: nowrap; /* Ensure s-photo stay in a single row by default */
+    flex-wrap: nowrap;
+    /* Ensure s-photo stay in a single row by default */
 }
 
 /* circle-photo styling */
@@ -50,21 +54,21 @@
 
 /* Unique cropping for each circle-photo image */
 .social .circle-photo:nth-child(1) img {
-    object-position: -360px -260px ;
-    width:500px;
-    height:500px;
+    object-position: -360px -260px;
+    width: 500px;
+    height: 500px;
 }
 
 .social .circle-photo:nth-child(2) img {
     object-position: -930px -280px;
-    width:500px;
-    height:500px;
+    width: 500px;
+    height: 500px;
 }
 
 .social .circle-photo:nth-child(3) img {
     object-position: -570px -45px;
-    width:250px;
-    height:250px;
+    width: 250px;
+    height: 250px;
 }
 
 .social .circle-photo:nth-child(4) img {
@@ -83,8 +87,10 @@
 .social p {
     max-height: 78px;
     text-align: center;
-    margin: 20px auto; /* Add consistent margin */
-    max-width: 800px; /* Limit paragraph width for readability */
+    margin: 20px auto;
+    /* Add consistent margin */
+    max-width: 800px;
+    /* Limit paragraph width for readability */
 }
 
 /* Social impact home link */
@@ -106,13 +112,14 @@
     display: flex;
     align-items: center;
     text-decoration: none;
-    color:#4F149A;
-    gap:5px;
+    color: #4F149A;
+    gap: 5px;
 }
+
 .social-link svg {
-  width: 20px;
-  height: 10px;
-  object-fit: contain;
+    width: 20px;
+    height: 10px;
+    object-fit: contain;
 }
 
 /* Explore button/link styling */
@@ -158,10 +165,11 @@
 
     .social p {
         max-height: none;
-        text-align:left;
+        text-align: left;
     }
-    .sec-9{
-        padding:20px 0;
+
+    .sec-9 {
+        padding: 20px 0;
     }
 }
 
@@ -169,8 +177,9 @@
 @media (max-width: 767px) {
     .social {
         background: linear-gradient(360deg, #f2f2f2 4.43%, #fff 40.95%, #ebe2fb 61%);
-        min-height: auto; 
-         padding: 30px 0 70px;/* Allow content to dictate height */
+        min-height: auto;
+        padding: 30px 0 70px;
+        /* Allow content to dictate height */
     }
 
     .social .s-photo {
@@ -240,6 +249,7 @@
     .social-temp span {
         font-size: 18px;
     }
+
     .social {
         padding: 70px 0 100px;
     }
@@ -276,7 +286,8 @@
     .social {
         background: linear-gradient(360deg, #f2f2f2 4.43%, #fff 51.95%, #ebe2fb 51%);
         padding: 80px 0;
-        min-height: auto; /* Allow content to dictate height */
+        min-height: auto;
+        /* Allow content to dictate height */
     }
 
     .social .circle-photo {
