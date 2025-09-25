@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expertise Gallery</title>
+    <style>
+        .gallery-text {
+            padding: 0px 0 60px;
+            text-align: center;
+        }
+
+        .gallery-text .text-it {
+            margin-bottom: 40px;
+        }
+
+        .left-text {
+            text-align: left;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 40px;
+        }
+
+        .cards-btn {
+            background: #e8dbf7;
+            padding: 8px 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 500;
+            min-width: 120px;
+            text-align: center;
+            white-space: nowrap;
+        }
+
+        .cards-btn.active {
+            background: #5a0dad;
+            color: #fff;
+        }
+
+        /* Desktop: 2 rows max */
+        @media (min-width: 1024px) {
+            .cards {
+                flex-direction: row;
+                flex-wrap: wrap;
+                max-width: 100%;
+            }
+
+            .cards .cards-btn {
+                flex: 1 0 calc(20% - 12px);
+            }
+        }
+
+        /* Tablet: 3 rows max */
+        @media (min-width: 768px) and (max-width: 1023px) {
+            .cards {
+                flex-direction: row;
+                flex-wrap: wrap;
+                max-width: 100%;
+            }
+
+            .cards .cards-btn {
+                flex: 1 0 calc(25% - 12px);
+            }
+        }
+
+        /* Mobile: Adjust grid for smaller screens */
+        @media (max-width: 767px) {
+            .cards {
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 8px;
+            }
+
+            .cards .cards-btn {
+                flex: 1 0 calc(33.33% - 8px); /* 3 buttons per row */
+                min-width: 100px;
+                padding: 6px 12px;
+            }
+
+            .contain-7-grid {
+                grid-template-columns: repeat(2, 1fr); /* 2 columns on mobile */
+                gap: 15px;
+                padding: 10px;
+            }
+
+            .contain-7-grid img {
+                width: 80px;
+                height: 80px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery-text {
+                padding: 0 0;
+            }
+
+            .cards .cards-btn {
+                flex: 1 0 calc(50% - 8px); /* 2 buttons per row */
+            }
+        }
+
+        .sec-contain-7 {
+            position: relative;
+            margin-top: 40px;
+        }
+
+        /* Grid container */
+        .contain-7-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            justify-items: center;
+            padding: 20px 0;
+        }
+
+        /* Grid images */
+        .contain-7-grid img {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+            display: block;
+        }
+
+        /* Overlay center image (kept but empty as per original) */
+        .overlay-img {
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+        }
+
+        .overlay-img img {
+            max-width: 400px;
+            width: 100%;
+            height: auto;
+            border: 1.5px solid black;
+            -webkit-mask: inset(20% 0 15% 0);
+            mask: inset(50% 0 50% 0);
+        }
+
+        /* Mobile only image (kept but empty as per original) */
+        .mobile-img {
+            display: none;
+        }
+
+        .mobile-img img {
+            max-width: 700px;
+            width: 100%;
+            margin: 0 auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <section class="gallery-text">
+        <div class="container">
+            <div class="text-it">
+                <div class="head-it desk-view">Wide-Ranging Expertise from Leading Software Experts</div>
+                <div class="head-it mob-view">Wide Range of Expertise</div>
+                <p class="desk-view">
+                    Our strength lies in delivering exceptional IT consulting services backed by a wide range of
+                    expertise in cutting-edge technologies. With our software experts, we craft innovative solutions
+                    that align with your business needs and also exceeding your expectations.
+                </p>
+                <p class="mob-view left-text">Our strength lies in our wide range of expertise across numerous
+                    cutting-edge technologies. This comprehensive knowledge enables us to craft stunning and
+                    functional websites that not only meet your specific requirements but also exceed your
+                    expectations.</p>
+            </div>
+
+            <!-- Buttons -->
+            <div class="cards">
+                <div class="cards-btn" data-category="backend"><span>Backend</span></div>
+                <div class="cards-btn active" data-category="frontend"><span>Frontend</span></div>
+                <div class="cards-btn" data-category="data"><span>Data and Databases</span></div>
+                <div class="cards-btn" data-category="quality"><span>Quality Engineering</span></div>
+                <div class="cards-btn" data-category="mobile"><span>Mobile Apps &amp; PWA</span></div>
+                <div class="cards-btn" data-category="cloud"><span>Cloud &amp; DevOps</span></div>
+                <div class="cards-btn" data-category="digital"><span>Digital Experience Platforms</span></div>
+                <div class="cards-btn" data-category="ecommerce"><span>Shop/E-Commerce Platforms</span></div>
+                <div class="cards-btn" data-category="project"><span>Project Management</span></div>
+            </div>
+
+            <!-- Display Section -->
+            <div class="sec-contain-7">
+                <!-- Tech grid (no blur) -->
+                <div class="contain-7-grid" id="tech-grid">
+                    <div><img src="Images/logos/angular.webp" alt="Angular"></div>
+                    <div><img src="Images/logos/antidesign.webp" alt="Ant Design"></div>
+                    <div><img src="Images/logos/bootstrap.webp" alt: "Bootstrap"></div>
+                    <div><img src="Images/logos/css.webp" alt="CSS"></div>
+                    <div><img src="Images/logos/html.webp" alt="HTML"></div>
+                    <div><img src="Images/logos/jquery.webp" alt="jQuery"></div>
+                    <div><img src="Images/logos/js.webp" alt="JavaScript"></div>
+                    <div><img src="Images/logos/nextjs.webp" alt="Next.js"></div>
+                    <div><img src="Images/logos/react.webp" alt="React"></div>
+                    <div><img src="Images/logos/redux.webp" alt="Redux"></div>
+                    <div><img src="Images/logos/requirejs.webp" alt="RequireJS"></div>
+                    <div><img src="Images/logos/sass.webp" alt="Sass"></div>
+                    <div><img src="Images/logos/tailwind.webp" alt="Tailwind CSS"></div>
+                    <div><img src="Images/logos/typescript.webp" alt="TypeScript"></div>
+                    <div><img src="Images/logos/vuejs.webp" alt="Vue.js"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Ensure DOM is fully loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            // Define icon sets for each category
+            const techIcons = {
+                backend: [
+                    { src: "Images/logos/node.webp", alt: "Node.js" },
+                    { src: "Images/logos/python.webp", alt: "Python" },
+                    { src: "Images/logos/java.webp", alt: "Java" },
+                    { src: "Images/logos/ruby.webp", alt: "Ruby" },
+                    { src: "Images/logos/php.webp", alt: "PHP" },
+                    { src: "Images/logos/dotnet.webp", alt: ".NET" },
+                    { src: "Images/logos/django.webp", alt: "Django" },
+                    { src: "Images/logos/flask.webp", alt: "Flask" }
+                ],
+                frontend: [
+                    { src: "Images/logos/angular.webp", alt: "Angular" },
+                    { src: "Images/logos/antidesign.webp", alt: "Ant Design" },
+                    { src: "Images/logos/bootstrap.webp", alt: "Bootstrap" },
+                    { src: "Images/logos/css.webp", alt: "CSS" },
+                    { src: "Images/logos/html.webp", alt: "HTML" },
+                    { src: "Images/logos/jquery.webp", alt: "jQuery" },
+                    { src: "Images/logos/js.webp", alt: "JavaScript" },
+                    { src: "Images/logos/nextjs.webp", alt: "Next.js" },
+                    { src: "Images/logos/react.webp", alt: "React" },
+                    { src: "Images/logos/redux.webp", alt: "Redux" },
+                    { src: "Images/logos/requirejs.webp", alt: "RequireJS" },
+                    { src: "Images/logos/sass.webp", alt: "Sass" },
+                    { src: "Images/logos/tailwind.webp", alt: "Tailwind CSS" },
+                    { src: "Images/logos/typescript.webp", alt: "TypeScript" },
+                    { src: "Images/logos/vuejs.webp", alt: "Vue.js" }
+                ],
+                data: [
+                    { src: "Images/logos/mysql.webp", alt: "MySQL" },
+                    { src: "Images/logos/postgresql.webp", alt: "PostgreSQL" },
+                    { src: "Images/logos/mongodb.webp", alt: "MongoDB" },
+                    { src: "Images/logos/redis.webp", alt: "Redis" },
+                    { src: "Images/logos/sqlserver.webp", alt: "SQL Server" },
+                    { src: "Images/logos/oracle.webp", alt: "Oracle" },
+                    { src: "Images/logos/elasticsearch.webp", alt: "Elasticsearch" }
+                ],
+                quality: [
+                    { src: "Images/logos/selenium.webp", alt: "Selenium" },
+                    { src: "Images/logos/cypress.webp", alt: "Cypress" },
+                    { src: "Images/logos/junit.webp", alt: "JUnit" },
+                    { src: "Images/logos/testng.webp", alt: "TestNG" },
+                    { src: "Images/logos/jest.webp", alt: "Jest" }
+                ],
+                mobile: [
+                    { src: "Images/logos/flutter.webp", alt: "Flutter" },
+                    { src: "Images/logos/reactnative.webp", alt: "React Native" },
+                    { src: "Images/logos/swift.webp", alt: "Swift" },
+                    { src: "Images/logos/kotlin.webp", alt: "Kotlin" },
+                    { src: "Images/logos/ionic.webp", alt: "Ionic" }
+                ],
+                cloud: [
+                    { src: "Images/logos/aws.webp", alt: "AWS" },
+                    { src: "Images/logos/azure.webp", alt: "Azure" },
+                    { src: "Images/logos/gcp.webp", alt: "Google Cloud" },
+                    { src: "Images/logos/docker.webp", alt: "Docker" },
+                    { src: "Images/logos/kubernetes.webp", alt: "Kubernetes" },
+                    { src: "Images/logos/jenkins.webp", alt: "Jenkins" }
+                ],
+                digital: [
+                    { src: "Images/logos/adobe.webp", alt: "Adobe Experience Manager" },
+                    { src: "Images/logos/sitecore.webp", alt: "Sitecore" },
+                    { src: "Images/logos/drupal.webp", alt: "Drupal" },
+                    { src: "Images/logos/wordpress.webp", alt: "WordPress" }
+                ],
+                ecommerce: [
+                    { src: "Images/logos/shopify.webp", alt: "Shopify" },
+                    { src: "Images/logos/magento.webp", alt: "Magento" },
+                    { src: "Images/logos/woocommerce.webp", alt: "WooCommerce" },
+                    { src: "Images/logos/bigcommerce.webp", alt: "BigCommerce" }
+                ],
+                project: [
+                    { src: "Images/logos/jira.webp", alt: "Jira" },
+                    { src: "Images/logos/trello.webp", alt: "Trello" },
+                    { src: "Images/logos/asana.webp", alt: "Asana" },
+                    { src: "Images/logos/scrum.webp", alt: "Scrum" }
+                ]
+            };
+
+            // Get DOM elements
+            const buttons = document.querySelectorAll('.cards-btn');
+            const techGrid = document.getElementById('tech-grid');
+
+            // Function to update grid content
+            function updateGrid(category) {
+                if (!techGrid) {
+                    console.error('Tech grid element not found');
+                    return;
+                }
+                techGrid.innerHTML = ''; // Clear current grid
+                const icons = techIcons[category] || [];
+                icons.forEach(icon => {
+                    const div = document.createElement('div');
+                    const img = document.createElement('img');
+                    img.src = icon.src;
+                    img.alt = icon.alt;
+                    img.onerror = () => console.error(`Failed to load image: ${icon.src}`);
+                    div.appendChild(img);
+                    techGrid.appendChild(div);
+                });
+            }
+
+            // Add click event listeners to buttons
+            buttons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Remove active class from all buttons
+                    buttons.forEach(btn => btn.classList.remove('active'));
+                    // Add active class to clicked button
+                    button.classList.add('active');
+                    // Update grid with the selected category's icons
+                    const category = button.getAttribute('data-category');
+                    if (category) {
+                        updateGrid(category);
+                    } else {
+                        console.error('No data-category attribute found on button');
+                    }
+                });
+            });
+
+            // Initialize with frontend category
+            updateGrid('frontend');
+        });
+    </script>
+</body>
+</html>

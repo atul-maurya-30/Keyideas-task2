@@ -23,9 +23,9 @@
     font-size: 14px;
     line-height: 1.6;
     margin-bottom: 20px;
-    max-width: 540px;
+    max-width: 1140px;
     font-weight: normal;
-    text-align: left;
+    
 }
 
 .contain-5-text .award-title span {
@@ -36,7 +36,6 @@
 
 .contain-since {
     width: 100%;
-    opacity: 0.5;
 
 }
 
@@ -45,7 +44,7 @@
     text-align: center;
     font-size: clamp(54px, 10vw, 200px);
     font-style: normal;
-    font-weight: 700;
+    font-weight: 800;
     line-height: 131%;
 }
 
@@ -95,7 +94,6 @@
 
     .contain-since {
         padding-bottom: 40px;
-        opacity: 1;
     }
 
     .contain-since span {
@@ -141,3 +139,89 @@
         display: block;
     }
 }
+
+
+@media (min-width: 1400px) {
+    .contain-5-text {
+        width: 66%;
+        margin: auto;
+    }
+}
+/* Container Setup */
+.logo-slider-wrapper {
+  overflow: hidden;
+  width: 100%; /* Ensure the wrapper takes full width */
+}
+
+.logo-row {
+  display: flex;
+  width: max-content; /* Allow the row to expand to fit all logos */
+}
+
+.logo-center {
+  display: flex;
+  animation: logo-scroll 30s linear infinite;
+}
+
+/* Logo Item */
+.logo-item {
+  display: grid;
+  place-items: center;
+  padding: 0 4px 30px; /* Space between logos */
+  flex-shrink: 0; /* Prevent logos from shrinking */
+  margin-right: -50px; 
+}
+
+.logo-box {
+  height: 70px;
+  width: 225px;
+  background-image: url("/Images/root/slider-sprite.webp");
+  background-repeat: no-repeat;
+  background-size: 400%;
+  transform: scale(0.8);
+  transform-origin: center;
+}
+
+.logo-box:hover {
+  background-image: url("/Images/root/coloured-slider-sprite.webp");
+}
+
+.logo-bg {
+  background-size: 400%;
+}
+
+/* Animation */
+@keyframes logo-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-235px * 24)); /* Adjusted for padding */
+  }
+}
+
+/* Individual Logo Positions (unchanged) */
+.logo-1  { background-position: -4.8rem 0.5rem; }
+.logo-2  { background-position: -21rem 0.9rem; }
+.logo-3  { background-position: -37rem 0.5rem; }
+.logo-4  { background-position: 3rem -10.1rem; }
+.logo-5  { background-position: -13rem -10.3rem; }
+.logo-6  { background-position: -29rem -9.8rem; }
+.logo-7  { background-position: -45rem -9.9rem; }
+.logo-8  { background-position: -5rem -20.8rem; }
+.logo-9  { background-position: -21rem -21rem; }
+.logo-10 { background-position: -36.8rem -21rem; }
+.logo-11 { background-position: 3rem -31.5rem; }
+.logo-12 { background-position: -13rem -31.6rem; }
+.logo-13 { background-position: -29rem -31.6rem; }
+.logo-14 { background-position: -45rem -31.7rem; }
+.logo-15 { background-position: -5rem -42.4rem; }
+.logo-16 { background-position: -21rem -42.2rem; }
+.logo-17 { background-position: -40.7rem -47.8rem; background-size: 450%; }
+.logo-18 { background-position: 3rem -53.3rem; }
+.logo-19 { background-position: -15.5rem -59.7rem; background-size: 450%; }
+.logo-20 { background-position: -29rem -52.8rem; }
+.logo-21 { background-position: -45rem -53rem; }
+.logo-22 { background-position: -5rem -63.7rem; }
+.logo-23 { background-position: -21rem -63.8rem; }
+.logo-24 { background-position: -37rem -63.8rem; }
