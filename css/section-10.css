@@ -199,6 +199,7 @@
     .image-frame.d-none.d-md-flex {
         gap: 12px;
         padding: 12px;
+        max-height:250px;
     }
 
     .image-frame.d-none.d-md-flex .first-box,
@@ -242,5 +243,4 @@
     .sec-10-frame p {
         text-align: left;
     }
-
 }

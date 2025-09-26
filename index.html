@@ -28,10 +28,647 @@
     <link rel="stylesheet" href="/css/footer.css">
 
 
+    <link rel="stylesheet" id="key-bootstrap-min-css" href="css/header-mob.css" type="text/css"
+        media="all">
+    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" id="key-header-footer"
+        href="/css/header.css" type="text/css" media="all">
+    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" id="key-fontload"
+        href="https://www.keyideasinfotech.com/wp-content/themes/keyideas/cssnew/fontload.min.css?ver=6.8.1"
+        type="text/css" media="all">
 </head>
 
 <body>
-    <div>
+    <header class="main-header">
+        <div class="container">
+            <div class="row1">
+                <nav class="navbar navbar-light navbar-expand-lg header_menu">
+                    <!-- Brand Logo -->
+                    <a class="navbar-brand" href="https://www.keyideasinfotech.com/">
+                        <img src="/Images/header/company_logo.webp" width="172" height="90"
+                            alt="Top Web Design Agency and Development Company" fetchpriority="high"
+                            class="img-fluid fixed">
+                    </a>
+
+                    <!-- Mobile Menu Toggle -->
+                    <button class="crossbar__toggler mob-menu-opn" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="ham-menu"></span>
+                        <span class="ham-menu"></span>
+                        <span class="ham-menu"></span>
+                    </button>
+
+                    <!-- Main Navigation -->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto w-100 justify-content-md-end align-items-lg-center">
+
+                            <!-- Company Dropdown -->
+                            <li class="dropdown comp__menu">
+                                <a class="dropdown-toggle header__top__links" href="https://www.keyideasinfotech.com/company/" role="button"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    Company <span class="down-main-icon"></span>
+                                </a>
+                                <span id="companyDropdown__new">
+                                    <span class="plus_minus_header d-lg-none">+</span>
+                                </span>
+
+                                <!-- Company Mega Menu -->
+                                <ul class="dropdown-menu megamenu-style full__width" id="company-menu">
+                                    <div class="container row container-70-30">
+                                        <!-- Client Review Section -->
+                                        <div class="col-sm-4 order-1 order-lg-0">
+                                            <div class="row">
+                                                <div class="col-12 order-1 order-lg-0">
+                                                    <div class="card mb-3 header-client-review-card dailyreview-rss">
+                                                        <div class="row no-gutters">
+                                                            <div class="col-md-3 col-3">
+                                                                <div class="header-client-img">
+                                                                    <img src="/Images/header/elias-mercer.webp"
+                                                                        alt="jason-clark" class="img-fluid" width="120"
+                                                                        height="120">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-9 col-9">
+                                                                <div class="card-body">
+                                                                    <div class="card-title">
+                                                                        <div class="client-name">Mia Clarkson</div>
+                                                                        <div class="d-md-flex d-none">
+                                                                            <span
+                                                                                class="header_images_star client-star-four"></span>
+                                                                            <span class="pl-1 rating-text">4.9</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <p class="card-text-blue">
+                                                                        Social Networking App, Los Angeles
+                                                                    </p>
+                                                                    <div class="d-md-none d-flex">
+                                                                        <span
+                                                                            class="header_images_star client-star-four"></span>
+                                                                        <span class="pl-1 rating-text">4.9</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 quote_and_link">
+                                                                <p class="card-text-black mb-3">
+                                                                    Using Node.js for the backend and Swift/Kotlin for mobile, they built live chat with WebSockets, media sharing with AWS S3, and an AI-powered content feed.
+                                                                </p>
+                                                                <div
+                                                                    class="d-flex justify-content-between align-items-center">
+                                                                    <span class="header__images big-quote-sign"></span>
+                                                                    <span>
+                                                                        <a href="https://www.keyideasinfotech.com/company/testimonials/"
+                                                                            title="read more testimonials">
+                                                                            Testimonials
+                                                                            <span
+                                                                                class="forward_arrow arrow__sign"></span>
+                                                                        </a>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="header__images since_07">
+                                                        <a href="https://www.keyideasinfotech.com/ecommerce/web-design-agency/our-process/">
+                                                            Our Process <span class="forward_arrow arrow__sign"></span>
+                                                        </a>
+                                                        <a href="https://www.keyideasinfotech.com/social-impact-corporate-responsibility/">
+                                                            Social Impact <span
+                                                                class="forward_arrow arrow__sign"></span>
+                                                        </a>
+                                                        <a href="https://www.keyideasinfotech.com/blog/">
+                                                            Blog <span class="forward_arrow arrow__sign"></span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Services Links -->
+                                        <div class="col-sm-2 pl-lg-4 pr-lg-0">
+                                            <div class="sub_main_link_wrapper">
+                                                <a href="https://www.keyideasinfotech.com/user-centered-design-agency/"
+                                                    class="sub-drop-down sub-drop-down-user-centered hd__headings p-0">
+                                                    User-Centered Design
+                                                </a>
+                                                <span class="inverted-v d-lg-none"></span>
+                                            </div>
+                                            <ul class="sub-dropdown-list sub-dropdown-list-user-centered">
+                                                <li><a href="https://www.keyideasinfotech.com/branding/">Branding Agency</a></li>
+                                                <li><a href="https://www.keyideasinfotech.com/ux-ui-design/">UI And UX</a></li>
+                                                <li><a href="https://www.keyideasinfotech.com/user-experience-design-agency/">User Experience</a>
+                                                </li>
+                                            </ul>
+
+                                            <div class="sub_main_link_wrapper">
+                                                <a href="https://www.keyideasinfotech.com/website-development/"
+                                                    class="sub-drop-down sub-drop-down-web-development hd__headings mt-50-0 p-0">
+                                                    Web Development
+                                                </a>
+                                                <span class="inverted-v d-lg-none"></span>
+                                            </div>
+                                            <ul class="sub-dropdown-list sub-dropdown-list-web-development">
+                                                <li><a href="https://www.keyideasinfotech.com/web-design/bespoke-website-design/">Bespoke Websites</a></li>
+                                                <li><a href="https://www.keyideasinfotech.com/top-responsive-web-design-development-company/">Mobile
+                                                        Responsive</a></li>
+                                                <li><a href="https://www.keyideasinfotech.com/website-development/wordpress/website-design-agency/">WordPress Websites</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <!-- Development Services -->
+                                        <div class="col-sm-2 pl-lg-4 pr-lg-0">
+                                            <div class="sub_main_link_wrapper">
+                                                <a href="https://www.keyideasinfotech.com/top-custom-software-development-services-hire-developers/"
+                                                    class="sub-drop-down sub-drop-down-software-development hd__headings p-0">
+                                                    Software Development
+                                                </a>
+                                                <span class="inverted-v d-lg-none"></span>
+                                            </div>
+                                            <ul class="sub-dropdown-list sub-dropdown-list-software-development">
+                                                <li><a href="https://www.keyideasinfotech.com/top-enterprise-software-development-company/">Enterprise
+                                                        Software</a></li>
+                                                <li><a href="https://www.keyideasinfotech.com/top-custom-crm-software-app-development-company/">Custom
+                                                        CRM</a></li>
+                                                <li><a
+                                                        href="https://www.keyideasinfotech.com/top-iot-app-development-company-internet-of-things-services/">IoT
+                                                        Development</a></li>
+                                                <li><a href="https://www.keyideasinfotech.com/offshore-software-development/">OffShore
+                                                        Development</a></li>
+                                                <li class="d-flex align-items-lg-center">
+                                                    <a href="https://www.keyideasinfotech.com/industries/retail-ecommerce/jewelry/3d-ar-virtual-try-on-vto-jewellery/">Virtual Try-On</a>
+                                                    <span class="header__images newly_added"></span>
+                                                </li>
+                                            </ul>
+
+                                            <div class="sub_main_link_wrapper">
+                                                <a href="https://www.keyideasinfotech.com/top-mobile-app-development-company/"
+                                                    class="sub-drop-down sub-drop-down-mobile-app hd__headings mt-50-0 p-0">
+                                                    Mobile App Development
+                                                </a>
+                                                <span class="inverted-v d-lg-none"></span>
+                                            </div>
+                                            <ul class="sub-dropdown-list sub-dropdown-list-mobile-app">
+                                                <li><a href="https://www.keyideasinfotech.com/top-ibeacon-app-development-company/">iBeacon</a></li>
+                                                <li><a href="https://www.keyideasinfotech.com/top-mobile-app-development-company/">PWA</a></li>
+                                                <li><a
+                                                        href="https://www.keyideasinfotech.com/budget-friendly-maui-developers-the-top-maui-web-development-company-that-will-take-your-web-presence-to-paradise/">Xamarin
+                                                        To MAUI</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <!-- Technology Stack -->
+                                        <div class="col-sm-2 pl-lg-5">
+                                            <div class="sub_main_link_wrapper">
+                                                <a href="https://www.keyideasinfotech.com/best-cloud-application-development-services-company/"
+                                                    class="sub-drop-down sub-drop-down-cloud-services hd__headings p-0">
+                                                    Cloud Services
+                                                </a>
+                                                <span class="inverted-v d-lg-none"></span>
+                                            </div>
+                                            <ul class="sub-dropdown-list sub-dropdown-list-cloud-services">
+                                                <li><a href="https://www.keyideasinfotech.com/website-development/aws/">AWS</a></li>
+                                                <li><a href="https://www.keyideasinfotech.com/website-development/azure/">Azure</a></li>
+                                                <li><a href="https://www.keyideasinfotech.com/hosting-solutions/">Hosting</a></li>
+                                            </ul>
+
+                                            <div class="sub_main_link_wrapper">
+                                                <a href="https://www.keyideasinfotech.com/website-development/"
+                                                    class="sub-drop-down sub-drop-down-technology hd__headings mt-50-0 p-0">
+                                                    Technology
+                                                </a>
+                                                <span class="inverted-v d-lg-none"></span>
+                                            </div>
+                                            <ul class="sub-dropdown-list sub-dropdown-list-technology">
+                                                <li><a href="https://www.keyideasinfotech.com/website-development/angular/">Angular</a></li>
+                                                <li><a href="https://www.keyideasinfotech.com/website-development/asp-dot-net-mvc/certified-developer/">ASP.NET&nbsp;MVC</a></li>
+                                                <li><a href="https://www.keyideasinfotech.com/top-laravel-web-development-company/">Laravel</a></li>
+                                                <li><a
+                                                        href="https://www.keyideasinfotech.com/top-nodejs-development-services-company-hire-developers/">Node
+                                                        JS</a></li>
+                                                <li><a href="https://www.keyideasinfotech.com/website-development/react/">React</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <!-- E-commerce & Marketing -->
+                                        <div class="col-sm-2">
+                                            <div class="sub_main_link_wrapper">
+                                                <a href="https://www.keyideasinfotech.com/ecommerce/"
+                                                    class="sub-drop-down sub-drop-down-ecommerce hd__headings p-0">
+                                                    E-Commerce Agency
+                                                </a>
+                                                <span class="inverted-v d-lg-none"></span>
+                                            </div>
+                                            <ul class="sub-dropdown-list sub-dropdown-list-ecommerce">
+                                                <li><a href="https://www.keyideasinfotech.com/website-development/ablecommerce-development-services/">AbleCommerce</a>
+                                                </li>
+                                                <li><a
+                                                        href="https://www.keyideasinfotech.com/hire-bagisto-developer-a-laravel-based-ecommerce-store/">Bagisto</a>
+                                                </li>
+                                                <li><a href="https://www.keyideasinfotech.com/website-development/magento/agency/">Magento</a></li>
+                                                <li><a href="https://www.keyideasinfotech.com/website-development/shopify/">Shopify</a></li>
+                                                <li><a href="https://www.keyideasinfotech.com/website-development/wordpress/woocommerce/">WooCommerce</a></li>
+                                            </ul>
+
+                                            <div class="sub_main_link_wrapper">
+                                                <a href="https://www.keyideasinfotech.com/top-digital-marketing-agency-seo-internet-marketing-services/"
+                                                    class="sub-drop-down sub-drop-down-marketing hd__headings mt-50-0 p-0">
+                                                    Marketing
+                                                </a>
+                                                <span class="inverted-v d-lg-none"></span>
+                                            </div>
+                                            <ul class="sub-dropdown-list sub-dropdown-list-marketing">
+                                                <li class="d-flex align-items-lg-center">
+                                                    <a
+                                                        href="https://www.keyideasinfotech.com/unlocking-ecommerce-success-with-klaviyo-experts-your-klaviyo-agency-blueprint/">Klaviyo
+                                                        Experts</a>
+                                                    <span class="header__images newly_added"></span>
+                                                </li>
+                                                <li><a href="https://www.keyideasinfotech.com/social-media-marketing/">Social Media Marketing</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </ul>
+                            </li>
+
+                            <!-- Case Studies Dropdown -->
+                            <li class="dropdown casestudies__menu">
+                                <a class="dropdown-toggle header__top__links" href="https://www.keyideasinfotech.com/portfolio/" role="button"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    Case Studies <span class="down-main-icon"></span>
+                                </a>
+                                <span id="workDropdown__new">
+                                    <span class="plus_minus_header d-lg-none">+</span>
+                                </span>
+
+                                <!-- Case Studies Mega Menu -->
+                                <ul class="dropdown-menu megamenu-style full__width" id="case_study_menu">
+                                    <div class="container row container-70-30">
+                                        <!-- Case Studies Section -->
+                                        <div class="col-lg-6 col-12">
+                                            <div class="casestudies_logo_wrpapper">
+                                                <div class="d-flex">
+                                                    <a href="https://www.keyideasinfotech.com/portfolio/">
+                                                        Case Study <span class="forward_arrow arrow__sign"></span>
+                                                    </a>
+                                                    <a href="https://www.keyideasinfotech.com/portfolio/ui-ux-gallery/">
+                                                        UI UX Gallery <span class="forward_arrow arrow__sign"></span>
+                                                    </a>
+                                                </div>
+                                                <hr class="casestudies__hr">
+                                                <div class="cs_clients_and_awards">
+                                                    <span class="header__client__stack header_client_apache"></span>
+                                                    <span class="header__client__stack header_client_vestas">
+                                                        <a href="https://www.keyideasinfotech.com/portfolio/energy-industry-website-denmark/"
+                                                            class="link-ca-top"></a>
+                                                    </span>
+                                                    <span class="header__client__stack header_client_barkevs">
+                                                        <a href="https://www.keyideasinfotech.com/portfolio/jewelry-ecommerce-los-angeles/"
+                                                            class="link-ca-top"></a>
+                                                    </span>
+                                                    <span class="header__client__stack header_client_acepyro">
+                                                        <a href="https://www.keyideasinfotech.com/portfolio/warehouse-management-system-ecommerce/"
+                                                            class="link-ca-top"></a>
+                                                    </span>
+                                                    <span class="header__client__stack header_client_wsp">
+                                                        <a href="https://www.keyideasinfotech.com/portfolio/home-repair-remodelling-experts-website-design/"
+                                                            class="link-ca-mid"></a>
+                                                    </span>
+                                                    <span class="header__client__stack header_client_lanshack">
+                                                        <a href="https://www.keyideasinfotech.com/portfolio/ablecommerce-website-for-fortune500-network-provider/"
+                                                            class="link-ca-mid"></a>
+                                                    </span>
+                                                    <span class="header__client__stack header_client_airllywood">
+                                                        <a href="https://www.keyideasinfotech.com/portfolio/online-clothing-store-website-design/"
+                                                            class="link-ca-mid"></a>
+                                                    </span>
+                                                    <span class="header__client__stack header_client_mindtree"></span>
+                                                    <span class="header__client__stack header_client_cd"></span>
+                                                    <span class="header__client__stack header_client_op">
+                                                        <a href="https://www.keyideasinfotech.com/portfolio/health-and-wellness-website-app/"
+                                                            class="link-ca-bottom"></a>
+                                                    </span>
+                                                    <span class="header__client__stack header_client_capgem"></span>
+                                                    <span class="header__client__stack header_client_cc"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Awards Section -->
+                                        <div class="col-lg-6 col-12 header-mt-30-mob">
+                                            <div class="casestudies_logo_wrpapper">
+                                                <div class="text-center">
+                                                    <a href="https://www.keyideasinfotech.com/company/awards-recognition/">
+                                                        Awards &amp; Recognition <span
+                                                            class="forward_arrow arrow__sign"></span>
+                                                    </a>
+                                                </div>
+                                                <hr class="casestudies__hr">
+                                                <div class="cs_clients_and_awards">
+                                                    <span class="header__awards__stack header_client_goodfirms"></span>
+                                                    <span class="header__awards__stack header_client_clutch"></span>
+                                                    <span class="header__awards__stack header_client_behemoths"></span>
+                                                    <span
+                                                        class="header__awards__stack header_client_crowdreviews"></span>
+                                                    <span class="header__awards__stack header_client_topfirms"></span>
+                                                    <span class="header__awards__stack header_client_mscloud"></span>
+                                                    <span class="header__awards__stack header_client_sortlist"></span>
+                                                    <span class="header__awards__stack header_client_bagisto"></span>
+                                                    <span class="header__awards__stack header_client_appfutura"></span>
+                                                    <span
+                                                        class="header__awards__stack header_client_techreviwer"></span>
+                                                    <span class="header__awards__stack header_client_sfsuggest"></span>
+                                                    <span
+                                                        class="header__awards__stack header_client_selectedfirms"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </ul>
+                            </li>
+
+                            <!-- Industries Dropdown -->
+                            <li class="dropdown industries__menu">
+                                <a class="dropdown-toggle header__top__links" href="https://www.keyideasinfotech.com/industries/" role="button"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    Industries <span class="down-main-icon"></span>
+                                </a>
+                                <span id="resourcesDropdown__new">
+                                    <span class="plus_minus_header d-lg-none">+</span>
+                                </span>
+
+                                <!-- Industries Mega Menu -->
+                                <ul class="dropdown-menu megamenu-style full__width" id="industry_menu">
+                                    <div class="container row container-70-30">
+                                        <!-- Technology Stack -->
+                                        <div class="col-md-5 order-1 order-lg-0 header-mt-30-mob">
+                                            <div class="casestudies_logo_wrpapper pad-20-30">
+                                                <div class="d-flex flex-wrap indus">
+                                                    <div class="industries-tech-stck">
+                                                        <span class="header__tech__stack header_tech_asp">
+                                                            <a href="https://www.keyideasinfotech.com/top-asp-net-development-company/">
+                                                                <p>ASP.NET</p>
+                                                            </a>
+                                                        </span>
+                                                    </div>
+                                                    <div class="industries-tech-stck">
+                                                        <span class="header__tech__stack header_tech_cSharp">
+                                                            <p>C#</p>
+                                                        </span>
+                                                    </div>
+                                                    <div class="industries-tech-stck">
+                                                        <span class="header__tech__stack header_tech_laravel">
+                                                            <a href="top-laravel-web-development-company.https://www.keyideasinfotech.com/top-laravel-web-development-company/">
+                                                                <p>Laravel</p>
+                                                            </a>
+                                                        </span>
+                                                    </div>
+                                                    <div class="industries-tech-stck">
+                                                        <span class="header__tech__stack header_tech_nodejs">
+                                                            <a
+                                                                href="top-nodejs-development-services-company-hire-developers.https://www.keyideasinfotech.com/top-nodejs-development-services-company-hire-developers/">
+                                                                <p>Nodejs</p>
+                                                            </a>
+                                                        </span>
+                                                    </div>
+                                                    <div class="industries-tech-stck">
+                                                        <span class="header__tech__stack header_tech_angular">
+                                                            <a
+                                                                href="top-angularjs-development-company-hire-developers.https://www.keyideasinfotech.com/top-angularjs-development-company-hire-developers/">
+                                                                <p>Angular</p>
+                                                            </a>
+                                                        </span>
+                                                    </div>
+
+                                                    <div class="industries-tech-stck">
+                                                        <span class="header__tech__stack header_tech_jquery">
+                                                            <a href="https://www.keyideasinfotech.com/website-development/hire-best-jquery-developers/">
+                                                                <p>JQuery</p>
+                                                            </a>
+                                                        </span>
+                                                    </div>
+                                                    <div class="industries-tech-stck">
+                                                        <span class="header__tech__stack header_tech_nextjs">
+                                                            <a href="https://www.keyideasinfotech.com/website-development/hire-best-nextjs-developers/">
+                                                                <p>Next JS</p>
+                                                            </a>
+                                                        </span>
+                                                    </div>
+                                                    <div class="industries-tech-stck">
+                                                        <span class="header__tech__stack header_tech_react">
+                                                            <a href="https://www.keyideasinfotech.com/website-development/react/">
+                                                                <p>React</p>
+                                                            </a>
+                                                        </span>
+                                                    </div>
+                                                    <div class="industries-tech-stck">
+                                                        <span class="header__tech__stack header_tech_ts">
+                                                            <p>Typescript</p>
+                                                        </span>
+                                                    </div>
+                                                    <div class="industries-tech-stck">
+                                                        <span class="header__tech__stack header_tech_vue">
+                                                            <a href="https://www.keyideasinfotech.com/website-development/hire-best-vuejs-developers/">
+                                                                <p>Vue JS</p>
+                                                            </a>
+                                                        </span>
+                                                    </div>
+
+                                                    <div class="industries-tech-stck">
+                                                        <span class="header__tech__stack header_tech_android">
+                                                            <a href="https://www.keyideasinfotech.com/top-android-app-development-company/">
+                                                                <p>Android</p>
+                                                            </a>
+                                                        </span>
+                                                    </div>
+                                                    <div class="industries-tech-stck">
+                                                        <span class="header__tech__stack header_tech_ios">
+                                                            <a href="https://www.keyideasinfotech.com/top-ios-app-development-company/">
+                                                                <p>iOS</p>
+                                                            </a>
+                                                        </span>
+                                                    </div>
+                                                    <div class="industries-tech-stck">
+                                                        <span class="header__tech__stack header_tech_pwa">
+                                                            <p>PWA</p>
+                                                        </span>
+                                                    </div>
+                                                    <div class="industries-tech-stck">
+                                                        <span class="header__tech__stack header_tech_rn">
+                                                            <a href="https://www.keyideasinfotech.com/website-development/hire-best-redux-developers/">
+                                                                <p>Redux</p>
+                                                            </a>
+                                                        </span>
+                                                    </div>
+                                                    <div class="industries-tech-stck">
+                                                        <span class="header__tech__stack header_tech_maui">
+                                                            <a
+                                                                href="https://www.keyideasinfotech.com/keyideas-guide-to-mastering-maui-migration-services-seamlessly-transition-your-applications/">
+                                                                <p>MAUI</p>
+                                                            </a>
+                                                        </span>
+                                                    </div>
+
+                                                    <div class="industries-tech-stck">
+                                                        <span class="header__tech__stack header_tech_mongodb">
+                                                            <p>MongoDB</p>
+                                                        </span>
+                                                    </div>
+                                                    <div class="industries-tech-stck">
+                                                        <span class="header__tech__stack header_tech_docker">
+                                                            <p>Docker</p>
+                                                        </span>
+                                                    </div>
+                                                    <div class="industries-tech-stck">
+                                                        <span class="header__tech__stack header_tech_azure">
+                                                            <a href="https://www.keyideasinfotech.com/website-development/azure/">
+                                                                <p>Azure</p>
+                                                            </a>
+                                                        </span>
+                                                    </div>
+                                                    <div class="industries-tech-stck">
+                                                        <span class="header__tech__stack header_tech_sql">
+                                                            <p>SQL Server</p>
+                                                        </span>
+                                                    </div>
+                                                    <div class="industries-tech-stck">
+                                                        <span class="header__tech__stack header_tech_aws">
+                                                            <a href="https://www.keyideasinfotech.com/website-development/aws/">
+                                                                <p>AWS</p>
+                                                            </a>
+                                                        </span>
+                                                    </div>
+                                                    <div class="industries-tech-stck invisible d-md-none">
+                                                        <span class="header__tech__stack header_tech_aws">
+                                                            <p></p>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Industry Categories -->
+                                        <div class="col-md-7">
+                                            <div class="row">
+                                                <div class="col-lg-5 pl-lg-5">
+                                                    <ul class="show_sub_ul mb-0">
+                                                        <li><a href="https://www.keyideasinfotech.com/industries/automotive-transportation-web-design/">Automotive
+                                                                &amp; Transportation</a></li>
+                                                        <li><a href="https://www.keyideasinfotech.com/industries/dealers-distributors/">Dealers &amp;
+                                                                Distributors</a></li>
+                                                        <li><a href="https://www.keyideasinfotech.com/industries/education/">Education</a></li>
+                                                        <li><a href="https://www.keyideasinfotech.com/portfolio/event-and-conference-management-software/">Events
+                                                                &amp; Conference</a></li>
+                                                        <li><a href="https://www.keyideasinfotech.com/industries/retail-ecommerce/fashion/">Fashion E-Commerce</a></li>
+                                                        <li><a href="https://www.keyideasinfotech.com/industries/finance/">Finance</a></li>
+                                                        <li><a href="https://www.keyideasinfotech.com/industries/food-beverage/">Food &amp; Beverage</a></li>
+                                                        <li><a href="https://www.keyideasinfotech.com/industries/heavy-equipments/">Heavy Equipments</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-3 pl-lg-0">
+                                                    <ul class="show_sub_ul mb-0 sub_translate_15">
+                                                        <li><a href="https://www.keyideasinfotech.com/industries/home-repair-website-design/">Home &amp;
+                                                                Repair</a></li>
+                                                        <li><a href="https://www.keyideasinfotech.com/industries/industrial/">Industrial</a></li>
+                                                        <li><a href="https://www.keyideasinfotech.com/industries/insurance/">Insurance</a></li>
+                                                        <li><a href="https://www.keyideasinfotech.com/industries/retail-ecommerce/jewelry/jewellery-website-design/">Jewelry Website
+                                                                Design</a></li>
+                                                        <li><a href="https://www.keyideasinfotech.com/industries/legal-web-design/">Legal</a></li>
+                                                        <li><a href="https://www.keyideasinfotech.com/industries/local-services/">Local Services</a></li>
+                                                        <li><a href="https://www.keyideasinfotech.com/industries/medical-health-website/"
+                                                                class="text-nowrap">Medical &amp; Health</a></li>
+                                                        <li><a href="https://www.keyideasinfotech.com/industries/professional-services-web-design/">Non-Profit</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <ul class="show_sub_ul mb-0">
+                                                        <li><a href="https://www.keyideasinfotech.com/industries/real-estate/">Professional
+                                                                Services</a></li>
+                                                        <li><a href="https://www.keyideasinfotech.com/industries/real-estate/">Real Estate</a></li>
+                                                        <li><a href="https://www.keyideasinfotech.com/industries/recreation-entertainment/">Recreation &amp;
+                                                                Entertainment</a></li>
+                                                        <li><a href="https://www.keyideasinfotech.com/industries/retail-ecommerce/">Retail &amp; E-Commerce</a>
+                                                        </li>
+                                                        <li><a href="https://www.keyideasinfotech.com/industries/tech-companies-website-design/software-companies-websites/">Software</a></li>
+                                                        <li><a href="https://www.keyideasinfotech.com/industries/tech-companies-website-design/">Tech</a></li>
+                                                        <li><a href="https://www.keyideasinfotech.com/industries/tourism-hospitality-website-design/">Tourism
+                                                                &amp; Hospitality</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            <!-- Industry Stats -->
+                                            <div class="row industries_component_row">
+                                                <div class="col-12 pl-lg-5 industries_component_col">
+                                                    <div
+                                                        class="industries_component_wrapper bg-EFEFEF industries_deliver_component">
+                                                        <p class="pt-1">Delivered 111,768+ leads for our client</p>
+                                                    </div>
+
+                                                    <div
+                                                        class="industries_component_wrapper d-flex industries_agility_component">
+                                                        <div><span class="header__images agility"></span></div>
+                                                        <div>
+                                                            <p>Agility</p>
+                                                        </div>
+                                                    </div>
+
+                                                    <div
+                                                        class="industries_component_wrapper d-flex industries_ingenuity_component">
+                                                        <div><span class="header__images ingenuity"></span></div>
+                                                        <div>
+                                                            <p>Ingenuity</p>
+                                                        </div>
+                                                    </div>
+
+                                                    <div
+                                                        class="industries_component_wrapper d-flex industries_reliability_component">
+                                                        <div><span class="header__images reliability"></span></div>
+                                                        <div>
+                                                            <p>Reliability</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </ul>
+                            </li>
+
+                            <!-- Simple Menu Items -->
+                            <li class="dropdown hiring">
+                                <a class="dropdown-toggle" href="https://www.keyideasinfotech.com/careers/">We're Hiring</a>
+                            </li>
+                            <li class="lets-talk-btn">
+                                <a href="https://www.keyideasinfotech.com/contact-us/">Let's Talk</a>
+                            </li>
+                        </ul>
+
+                        <!-- Mobile Contact Info -->
+                        <div class="mob_get_in_touch d-md-block d-lg-none">
+                            <p>Get In Touch</p>
+                            <a href="mailto:sales@keyideas.com">sales@keyideas.com</a>
+                            <div class="d-flex justify-content-between">
+                                <a target="_blank" title="Linkedin"
+                                    href="https://www.linkedin.com/company/keyideas-infotech-p-limited/"
+                                    class="in_touch_with_social_media linkedin"></a>
+                                <a target="_blank" title="Behance" href="https://www.behance.net/keyideas/"
+                                    class="in_touch_with_social_media behance"></a>
+                                <a target="_blank" title="Twitter" href="https://twitter.com/keyideasglobal/"
+                                    class="in_touch_with_social_media x"></a>
+                                <a target="_blank" title="Facebook" href="https://www.facebook.com/keyideascompany/"
+                                    class="in_touch_with_social_media fb"></a>
+                                <a target="_blank" title="Instagram" href="https://www.instagram.com/keyideasglobal/"
+                                    class="in_touch_with_social_media ig"></a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="main-page-wrap">
         <!-- Section-1 Animated Banner Section-->
         <section class="sec-1">
             <div class="banner-background">
@@ -641,69 +1278,165 @@
 
                 <!-- Slider view -->
                 <!-- Slider view -->
-<!-- Slider view -->
-<div class="logo-slider-wrapper mt-5">
-    <div class="logo-row">
-      <div class="logo-slide-track logo-center">
-        
-        <!-- 24 Logos (1 set) -->
-        <div class="logo-item"><div class="logo-1 logo-box logo-bg"></div></div>
-        <div class="logo-item"><div class="logo-2 logo-box logo-bg"></div></div>
-        <div class="logo-item"><div class="logo-3 logo-box logo-bg"></div></div>
-        <div class="logo-item"><div class="logo-4 logo-box logo-bg"></div></div>
-        <div class="logo-item"><div class="logo-5 logo-box logo-bg"></div></div>
-        <div class="logo-item"><div class="logo-6 logo-box logo-bg"></div></div>
-        <div class="logo-item"><div class="logo-7 logo-box logo-bg"></div></div>
-        <div class="logo-item"><div class="logo-8 logo-box logo-bg"></div></div>
-        <div class="logo-item"><div class="logo-9 logo-box logo-bg"></div></div>
-        <div class="logo-item"><div class="logo-10 logo-box logo-bg"></div></div>
-        <div class="logo-item"><div class="logo-11 logo-box logo-bg"></div></div>
-        <div class="logo-item"><div class="logo-12 logo-box logo-bg"></div></div>
-        <div class="logo-item"><div class="logo-13 logo-box logo-bg"></div></div>
-        <div class="logo-item"><div class="logo-14 logo-box logo-bg"></div></div>
-        <div class="logo-item"><div class="logo-15 logo-box logo-bg"></div></div>
-        <div class="logo-item"><div class="logo-16 logo-box logo-bg"></div></div>
-        <div class="logo-item"><div class="logo-17 logo-box logo-bg"></div></div>
-        <div class="logo-item"><div class="logo-18 logo-box logo-bg"></div></div>
-        <div class="logo-item"><div class="logo-19 logo-box logo-bg"></div></div>
-        <div class="logo-item"><div class="logo-20 logo-box logo-bg"></div></div>
-        <div class="logo-item"><div class="logo-21 logo-box logo-bg"></div></div>
-        <div class="logo-item"><div class="logo-22 logo-box logo-bg"></div></div>
-        <div class="logo-item"><div class="logo-23 logo-box logo-bg"></div></div>
-        <div class="logo-item"><div class="logo-24 logo-box logo-bg"></div></div>
+                <!-- Slider view -->
+                <div class="logo-slider-wrapper mt-5">
+                    <div class="logo-row">
+                        <div class="logo-slide-track logo-center">
 
-        <!-- Duplicate 24 logos for infinite scroll -->
-        <div class="logo-item"><div class="logo-1 logo-box logo-bg"></div></div>
-        <div class="logo-item"><div class="logo-2 logo-box logo-bg"></div></div>
-        <div class="logo-item"><div class="logo-3 logo-box logo-bg"></div></div>
-        <div class="logo-item"><div class="logo-4 logo-box logo-bg"></div></div>
-        <div class="logo-item"><div class="logo-5 logo-box logo-bg"></div></div>
-        <div class="logo-item"><div class="logo-6 logo-box logo-bg"></div></div>
-        <div class="logo-item"><div class="logo-7 logo-box logo-bg"></div></div>
-        <div class="logo-item"><div class="logo-8 logo-box logo-bg"></div></div>
-        <div class="logo-item"><div class="logo-9 logo-box logo-bg"></div></div>
-        <div class="logo-item"><div class="logo-10 logo-box logo-bg"></div></div>
-        <div class="logo-item"><div class="logo-11 logo-box logo-bg"></div></div>
-        <div class="logo-item"><div class="logo-12 logo-box logo-bg"></div></div>
-        <div class="logo-item"><div class="logo-13 logo-box logo-bg"></div></div>
-        <div class="logo-item"><div class="logo-14 logo-box logo-bg"></div></div>
-        <div class="logo-item"><div class="logo-15 logo-box logo-bg"></div></div>
-        <div class="logo-item"><div class="logo-16 logo-box logo-bg"></div></div>
-        <div class="logo-item"><div class="logo-17 logo-box logo-bg"></div></div>
-        <div class="logo-item"><div class="logo-18 logo-box logo-bg"></div></div>
-        <div class="logo-item"><div class="logo-19 logo-box logo-bg"></div></div>
-        <div class="logo-item"><div class="logo-20 logo-box logo-bg"></div></div>
-        <div class="logo-item"><div class="logo-21 logo-box logo-bg"></div></div>
-        <div class="logo-item"><div class="logo-22 logo-box logo-bg"></div></div>
-        <div class="logo-item"><div class="logo-23 logo-box logo-bg"></div></div>
-        <div class="logo-item"><div class="logo-24 logo-box logo-bg"></div></div>
+                            <!-- 24 Logos (1 set) -->
+                            <div class="logo-item">
+                                <div class="logo-1 logo-box logo-bg"></div>
+                            </div>
+                            <div class="logo-item">
+                                <div class="logo-2 logo-box logo-bg"></div>
+                            </div>
+                            <div class="logo-item">
+                                <div class="logo-3 logo-box logo-bg"></div>
+                            </div>
+                            <div class="logo-item">
+                                <div class="logo-4 logo-box logo-bg"></div>
+                            </div>
+                            <div class="logo-item">
+                                <div class="logo-5 logo-box logo-bg"></div>
+                            </div>
+                            <div class="logo-item">
+                                <div class="logo-6 logo-box logo-bg"></div>
+                            </div>
+                            <div class="logo-item">
+                                <div class="logo-7 logo-box logo-bg"></div>
+                            </div>
+                            <div class="logo-item">
+                                <div class="logo-8 logo-box logo-bg"></div>
+                            </div>
+                            <div class="logo-item">
+                                <div class="logo-9 logo-box logo-bg"></div>
+                            </div>
+                            <div class="logo-item">
+                                <div class="logo-10 logo-box logo-bg"></div>
+                            </div>
+                            <div class="logo-item">
+                                <div class="logo-11 logo-box logo-bg"></div>
+                            </div>
+                            <div class="logo-item">
+                                <div class="logo-12 logo-box logo-bg"></div>
+                            </div>
+                            <div class="logo-item">
+                                <div class="logo-13 logo-box logo-bg"></div>
+                            </div>
+                            <div class="logo-item">
+                                <div class="logo-14 logo-box logo-bg"></div>
+                            </div>
+                            <div class="logo-item">
+                                <div class="logo-15 logo-box logo-bg"></div>
+                            </div>
+                            <div class="logo-item">
+                                <div class="logo-16 logo-box logo-bg"></div>
+                            </div>
+                            <div class="logo-item">
+                                <div class="logo-17 logo-box logo-bg"></div>
+                            </div>
+                            <div class="logo-item">
+                                <div class="logo-18 logo-box logo-bg"></div>
+                            </div>
+                            <div class="logo-item">
+                                <div class="logo-19 logo-box logo-bg"></div>
+                            </div>
+                            <div class="logo-item">
+                                <div class="logo-20 logo-box logo-bg"></div>
+                            </div>
+                            <div class="logo-item">
+                                <div class="logo-21 logo-box logo-bg"></div>
+                            </div>
+                            <div class="logo-item">
+                                <div class="logo-22 logo-box logo-bg"></div>
+                            </div>
+                            <div class="logo-item">
+                                <div class="logo-23 logo-box logo-bg"></div>
+                            </div>
+                            <div class="logo-item">
+                                <div class="logo-24 logo-box logo-bg"></div>
+                            </div>
 
-      </div>
-    </div>
-  </div>
+                            <!-- Duplicate 24 logos for infinite scroll -->
+                            <div class="logo-item">
+                                <div class="logo-1 logo-box logo-bg"></div>
+                            </div>
+                            <div class="logo-item">
+                                <div class="logo-2 logo-box logo-bg"></div>
+                            </div>
+                            <div class="logo-item">
+                                <div class="logo-3 logo-box logo-bg"></div>
+                            </div>
+                            <div class="logo-item">
+                                <div class="logo-4 logo-box logo-bg"></div>
+                            </div>
+                            <div class="logo-item">
+                                <div class="logo-5 logo-box logo-bg"></div>
+                            </div>
+                            <div class="logo-item">
+                                <div class="logo-6 logo-box logo-bg"></div>
+                            </div>
+                            <div class="logo-item">
+                                <div class="logo-7 logo-box logo-bg"></div>
+                            </div>
+                            <div class="logo-item">
+                                <div class="logo-8 logo-box logo-bg"></div>
+                            </div>
+                            <div class="logo-item">
+                                <div class="logo-9 logo-box logo-bg"></div>
+                            </div>
+                            <div class="logo-item">
+                                <div class="logo-10 logo-box logo-bg"></div>
+                            </div>
+                            <div class="logo-item">
+                                <div class="logo-11 logo-box logo-bg"></div>
+                            </div>
+                            <div class="logo-item">
+                                <div class="logo-12 logo-box logo-bg"></div>
+                            </div>
+                            <div class="logo-item">
+                                <div class="logo-13 logo-box logo-bg"></div>
+                            </div>
+                            <div class="logo-item">
+                                <div class="logo-14 logo-box logo-bg"></div>
+                            </div>
+                            <div class="logo-item">
+                                <div class="logo-15 logo-box logo-bg"></div>
+                            </div>
+                            <div class="logo-item">
+                                <div class="logo-16 logo-box logo-bg"></div>
+                            </div>
+                            <div class="logo-item">
+                                <div class="logo-17 logo-box logo-bg"></div>
+                            </div>
+                            <div class="logo-item">
+                                <div class="logo-18 logo-box logo-bg"></div>
+                            </div>
+                            <div class="logo-item">
+                                <div class="logo-19 logo-box logo-bg"></div>
+                            </div>
+                            <div class="logo-item">
+                                <div class="logo-20 logo-box logo-bg"></div>
+                            </div>
+                            <div class="logo-item">
+                                <div class="logo-21 logo-box logo-bg"></div>
+                            </div>
+                            <div class="logo-item">
+                                <div class="logo-22 logo-box logo-bg"></div>
+                            </div>
+                            <div class="logo-item">
+                                <div class="logo-23 logo-box logo-bg"></div>
+                            </div>
+                            <div class="logo-item">
+                                <div class="logo-24 logo-box logo-bg"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
 
 
-                
+
                 <!-- <div class="blur-image mt-5 desk-view-blur">
                     <div class="image-container">
                         <img src="/Images/root/clientshort.webp" alt="Background Image" class="bg-img">
@@ -838,7 +1571,8 @@
                         </a>
                     </div>
                     <div class="small-card gallery-cont-mob">
-                        <a href="https://www.keyideasinfotech.com/industries/heavy-equipments/heavy-equipments-website-design/">
+                        <a
+                            href="https://www.keyideasinfotech.com/industries/heavy-equipments/heavy-equipments-website-design/">
                             <div class="card-img d-flex justify-content-center align-content-center">
                                 <img decoding="async" loading="lazy" width="256" height="256" class="card-image w-100"
                                     src="/Images/customized/heavyequipments.webp" alt="Heavy Equipment Web Design">
@@ -857,7 +1591,8 @@
                         </a>
                     </div>
                     <div class="small-card gallery-cont-mob">
-                        <a href="https://www.keyideasinfotech.com/industries/industrial/general-company-website-design/">
+                        <a
+                            href="https://www.keyideasinfotech.com/industries/industrial/general-company-website-design/">
                             <div class="card-img d-flex justify-content-center align-content-center">
                                 <img decoding="async" loading="lazy" width="256" height="256" class="card-image w-100"
                                     src="/Images/customized/industrial.webp"
@@ -1066,57 +1801,57 @@
 
         <!-- Section-7 logos with buttons in blur -->
         <section class="gallery-text">
-        <div class="container">
-            <div class="text-it">
-                <div class="head-it desk-view">Wide-Ranging Expertise from Leading Software Experts</div>
-                <div class="head-it mob-view">Wide Range of Expertise</div>
-                <p class="desk-view">
-                    Our strength lies in delivering exceptional IT consulting services backed by a wide range of
-                    expertise in cutting-edge technologies. With our software experts, we craft innovative solutions
-                    that align with your business needs and also exceeding your expectations.
-                </p>
-                <p class="mob-view left-text">Our strength lies in our wide range of expertise across numerous
-                    cutting-edge technologies. This comprehensive knowledge enables us to craft stunning and
-                    functional websites that not only meet your specific requirements but also exceed your
-                    expectations.</p>
-            </div>
+            <div class="container">
+                <div class="text-it">
+                    <div class="head-it desk-view">Wide-Ranging Expertise from Leading Software Experts</div>
+                    <div class="head-it mob-view">Wide Range of Expertise</div>
+                    <p class="desk-view">
+                        Our strength lies in delivering exceptional IT consulting services backed by a wide range of
+                        expertise in cutting-edge technologies. With our software experts, we craft innovative solutions
+                        that align with your business needs and also exceeding your expectations.
+                    </p>
+                    <p class="mob-view left-text">Our strength lies in our wide range of expertise across numerous
+                        cutting-edge technologies. This comprehensive knowledge enables us to craft stunning and
+                        functional websites that not only meet your specific requirements but also exceed your
+                        expectations.</p>
+                </div>
 
-            <!-- Buttons -->
-            <div class="cards">
-                <div class="cards-btn" data-category="backend"><span>Backend</span></div>
-                <div class="cards-btn active" data-category="frontend"><span>Frontend</span></div>
-                <div class="cards-btn" data-category="data"><span>Data and Databases</span></div>
-                <div class="cards-btn" data-category="quality"><span>Quality Engineering</span></div>
-                <div class="cards-btn" data-category="mobile"><span>Mobile Apps &amp; PWA</span></div>
-                <div class="cards-btn" data-category="cloud"><span>Cloud &amp; DevOps</span></div>
-                <div class="cards-btn" data-category="digital"><span>Digital Experience Platforms</span></div>
-                <div class="cards-btn" data-category="ecommerce"><span>Shop/E-Commerce Platforms</span></div>
-                <div class="cards-btn" data-category="project"><span>Project Management</span></div>
-            </div>
+                <!-- Buttons -->
+                <div class="cards">
+                    <div class="cards-btn" data-category="backend"><span>Backend</span></div>
+                    <div class="cards-btn active" data-category="frontend"><span>Frontend</span></div>
+                    <div class="cards-btn" data-category="data"><span>Data and Databases</span></div>
+                    <div class="cards-btn" data-category="quality"><span>Quality Engineering</span></div>
+                    <div class="cards-btn" data-category="mobile"><span>Mobile Apps &amp; PWA</span></div>
+                    <div class="cards-btn" data-category="cloud"><span>Cloud &amp; DevOps</span></div>
+                    <div class="cards-btn" data-category="digital"><span>Digital Experience Platforms</span></div>
+                    <div class="cards-btn" data-category="ecommerce"><span>Shop/E-Commerce Platforms</span></div>
+                    <div class="cards-btn" data-category="project"><span>Project Management</span></div>
+                </div>
 
-            <!-- Display Section -->
-            <div class="sec-contain-7">
-                <!-- Tech grid (no blur) -->
-                <div class="contain-7-grid" id="tech-grid">
-                    <div><img src="Images/logos/angular.webp" alt="Angular"></div>
-                    <div><img src="Images/logos/antidesign.webp" alt="Ant Design"></div>
-                    <div><img src="Images/logos/bootstrap.webp" alt: "Bootstrap"></div>
-                    <div><img src="Images/logos/css.webp" alt="CSS"></div>
-                    <div><img src="Images/logos/html.webp" alt="HTML"></div>
-                    <div><img src="Images/logos/jquery.webp" alt="jQuery"></div>
-                    <div><img src="Images/logos/js.webp" alt="JavaScript"></div>
-                    <div><img src="Images/logos/nextjs.webp" alt="Next.js"></div>
-                    <div><img src="Images/logos/react.webp" alt="React"></div>
-                    <div><img src="Images/logos/redux.webp" alt="Redux"></div>
-                    <div><img src="Images/logos/requirejs.webp" alt="RequireJS"></div>
-                    <div><img src="Images/logos/sass.webp" alt="Sass"></div>
-                    <div><img src="Images/logos/tailwind.webp" alt="Tailwind CSS"></div>
-                    <div><img src="Images/logos/typescript.webp" alt="TypeScript"></div>
-                    <div><img src="Images/logos/vuejs.webp" alt="Vue.js"></div>
+                <!-- Display Section -->
+                <div class="sec-contain-7">
+                    <!-- Tech grid (no blur) -->
+                    <div class="contain-7-grid" id="tech-grid">
+                        <div><img src="Images/logos/angular.webp" alt="Angular"></div>
+                        <div><img src="Images/logos/antidesign.webp" alt="Ant Design"></div>
+                        <div><img src="Images/logos/bootstrap.webp" alt: "Bootstrap"></div>
+                        <div><img src="Images/logos/css.webp" alt="CSS"></div>
+                        <div><img src="Images/logos/html.webp" alt="HTML"></div>
+                        <div><img src="Images/logos/jquery.webp" alt="jQuery"></div>
+                        <div><img src="Images/logos/js.webp" alt="JavaScript"></div>
+                        <div><img src="Images/logos/nextjs.webp" alt="Next.js"></div>
+                        <div><img src="Images/logos/react.webp" alt="React"></div>
+                        <div><img src="Images/logos/redux.webp" alt="Redux"></div>
+                        <div><img src="Images/logos/requirejs.webp" alt="RequireJS"></div>
+                        <div><img src="Images/logos/sass.webp" alt="Sass"></div>
+                        <div><img src="Images/logos/tailwind.webp" alt="Tailwind CSS"></div>
+                        <div><img src="Images/logos/typescript.webp" alt="TypeScript"></div>
+                        <div><img src="Images/logos/vuejs.webp" alt="Vue.js"></div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
         <!-- Section-8 Chart View-->
         <section class="sec-8">
@@ -1259,8 +1994,9 @@
                         </p>
                     </div>
                     <div class="social-link d-flex justify-content-center align-items-center">
-                        <a title=" social responsibility" target="_blank" href="https://www.keyideasinfotech.com/social-impact-corporate-responsibility/" class="d-flex align-items-center"
-                            rel="noopener">
+                        <a title=" social responsibility" target="_blank"
+                            href="https://www.keyideasinfotech.com/social-impact-corporate-responsibility/"
+                            class="d-flex align-items-center" rel="noopener">
                             <span>Social Responsibility</span>
                             <div>
 
@@ -1312,7 +2048,8 @@
                             <div><img decoding="async" loading="lazy" width="368" height="353"
                                     alt="Design Development Job Openings" src="/Images/careers/4.webp"></div>
                             <div class="opening-link d-none d-md-block">
-                                <a target="_blank" href="https://www.keyideasinfotech.com/careers/" title="careers" rel="noopener">
+                                <a target="_blank" href="https://www.keyideasinfotech.com/careers/" title="careers"
+                                    rel="noopener">
                                     <span class="desk-view">Job Openings</span>
                                     <div>
                                         <svg width="30" height="10" viewBox="8 0 30 12" fill="none"
@@ -1340,7 +2077,8 @@
                         </div>
                     </div>
                     <div class="social-temp ">
-                        <a target="_blank" href="https://www.keyideasinfotech.com/careers/" title="careers" class="d-flex align-items-center " rel="noopener">
+                        <a target="_blank" href="https://www.keyideasinfotech.com/careers/" title="careers"
+                            class="d-flex align-items-center " rel="noopener">
                             <span class="mob-view">Job Openings</span>
                             <div>
                                 <svg width="30" height="10" viewBox="8 0 30 12" fill="none"
@@ -1358,187 +2096,277 @@
 
         <!-- Section-11 Comprehesive View-->
         <section class="sec-11">
-        <div class="container">
-            <div class="sec-11-contain">
-                <div class="sec-11-head">
+            <div class="container">
+                <div class="sec-11-contain">
+                    <div class="sec-11-head">
                         <h2>Comprehensive FAQ About Choosing the Right IT Consulting Services Company</h2>
                     </div>
-                <div class="sec-11-point">
-                    
-                    <div class="accordion" id="sec-11-accordian">
-                        <div class="accordion-item sec-11-points">
-                            <h3 class="accordion-header" id="heading8">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
-                                    What do Keyideas’ IT consulting services cost for custom websites or apps?
-                                </button>
-                            </h3>
-                            <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="heading8" data-bs-parent="#sec-11-accordian">
-                                <div class="accordion-body">
-                                    Keyideas offers bespoke solutions tailored to the unique needs of businesses at any scale. Our pricing varies based on factors like project complexity, required features, and business goals. Here’s a breakdown: <br><br>
-                                    <b>Basic Websites or Apps:</b> Starting at $6,000, designed with clean, responsive layouts and minimal interactivity, ideal for businesses seeking a strong web presence with fast load times and SEO-optimized architecture. <br><br>
-                                    <b>Advanced Solutions:</b> Priced between $20,000 and $50,000, these solutions integrate advanced features like OAuth-based user authentication, secure payment gateways, third-party API integrations, dynamic content management, and cloud storage. Perfect for businesses requiring enhanced functionality, scalability, and seamless data flow without full-scale enterprise systems. <br><br>
-                                    <b>Enterprise-Grade Systems:</b> Starting at $75,000, designed to meet complex business needs such as multi-role user access, real-time data processing, high-volume transactions, and robust security. These systems leverage microservices, cloud-native deployment, and distributed architectures for maximum scalability, performance, and security. <br><br>
-                                    Our pricing is fully customized, delivering high-performance, scalable, and secure solutions that align with your goals.
+                    <div class="sec-11-point">
+
+                        <div class="accordion" id="sec-11-accordian">
+                            <div class="accordion-item sec-11-points">
+                                <h3 class="accordion-header" id="heading8">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                                        What do Keyideas’ IT consulting services cost for custom websites or apps?
+                                    </button>
+                                </h3>
+                                <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="heading8"
+                                    data-bs-parent="#sec-11-accordian">
+                                    <div class="accordion-body">
+                                        Keyideas offers bespoke solutions tailored to the unique needs of businesses at
+                                        any scale. Our pricing varies based on factors like project complexity, required
+                                        features, and business goals. Here’s a breakdown: <br><br>
+                                        <b>Basic Websites or Apps:</b> Starting at $6,000, designed with clean,
+                                        responsive layouts and minimal interactivity, ideal for businesses seeking a
+                                        strong web presence with fast load times and SEO-optimized architecture.
+                                        <br><br>
+                                        <b>Advanced Solutions:</b> Priced between $20,000 and $50,000, these solutions
+                                        integrate advanced features like OAuth-based user authentication, secure payment
+                                        gateways, third-party API integrations, dynamic content management, and cloud
+                                        storage. Perfect for businesses requiring enhanced functionality, scalability,
+                                        and seamless data flow without full-scale enterprise systems. <br><br>
+                                        <b>Enterprise-Grade Systems:</b> Starting at $75,000, designed to meet complex
+                                        business needs such as multi-role user access, real-time data processing,
+                                        high-volume transactions, and robust security. These systems leverage
+                                        microservices, cloud-native deployment, and distributed architectures for
+                                        maximum scalability, performance, and security. <br><br>
+                                        Our pricing is fully customized, delivering high-performance, scalable, and
+                                        secure solutions that align with your goals.
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="accordion-item sec-11-points">
-                            <h3 class="accordion-header" id="heading9">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
-                                    What makes Keyideas’ software experts stand out?
-                                </button>
-                            </h3>
-                            <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="heading9" data-bs-parent="#sec-11-accordian">
-                                <div class="accordion-body">
-                                    Since 2007, Keyideas has been a trusted IT partner, delivering innovative solutions that drive business success. Here’s why we are the go-to choice for businesses seeking advanced technology expertise:<br><br>
-                                    <b>Comprehensive Expertise:</b> Our team excels in cutting-edge technologies like MERN, MEAN, AI, Augmented Reality, IoT, and custom app development, ensuring scalable, robust solutions. <br><br>
-                                    <b>Proven Impact:</b> With over 832 projects completed and 3.1 million leads generated, we have earned recognition from top industry platforms like Clutch, GoodFirms, and TechBehemoths, cementing our global reputation. <br><br>
-                                    <b>Client-Centric Strategy:</b> We align every strategy with your business goals, ensuring measurable results that fuel growth. <br><br>
-                                    Our flexible pricing starts at $28/hour, providing exceptional value while delivering world-class, tailored solutions.
+                            <div class="accordion-item sec-11-points">
+                                <h3 class="accordion-header" id="heading9">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                                        What makes Keyideas’ software experts stand out?
+                                    </button>
+                                </h3>
+                                <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="heading9"
+                                    data-bs-parent="#sec-11-accordian">
+                                    <div class="accordion-body">
+                                        Since 2007, Keyideas has been a trusted IT partner, delivering innovative
+                                        solutions that drive business success. Here’s why we are the go-to choice for
+                                        businesses seeking advanced technology expertise:<br><br>
+                                        <b>Comprehensive Expertise:</b> Our team excels in cutting-edge technologies
+                                        like MERN, MEAN, AI, Augmented Reality, IoT, and custom app development,
+                                        ensuring scalable, robust solutions. <br><br>
+                                        <b>Proven Impact:</b> With over 832 projects completed and 3.1 million leads
+                                        generated, we have earned recognition from top industry platforms like Clutch,
+                                        GoodFirms, and TechBehemoths, cementing our global reputation. <br><br>
+                                        <b>Client-Centric Strategy:</b> We align every strategy with your business
+                                        goals, ensuring measurable results that fuel growth. <br><br>
+                                        Our flexible pricing starts at $28/hour, providing exceptional value while
+                                        delivering world-class, tailored solutions.
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="accordion-item sec-11-points">
-                            <h3 class="accordion-header" id="heading10">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
-                                    Why is outsourcing to Keyideas more cost-effective than in-house development?
-                                </button>
-                            </h3>
-                            <div id="collapse10" class="accordion-collapse collapse" aria-labelledby="heading10" data-bs-parent="#sec-11-accordian">
-                                <div class="accordion-body">
-                                    Outsourcing to Keyideas allows businesses to save time and costs by eliminating internal hiring, training, and infrastructure expenses. This enables you to focus on core operations while we manage the technical aspects. With our streamlined workflows and expert team, we ensure fast, high-quality project delivery. Our flexible pricing starts at $28/hour, allowing you to pay only for the resources you need and ensuring tailored solutions for your specific requirements.<br><br>
-                                    Partnering with Keyideas offers scalable, cost-effective solutions that maximize ROI.
+                            <div class="accordion-item sec-11-points">
+                                <h3 class="accordion-header" id="heading10">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
+                                        Why is outsourcing to Keyideas more cost-effective than in-house development?
+                                    </button>
+                                </h3>
+                                <div id="collapse10" class="accordion-collapse collapse" aria-labelledby="heading10"
+                                    data-bs-parent="#sec-11-accordian">
+                                    <div class="accordion-body">
+                                        Outsourcing to Keyideas allows businesses to save time and costs by eliminating
+                                        internal hiring, training, and infrastructure expenses. This enables you to
+                                        focus on core operations while we manage the technical aspects. With our
+                                        streamlined workflows and expert team, we ensure fast, high-quality project
+                                        delivery. Our flexible pricing starts at $28/hour, allowing you to pay only for
+                                        the resources you need and ensuring tailored solutions for your specific
+                                        requirements.<br><br>
+                                        Partnering with Keyideas offers scalable, cost-effective solutions that maximize
+                                        ROI.
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="accordion-item sec-11-points">
-                            <h3 class="accordion-header" id="heading11">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
-                                    How can Keyideas redesign your website or app to boost sales on budget?
-                                </button>
-                            </h3>
-                            <div id="collapse11" class="accordion-collapse collapse" aria-labelledby="heading11" data-bs-parent="#sec-11-accordian">
-                                <div class="accordion-body">
-                                    At Keyideas, we blend advanced technology with innovative design to build high-performance websites and apps that drive revenue. Here’s how we deliver results:<br><br>
-                                    <b>Conversion Optimization:</b> We implement lead capture forms, custom integrations, and design elements to maximize conversions. <br><br>
-                                    <b>SEO and Traffic Enhancement:</b> By improving page speed, mobile responsiveness, and SEO, we boost visibility and attract your target audience. <br><br>
-                                    <b>Data-Driven Strategy:</b> Using analytics, we refine user behavior insights to make precise adjustments that increase revenue. <br><br>
-                                    <b>UX Efficiency:</b> Our intuitive designs streamline navigation, enhancing user experience and retention.<br><br>
-                                    <b>Scalability and Security:</b> We ensure your redesign can scale with your business and incorporate strong security to protect user data. <br><br>
-                                    <b>Continuous Optimization:</b> Post-launch, we track performance and optimize strategies to ensure long-term growth. <br><br>
-                                    Redesign projects start at $6,000, delivering scalable, secure, and ROI-focused solutions within budget.
+                            <div class="accordion-item sec-11-points">
+                                <h3 class="accordion-header" id="heading11">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
+                                        How can Keyideas redesign your website or app to boost sales on budget?
+                                    </button>
+                                </h3>
+                                <div id="collapse11" class="accordion-collapse collapse" aria-labelledby="heading11"
+                                    data-bs-parent="#sec-11-accordian">
+                                    <div class="accordion-body">
+                                        At Keyideas, we blend advanced technology with innovative design to build
+                                        high-performance websites and apps that drive revenue. Here’s how we deliver
+                                        results:<br><br>
+                                        <b>Conversion Optimization:</b> We implement lead capture forms, custom
+                                        integrations, and design elements to maximize conversions. <br><br>
+                                        <b>SEO and Traffic Enhancement:</b> By improving page speed, mobile
+                                        responsiveness, and SEO, we boost visibility and attract your target audience.
+                                        <br><br>
+                                        <b>Data-Driven Strategy:</b> Using analytics, we refine user behavior insights
+                                        to make precise adjustments that increase revenue. <br><br>
+                                        <b>UX Efficiency:</b> Our intuitive designs streamline navigation, enhancing
+                                        user experience and retention.<br><br>
+                                        <b>Scalability and Security:</b> We ensure your redesign can scale with your
+                                        business and incorporate strong security to protect user data. <br><br>
+                                        <b>Continuous Optimization:</b> Post-launch, we track performance and optimize
+                                        strategies to ensure long-term growth. <br><br>
+                                        Redesign projects start at $6,000, delivering scalable, secure, and ROI-focused
+                                        solutions within budget.
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="accordion-item sec-11-points">
-                            <h3 class="accordion-header" id="heading12">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
-                                    What’s the pricing structure for working with Keyideas on custom software?
-                                </button>
-                            </h3>
-                            <div id="collapse12" class="accordion-collapse collapse" aria-labelledby="heading12" data-bs-parent="#sec-11-accordian">
-                                <div class="accordion-body">
-                                    We provide flexible and transparent pricing models, customized to meet your project’s needs: <br><br>
-                                    <b>Hourly:</b> Starting at $28/hour, ideal for projects requiring flexibility or continuous updates. <br><br>
-                                    <b>Monthly:</b> Starting at $3,800/month, perfect for long-term projects with dedicated resources. <br><br>
-                                    <b>Project-Based:</b> Tailored for well-defined projects, with pricing customized based on complexity, deliverables, and scope. <br><br>
-                                    Our pricing is scalable, adaptable, and designed to ensure cost-efficiency while maintaining high-quality standards. We also offer initial consultations to assess your project needs and determine the best approach. Additionally, our post-launch support ensures your solution continues to perform optimally.
+                            <div class="accordion-item sec-11-points">
+                                <h3 class="accordion-header" id="heading12">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
+                                        What’s the pricing structure for working with Keyideas on custom software?
+                                    </button>
+                                </h3>
+                                <div id="collapse12" class="accordion-collapse collapse" aria-labelledby="heading12"
+                                    data-bs-parent="#sec-11-accordian">
+                                    <div class="accordion-body">
+                                        We provide flexible and transparent pricing models, customized to meet your
+                                        project’s needs: <br><br>
+                                        <b>Hourly:</b> Starting at $28/hour, ideal for projects requiring flexibility or
+                                        continuous updates. <br><br>
+                                        <b>Monthly:</b> Starting at $3,800/month, perfect for long-term projects with
+                                        dedicated resources. <br><br>
+                                        <b>Project-Based:</b> Tailored for well-defined projects, with pricing
+                                        customized based on complexity, deliverables, and scope. <br><br>
+                                        Our pricing is scalable, adaptable, and designed to ensure cost-efficiency while
+                                        maintaining high-quality standards. We also offer initial consultations to
+                                        assess your project needs and determine the best approach. Additionally, our
+                                        post-launch support ensures your solution continues to perform optimally.
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="accordion-item sec-11-points">
-                            <h3 class="accordion-header" id="heading13">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
-                                    How does Keyideas ensure the best value while improving performance, scalability, and security?
-                                </button>
-                            </h3>
-                            <div id="collapse13" class="accordion-collapse collapse" aria-labelledby="heading13" data-bs-parent="#sec-11-accordian">
-                                <div class="accordion-body">
-                                    Keyideas ensures exceptional value by optimizing performance, scalability, and security across all solutions: <br><br>
-                                    <b>Performance:</b> We enhance speed and responsiveness through efficient UI/UX design, advanced caching techniques, and CDN integration, ensuring seamless user experiences. <br><br>
-                                    <b>Scalability:</b> Leveraging cloud-based architectures, microservices, and containerization, we enable solutions to scale dynamically, supporting growth and high-demand workloads. <br><br>
-                                    <b>Security:</b> We implement robust encryption, secure APIs, and best-in-class security protocols, conducting regular audits to maintain data protection and compliance. <br><br>
-                                    Our commitment to excellence ensures that all solutions are optimized for performance, built to scale, and secured to the highest standards.
+                            <div class="accordion-item sec-11-points">
+                                <h3 class="accordion-header" id="heading13">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
+                                        How does Keyideas ensure the best value while improving performance,
+                                        scalability, and security?
+                                    </button>
+                                </h3>
+                                <div id="collapse13" class="accordion-collapse collapse" aria-labelledby="heading13"
+                                    data-bs-parent="#sec-11-accordian">
+                                    <div class="accordion-body">
+                                        Keyideas ensures exceptional value by optimizing performance, scalability, and
+                                        security across all solutions: <br><br>
+                                        <b>Performance:</b> We enhance speed and responsiveness through efficient UI/UX
+                                        design, advanced caching techniques, and CDN integration, ensuring seamless user
+                                        experiences. <br><br>
+                                        <b>Scalability:</b> Leveraging cloud-based architectures, microservices, and
+                                        containerization, we enable solutions to scale dynamically, supporting growth
+                                        and high-demand workloads. <br><br>
+                                        <b>Security:</b> We implement robust encryption, secure APIs, and best-in-class
+                                        security protocols, conducting regular audits to maintain data protection and
+                                        compliance. <br><br>
+                                        Our commitment to excellence ensures that all solutions are optimized for
+                                        performance, built to scale, and secured to the highest standards.
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="accordion-item sec-11-points">
-                            <h3 class="accordion-header" id="heading132">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse132" aria-expanded="false" aria-controls="collapse132">
-                                    What factors affect the cost of IT consulting services with Keyideas, and how do they tailor solutions?
-                                </button>
-                            </h3>
-                            <div id="collapse132" class="accordion-collapse collapse" aria-labelledby="heading132" data-bs-parent="#sec-11-accordian">
-                                <div class="accordion-body">
-                                    At Keyideas, we prioritize delivering cutting-edge solutions by focusing on: <br><br>
-                                    <b>Performance:</b> Accelerating speed and responsiveness through optimized UI/UX design and advanced caching strategies. <br><br>
-                                    <b>Scalability:</b> Leveraging cloud-based architectures, microservices, and containerization to enable seamless growth. <br><br>
-                                    <b>Security:</b> Implementing robust encryption and secure APIs, alongside strict adherence to industry standards like GDPR and HIPAA, with regular audits to maintain data integrity.<br><br>
-                                    <b>Tailored Solutions:</b> Crafting bespoke solutions designed to meet your business’s unique challenges and objectives.<br><br>
-                                    <b>Innovation:</b> Integrating the latest technologies and trends to ensure your solution remains adaptable and ahead of the curve.<br><br>
-                                    With Keyideas, you receive more than just a service; you gain a strategic partner committed to delivering reliable, secure, and future-ready solutions.
+                            <div class="accordion-item sec-11-points">
+                                <h3 class="accordion-header" id="heading132">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse132" aria-expanded="false" aria-controls="collapse132">
+                                        What factors affect the cost of IT consulting services with Keyideas, and how do
+                                        they tailor solutions?
+                                    </button>
+                                </h3>
+                                <div id="collapse132" class="accordion-collapse collapse" aria-labelledby="heading132"
+                                    data-bs-parent="#sec-11-accordian">
+                                    <div class="accordion-body">
+                                        At Keyideas, we prioritize delivering cutting-edge solutions by focusing on:
+                                        <br><br>
+                                        <b>Performance:</b> Accelerating speed and responsiveness through optimized
+                                        UI/UX design and advanced caching strategies. <br><br>
+                                        <b>Scalability:</b> Leveraging cloud-based architectures, microservices, and
+                                        containerization to enable seamless growth. <br><br>
+                                        <b>Security:</b> Implementing robust encryption and secure APIs, alongside
+                                        strict adherence to industry standards like GDPR and HIPAA, with regular audits
+                                        to maintain data integrity.<br><br>
+                                        <b>Tailored Solutions:</b> Crafting bespoke solutions designed to meet your
+                                        business’s unique challenges and objectives.<br><br>
+                                        <b>Innovation:</b> Integrating the latest technologies and trends to ensure your
+                                        solution remains adaptable and ahead of the curve.<br><br>
+                                        With Keyideas, you receive more than just a service; you gain a strategic
+                                        partner committed to delivering reliable, secure, and future-ready solutions.
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="accordion-item sec-11-points">
-                            <h3 class="accordion-header" id="heading133">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse133" aria-expanded="false" aria-controls="collapse133">
-                                    How can Keyideas’ software experts streamline your IT infrastructure at flexible prices?
-                                </button>
-                            </h3>
-                            <div id="collapse133" class="accordion-collapse collapse" aria-labelledby="heading133" data-bs-parent="#sec-11-accordian">
-                                <div class="accordion-body">
-                                    Keyideas streamlines IT infrastructure by modernizing systems, integrating advanced technologies, and automating workflows to maximize efficiency. Our experts deliver tailored solutions with scalable designs, seamless integrations, and robust security to optimize performance for long-term growth. <br><br>
-                                    We offer flexible pricing models to align with your business needs, ensuring cost-effective solutions that provide measurable value while adapting to your budget and project requirements.
+                            <div class="accordion-item sec-11-points">
+                                <h3 class="accordion-header" id="heading133">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse133" aria-expanded="false" aria-controls="collapse133">
+                                        How can Keyideas’ software experts streamline your IT infrastructure at flexible
+                                        prices?
+                                    </button>
+                                </h3>
+                                <div id="collapse133" class="accordion-collapse collapse" aria-labelledby="heading133"
+                                    data-bs-parent="#sec-11-accordian">
+                                    <div class="accordion-body">
+                                        Keyideas streamlines IT infrastructure by modernizing systems, integrating
+                                        advanced technologies, and automating workflows to maximize efficiency. Our
+                                        experts deliver tailored solutions with scalable designs, seamless integrations,
+                                        and robust security to optimize performance for long-term growth. <br><br>
+                                        We offer flexible pricing models to align with your business needs, ensuring
+                                        cost-effective solutions that provide measurable value while adapting to your
+                                        budget and project requirements.
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="sec-11-box">
-                    <div class="sec-11-box-desc">
-                        <p class="sec-11-qoutes">&ldquo;They were all knowledgeable, professional, understanding, and simply amazing to work with...&rdquo;</p>
-                        <div class="sec-11-icon-text">
-                            <div class="clutch-icon"></div>
-                            <p>Review from Clutch.co</p>
+                    <div class="sec-11-box">
+                        <div class="sec-11-box-desc">
+                            <p class="sec-11-qoutes">&ldquo;They were all knowledgeable, professional, understanding,
+                                and simply amazing to work with...&rdquo;</p>
+                            <div class="sec-11-icon-text">
+                                <div class="clutch-icon"></div>
+                                <p>Review from Clutch.co</p>
+                            </div>
+                            <button type="button"><a href="https://www.keyideasinfotech.com/contact-us/" target="_blank"
+                                    rel="noopener noreferrer">Hire Monthly Resources</a></button>
+                            <p class="sec-11-qoute1">UNMATCHED PROFESSIONALISM, TAILORED FOR SUCCESS</p>
                         </div>
-                        <button type="button"><a href="https://www.keyideasinfotech.com/contact-us/" target="_blank" rel="noopener noreferrer">Hire Monthly Resources</a></button>
-                        <p class="sec-11-qoute1">UNMATCHED PROFESSIONALISM, TAILORED FOR SUCCESS</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
         <!-- Section: Discuss Ideas -->
-<section class="discuss-sec">
-  <div class="wrap-container">
-    <!-- Left Box -->
-    <div class="stats-box">
-      <div class="stats-card">
-        <div class="stats-left">
-          <div class="stats-text">We've successfully delivered over</div>
-          <div class="stats-image">
-            <img src="Images/root/leads.webp" alt="Leads Achieved Illustration" class="img-fluid" width="200px">
-          </div>
-          <div class="stats-text">Leads For The Client</div>
-        </div>
-        <!-- Right Side -->
-        <div class="stats-right">
-          <p class="stats-text">17 Years In Business</p>
-          <p class="stats-text">832+ Projects Completed</p>
-          <p class="stats-text">100+ Experts</p>
-        </div>
-      </div>
-    </div>
+        <section class="discuss-sec">
+            <div class="wrap-container">
+                <!-- Left Box -->
+                <div class="stats-box">
+                    <div class="stats-card">
+                        <div class="stats-left">
+                            <div class="stats-text">We've successfully delivered over</div>
+                            <div class="stats-image">
+                                <img src="Images/root/leads.webp" alt="Leads Achieved Illustration" class="img-fluid"
+                                    width="200px">
+                            </div>
+                            <div class="stats-text">Leads For The Client</div>
+                        </div>
+                        <!-- Right Side -->
+                        <div class="stats-right">
+                            <p class="stats-text">17 Years In Business</p>
+                            <p class="stats-text">832+ Projects Completed</p>
+                            <p class="stats-text">100+ Experts</p>
+                        </div>
+                    </div>
+                </div>
 
-    <!-- Right Purple Box -->
-    <div class="connect-box">
-      <h2 class="connect-title">Discuss Your Ideas</h2>
-      <a href="https://www.keyideasinfotech.com/contact-us/" target="_blank" class="connect-btn" role="button">Connect Now</a>
-    </div>
-  </div>
-</section>
+                <!-- Right Purple Box -->
+                <div class="connect-box">
+                    <h2 class="connect-title">Discuss Your Ideas</h2>
+                    <a href="https://www.keyideasinfotech.com/contact-us/" target="_blank" class="connect-btn"
+                        role="button">Connect Now</a>
+                </div>
+            </div>
+        </section>
 
 
 
@@ -1568,90 +2396,163 @@
 
         <!-- Footer Section -->
         <footer class="sec-13-footer">
-  <div class="container">
-    <div class="row justify-content-between">
-      <!-- Left Column -->
-      <div class="col-md-6">
-        <div class="first-b-head">SERVICES</div>
-        <div class="first-b-point">
-          <div class="first-b-point-block"><a href="https://www.keyideasinfotech.com/web-design/">Web Design</a></div>
-          <div class="first-b-point-block"><a href="https://www.keyideasinfotech.com/user-centered-design-agency/">UI Design</a></div>
-          <div class="first-b-point-block"><a href="https://www.keyideasinfotech.com/application-development/">App Development</a></div>
-          <div class="first-b-point-block"><a href="https://www.keyideasinfotech.com/graphic-design/">Graphic Design</a></div>
-          <div class="first-b-point-block"><a href="https://www.keyideasinfotech.com/ecommerce/">E-Commerce Websites</a></div>
-          <div class="first-b-point-block"><a href="https://www.keyideasinfotech.com/digital-marketing/">Digital Marketing</a></div>
-        </div>
+            <div class="container">
+                <div class="row justify-content-between">
+                    <!-- Left Column -->
+                    <div class="col-md-6">
+                        <div class="first-b-head">SERVICES</div>
+                        <div class="first-b-point">
+                            <div class="first-b-point-block"><a href="https://www.keyideasinfotech.com/web-design/">Web
+                                    Design</a></div>
+                            <div class="first-b-point-block"><a
+                                    href="https://www.keyideasinfotech.com/user-centered-design-agency/">UI Design</a>
+                            </div>
+                            <div class="first-b-point-block"><a
+                                    href="https://www.keyideasinfotech.com/application-development/">App Development</a>
+                            </div>
+                            <div class="first-b-point-block"><a
+                                    href="https://www.keyideasinfotech.com/graphic-design/">Graphic Design</a></div>
+                            <div class="first-b-point-block"><a
+                                    href="https://www.keyideasinfotech.com/ecommerce/">E-Commerce Websites</a></div>
+                            <div class="first-b-point-block"><a
+                                    href="https://www.keyideasinfotech.com/digital-marketing/">Digital Marketing</a>
+                            </div>
+                        </div>
 
-        <div class="first-b-link mt-4 d-flex">
-          <div class="first-b-link-left me-5">
-            <div class="first-b-head"><a href="https://www.keyideasinfotech.com/portfolio/">CASE STUDIES</a></div>
-            <div class="first-b-head"><a href="https://www.keyideasinfotech.com/industries/">INDUSTRIES</a></div>
-            <div class="first-b-head mb-0"><a href="https://www.keyideasinfotech.com/company/">ABOUT</a></div>
-          </div>
-          <div class="first-b-link-right">
-            <div class="first-b-head d-flex">
-              <a href="https://www.keyideasinfotech.com/careers/" class="d-flex">WE'RE HIRING 
-                <div class="sec-11-apply ms-2">APPLY NOW!</div>
-              </a>
+                        <div class="first-b-link mt-4 d-flex">
+                            <div class="first-b-link-left me-5">
+                                <div class="first-b-head"><a href="https://www.keyideasinfotech.com/portfolio/">CASE
+                                        STUDIES</a></div>
+                                <div class="first-b-head"><a
+                                        href="https://www.keyideasinfotech.com/industries/">INDUSTRIES</a></div>
+                                <div class="first-b-head mb-0"><a
+                                        href="https://www.keyideasinfotech.com/company/">ABOUT</a></div>
+                            </div>
+                            <div class="first-b-link-right">
+                                <div class="first-b-head d-flex">
+                                    <a href="https://www.keyideasinfotech.com/careers/" class="d-flex">WE'RE HIRING
+                                        <div class="sec-11-apply ms-2">APPLY NOW!</div>
+                                    </a>
+                                </div>
+                                <div class="first-b-head"><a
+                                        href="https://www.keyideasinfotech.com/social-impact-corporate-responsibility/">SOCIAL
+                                        IMPACT</a></div>
+                                <div class="first-b-head mb-0"><a href="https://www.keyideasinfotech.com/blog/">BLOG</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="first-b-head mt-4 mb-0 get-in-touch">
+                            <a href="https://www.keyideasinfotech.com/contact-us/">WANT TO LEARN MORE? GET IN TOUCH!</a>
+                        </div>
+                    </div>
+
+                    <!-- Right Column -->
+                    <div class="col-md-5">
+                        <div class="sec-13-footer-first-b">
+                            <div class="first-b-head">KEYIDEAS</div>
+                            <p>Keyideas is a premier web design, mobile apps, and web development company. Rated 5 out
+                                of 5 on Google, Clutch, and Goodfirms.</p>
+                        </div>
+
+                        <div class="footer-location d-flex justify-content-between mt-4">
+                            <div class="footer-location-left">
+                                <div class="first-b-head">INDIA</div>
+                                <p>3rd Floor Platina Tower<br>MG Road, Sector 28<br>Gurugram 122002</p><br>
+                                <p>13th Floor R-Tech Park<br>Western Express Highway<br>Goregaon Mumbai 400063</p><br>
+                                <p><a href="tel:+919999403715">+91 99994 03715</a></p>
+                                <p>(WhatsApp only)</p>
+                            </div>
+                            <div class="footer-location-right">
+                                <div class="first-b-head">UNITED STATES</div>
+                                <p>244 S Palmetto<br>Daytona Beach<br>Florida 32114</p><br>
+                                <p><a href="tel:+14155392130">US: +1 (415) 539-2130</a></p>
+                                <p><a href="tel:+447893926480">UK: +44 78939 26480</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="first-b-head"><a href="https://www.keyideasinfotech.com/social-impact-corporate-responsibility/">SOCIAL IMPACT</a></div>
-            <div class="first-b-head mb-0"><a href="https://www.keyideasinfotech.com/blog/">BLOG</a></div>
-          </div>
-        </div>
-        <div class="first-b-head mt-4 mb-0 get-in-touch">
-          <a href="https://www.keyideasinfotech.com/contact-us/">WANT TO LEARN MORE? GET IN TOUCH!</a>
-        </div>
-      </div>
 
-      <!-- Right Column -->
-      <div class="col-md-5">
-        <div class="sec-13-footer-first-b">
-          <div class="first-b-head">KEYIDEAS</div>
-          <p>Keyideas is a premier web design, mobile apps, and web development company. Rated 5 out of 5 on Google, Clutch, and Goodfirms.</p>
-        </div>
-
-        <div class="footer-location d-flex justify-content-between mt-4">
-          <div class="footer-location-left">
-            <div class="first-b-head">INDIA</div>
-            <p>3rd Floor Platina Tower<br>MG Road, Sector 28<br>Gurugram 122002</p><br>
-            <p>13th Floor R-Tech Park<br>Western Express Highway<br>Goregaon Mumbai 400063</p><br>
-            <p><a href="tel:+919999403715">+91 99994 03715</a></p>
-            <p>(WhatsApp only)</p>
-          </div>
-          <div class="footer-location-right">
-            <div class="first-b-head">UNITED STATES</div>
-            <p>244 S Palmetto<br>Daytona Beach<br>Florida 32114</p><br>
-            <p><a href="tel:+14155392130">US: +1 (415) 539-2130</a></p>
-            <p><a href="tel:+447893926480">UK: +44 78939 26480</a></p>
-          </div>
-        </div>
-      </div>
+            <!-- Bottom Section -->
+            <div class="second-b-head mt-4 d-none d-md-block"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center second-b-row">
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/company/keyideas-infotech-p-limited/"
+                                class="linkedin-icon footer-sprite" target="_blank"></a>
+                            <a href="https://www.behance.net/keyideas/" class="behance-icon footer-sprite"
+                                target="_blank"></a>
+                            <a href="https://twitter.com/keyideasglobal/" class="twitter-icon footer-sprite"
+                                target="_blank"></a>
+                            <a href="https://www.facebook.com/keyideascompany" class="facebook-icon footer-sprite"
+                                target="_blank"></a>
+                            <a href="https://www.instagram.com/keyideasglobal/" class="instagram-icon footer-sprite"
+                                target="_blank"></a>
+                        </div>
+                        <div class="additional-links mt-3">
+                            <p><a href="https://www.keyideasinfotech.com/privacy-policy/">Privacy Policy</a></p>
+                            <p><a href="https://www.keyideasinfotech.com/sitemap/">Sitemap</a></p>
+                            <p>© Copyright 2025. All Rights Reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
-  </div>
-
-  <!-- Bottom Section -->
-  <div class="second-b-head mt-4 d-none d-md-block"></div>
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center second-b-row">
-        <div class="social-links">
-          <a href="https://www.linkedin.com/company/keyideas-infotech-p-limited/" class="linkedin-icon footer-sprite" target="_blank"></a>
-          <a href="https://www.behance.net/keyideas/" class="behance-icon footer-sprite" target="_blank"></a>
-          <a href="https://twitter.com/keyideasglobal/" class="twitter-icon footer-sprite" target="_blank"></a>
-          <a href="https://www.facebook.com/keyideascompany" class="facebook-icon footer-sprite" target="_blank"></a>
-          <a href="https://www.instagram.com/keyideasglobal/" class="instagram-icon footer-sprite" target="_blank"></a>
-        </div>
-        <div class="additional-links mt-3">
-          <p><a href="https://www.keyideasinfotech.com/privacy-policy/">Privacy Policy</a></p>
-          <p><a href="https://www.keyideasinfotech.com/sitemap/">Sitemap</a></p>
-          <p>© Copyright 2025. All Rights Reserved.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
+    
+    <!-- header -->
+    <script type="text/javascript" defer src="js/header.js" id="key-custom-js"></script>
 
 
+
+
+    <!-- Brevo Conversations (Lazy Load) -->
+    <script>
+        function loadBrevoChat() {
+            if (window.brevoChatLoaded) return; // Prevent multiple loads
+            window.brevoChatLoaded = true;
+
+            (function (d, w, c) {
+                w.BrevoConversationsID = '6618c1a6bdae7c0f03217324';
+                w[c] = w[c] || function () {
+                    (w[c].q = w[c].q || []).push(arguments);
+                };
+                var s = d.createElement('script');
+                s.async = true;
+                s.src = 'https://conversations-widget.brevo.com/brevo-conversations.js';
+                d.head.appendChild(s);
+            })(document, window, 'BrevoConversations');
+        }
+
+        // Load chat after user interaction or delay
+        window.addEventListener('scroll', loadBrevoChat, { once: true });
+        window.addEventListener('click', loadBrevoChat, { once: true });
+        setTimeout(loadBrevoChat, 5000); // fallback: load after 5s
+    </script>
+    <!-- /Brevo Conversations -->
+
+
+
+    <script>
+        window.addEventListener('load', function () {
+            const fetchScripts = function (SCRIPTURL, FULLURL) {
+                const URL = 'https://www.keyideasinfotech.com/wp-content/themes/keyideas';
+                let SCRIPT = document.createElement('script');
+                SCRIPT.src = FULLURL ? `${SCRIPTURL}` : `${URL}/${SCRIPTURL}`;
+                document.head.prepend(SCRIPT);
+            }
+            const loadLocation = document.querySelector('.not__location');
+            let loadLocationSection = false;
+            if (!window.location.href.includes('/careers/') && !window.location.href.includes('/blog/') && !loadLocation) {
+                fetchScripts('jsnew/location-pageDOM.js', false);
+            }
+            fetchScripts('jsnew/DOMLOADER.js', false);
+
+            if (document.querySelector('body').classList.contains('blogLoad')) return
+            fetchScripts('jsnew/bootstrap.4.6.1.js', false);
+        })
+    </script>
 
 
 </body>

@@ -10,8 +10,7 @@ body {
     font-family: Poppins, sans-serif;
 }
 
-html,
-body {
+.main-page-wrap{
     width: 100%;
     max-width: 100%;
     overflow-x: hidden;
@@ -19,8 +18,11 @@ body {
     padding: 0;
 }
 
+
+
 .container {
     max-width: 1300px !important;
     margin-left: auto !important;
     margin-right: auto !important;
 }
+
